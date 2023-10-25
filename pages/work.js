@@ -1,6 +1,6 @@
 import Exp from "@/components/Exp";
 import Loading from "@/components/Loading";
-import Player from "@/components/player";
+import Player from "@/components/Player";
 import Template from "@/components/Template";
 import Head from "next/head";
 import Image from "next/image";

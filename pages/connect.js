@@ -1,6 +1,6 @@
 import Box from "@/components/Box";
 import Loading from "@/components/Loading";
-import Player from "@/components/player";
+import Player from "@/components/Player";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useState } from "react";
