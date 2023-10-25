@@ -10,12 +10,19 @@
   width: 0;
 }
 body {
+  cursor: none;
   height: 100vh;
   margin: 0;
   background-size: 200% 200%;
-  background-image: linear-gradient(45deg, #2355d5, #000000);
+  background-image: linear-gradient(49deg, rgb(0, 38, 150) 0%, rgba(6, 2, 37, 0.427) 100%);
+   animation: gradient 7s ease infinite;
+}
+.bg{
+  background-size: 200% 200%;
+  background-image: linear-gradient(49deg, rgb(0, 38, 150) 0%, rgba(6, 2, 37, 0.427) 100%);
   animation: gradient 7s ease infinite;
 }
+
 
 @keyframes gradient {
   0% {
@@ -28,6 +35,7 @@ body {
     background-position: 0% 50%;
   }
 }
+
 
 .effect {
   transition: 0.3s ease-in-out;
@@ -45,17 +53,22 @@ body {
 .circle:hover{
   transform: scale(1.03);
 }
+
 .circle:active{
   transform: scale(1);
 }
 .circleoutline{
-  
+  transition: all 0.5s ease; 
   animation: rotate 10s linear infinite;
+}
+.circle:hover + .circleoutline{
+  animation: rotate 12s linear infinite;
 }
 .circle-word {
   position: absolute;
   top: 50%;
   left: 50%;
+  color: white;
   font-size: 20px;
   font-weight: bold;
   width: 100%;
@@ -110,8 +123,55 @@ body {
   }
 }
 
-.banner{
-  background: url("../public/banner.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
+.enter:nth-child(1){
+  animation: enter 4s ease-in-out ;
+  animation-delay: -2s;
+}
+.enter:nth-child(2){
+  animation: enter 4.5s ease-in-out ;
+  animation-delay: -2s;
+  /* animation-delay: 0.6s; */
+}
+.enter:nth-child(3){
+  animation: enter 5s ease-in-out ;
+  animation-delay: -2s;
+  /* animation-delay: 0.6s; */
+}
+.enter:nth-child(4){
+  animation: enter 5.5s ease-in-out ;
+  animation-delay: -2s;
+  /* animation-delay: 0.6s; */
+}
+@keyframes enter {
+  0%{
+    transform: translateY(500px);
+  }
+  100%{
+    transform: translateY(0px);
+    
+  }
+}
+.leave:nth-child(4){
+  animation: leave 4s ease-in-out ;
+}
+.leave:nth-child(3){
+  animation: leave 4.5s ease-in-out ;
+}
+.leave:nth-child(2){
+  animation: leave 5s ease-in-out ;
+}
+.leave:nth-child(1){
+  animation: leave 5.5s ease-in-out ;
+}
+@keyframes leave {
+  0%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(500px);
+    
+  }
+}
+a:hover{
+  cursor: none;
 }

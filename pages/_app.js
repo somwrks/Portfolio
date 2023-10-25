@@ -1,26 +1,29 @@
 import "@/styles/globals.css";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import AnimatedCursor from "react-animated-cursor";
 
 export default function App({ Component, pageProps }) {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [yes, setYes] = useState(false);
-
+  const [yes, setYes] = useState(true);
+  const router = useRouter();
+  const [isDelayComplete, setIsDelayComplete] = useState(false);
   // Create a ref for the audio element
   const audioRef = useRef(null);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      if(!yes){
-        document.body.style.background="black";
-      }
-      else{
-        document.body.style.background="transparent";
-        document.body.style.backgroundImage="linear-gradient(45deg, #2355d5, #000000)";
+      if (!yes) {
+        document.body.style.background = "black";
+      } else {
+        document.body.style.background = "transparent";
+        document.body.style.backgroundImage =
+          "linear-gradient(45deg, #2355d5, #000000)";
       }
       // Initialize the audio element and store it in the ref
       audioRef.current = new Audio("/music.mp3");
-      audioRef.current.volume = 0.6;
+      audioRef.current.volume = 0.4;
 
       // Set up an event listener for the 'ended' event
       audioRef.current.addEventListener("ended", () => {
@@ -59,10 +62,25 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        hasBlendMode={true}
+        innerStyle={{
+          backgroundColor: "white",
+        }}
+        outerStyle={{
+          border: "3px solid black",
+        }}
+      />
+
       {!yes ? (
-        <div className="flex-col flex w-full justify-center items-center min-h-screen  ">
+        <div className="flex-col flex w-full justify-center bg items-center min-h-screen  ">
           <div className="flex flex-col h-[10vw] rounded-full circle w-[10vw] absolute"></div>
-          <div className="flex flex-col h-[10vw] rounded-full bg-[#0000008a] justify-center items-center w-[10vw] absolute cursor-pointer">
+          <div className="flex flex-col h-[10vw] rounded-full  justify-center items-center w-[10vw] absolute cursor-pointer">
             <Image src={"/play.svg"} width={200} onClick={start} height={200} />
           </div>
         </div>

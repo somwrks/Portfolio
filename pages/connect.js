@@ -17,11 +17,10 @@ export default function connect({toggleAudio}) {
     <div
       className={`flex ${
         change ? "opacity-0" : "opacity-100"
-      }  transition-all flex-col   w-full min-h-screen  `}
+      }  transition-all flex-col justify-center items-center  w-full min-h-screen  `}
     >
       <Player toggleAudio={toggleAudio}/>
-      <div className="flex flex-col  w-[50%] mx-auto p-4 space-y-4 backdrop-blur-xl ">
-     <div className="w-full h-[10vw] banner" ></div>
+      <div className="flex flex-col  w-[50%] mx-auto p-4 space-y-4 backdrop-blur-md ">
      <div className="flex items-center  flex-row space-x-3">
      <div ><Image src={"/som.webp"} width={150} height={150}  /></div>
      <div >
@@ -40,6 +39,7 @@ export default function connect({toggleAudio}) {
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Est placeat asperiores quae velit eos dolorem facere hic corrupti illum, a, tempora minima quisquam fugiat numquam earum aspernatur quos repudiandae atque.
      </p>
       </div>
+     
       </div>
     </div>
   </>

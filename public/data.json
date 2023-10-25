@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Founder & Chief Executive Officer",
+    "link": "https://www.linkedin.com/company/ownboon",
+    "detail1": "Founded OwnBoon, a global startup aimed at creating an all-in-one productivity and self-improvement community platform. Led the establishment and growth of the startup in the United States, building and guiding a diverse team from various countries.",
+    "detail2": "Negotiated more than $100,000 in venture capital funding and achieved over 1000 beta registrations for our innovative project and concept.",
+    "detail3": "Conducted 100+ interviews of talented candidates worldwide from prestigious institutions and backgrounds, managed various company departments, and pioneered AI-driven mental health solutions."
+  },
+  {
+    "title": "Co-Founder & Chief Technology Officer",
+    "link": "Link to PearPrep",
+    "detail1": "Co-founded PearPrep, a groundbreaking app designed to assist students in AP courses. Managed a diverse team and integrated advanced AI technologies to enhance the learning experience.",
+    "detail2": "Overcame technical challenges and made significant progress in app development, ensuring seamless user experience and functionality.",
+    "detail3": "Implemented Git, Next.js, and Tailwind CSS to optimize app performance and user interface."
+  },
+  {
+    "title": "Full Stack Developer",
+    "link": "https://csya-edu.org",
+    "detail1": "Developed a full-stack website for Computer Science Youth of America (CSYA), utilizing Next.js, Tailwind CSS, Google API, and Figma. Led the web development team and optimized the site's user experience.",
+    "detail2": "Revamped CSYA's online presence, leading to substantial growth through design, coding, and strategic partnerships.",
+    "detail3": "Joined CSYA's board after leading the web development team, earning founder's recommendation for outstanding contributions."
+  },
+  {
+    "title": "Chapter Lead",
+    "link": "Link to Genxl",
+    "detail1": "Served as the President and Founder of Genxl’s Uttar Pradesh, India Chapter. Organized dynamic events and activities, expanding Genxl's reach and influence through collaborative community engagement.",
+    "detail2": "Received a commendatory letter of recommendation from the renowned CEO for visionary leadership and impactful contributions.",
+    "detail3": "Utilized Git, Next.js, and Tailwind CSS to develop and maintain Genxl's online presence."
+  },
+  {
+    "title": "Full Stack Developer",
+    "link": "Link to Hack United",
+    "detail1": "Developed and optimized Hack United's online presence, creating a dynamic, registration-optimized website. Orchestrated the creation of 'United Hacks,' a record-breaking hackathon event with 300+ registrations and global participants.",
+    "detail2": "Implemented Git, Next.js, and Tailwind CSS to ensure seamless functionality and user experience.",
+    "detail3": "Received a letter of recommendation from the president of Hack United for pivotal contributions to the organization."
+  },
+  {
+    "title": "Mobile App Developer",
+    "link": "Link to Aesthetic Gold",
+    "detail1": "Freelanced as a mobile app developer for Aesthetic Gold, a top jewelry company. Built a secure and user-friendly app for team management and business transactions, redefining transaction dynamics in the jewelry industry.",
+    "detail2": "Collaborated closely with a fellow developer to deliver a harmonious digital solution, receiving laudatory recognition for dynamic creation.",
+    "detail3": "Utilized Figma, Firebase, React Native, and Tailwind CSS to develop the app, ensuring smooth user interface and functionality."
+  },
+  {
+    "title": "Student Volunteer",
+    "link": "Link to GreenBhumi",
+    "detail1": "Distinguished as a catalyst in Green Bhumi’s mission, orchestrated reforestation interviews and pioneered biodiversity research, expanding the legacy of green innovation.",
+    "detail2": "Attained laurels from the Green Bhumi CEO among 100 passionate individuals for exceptional contributions.",
+    "detail3": "Offered a position as a mentor for future volunteers due to outstanding performance and dedication."
+  },
+  {
+    "title": "Full Stack Development Intern",
+    "link": "Link to Teachnook",
+    "detail1": "Navigated a rigorous IIT Bhubaneswar-backed internship, immersing in advanced projects, bridging industry–academic gaps, and earning a coveted IIT Bhubaneswar Certificate.",
+    "detail2": "Galvanized full-stack development challenges, maneuvering intricate APIs, data parsing, and complex JavaScript Libraries.",
+    "detail3": "Emerged as one of the program’s inaugural graduates, leaving a legacy of accelerated learning, innovation, and impactful technology prowess."
+  },
+  {
+    "title": "Frontend Developer",
+    "link": "Link to Raj Diagnostic Centre",
+    "detail1": "Built a full-stack hospital management website for Raj Diagnostic Centre, digitalizing the inefficient system of patient waiting in line.",
+    "detail2": "Performed complex data transfers, real-time database updates, and email notifications in collaboration with a developer.",
+    "detail3": "Utilized Figma, Git, React.js, Express.js, Mongoose ODM, and Tailwind CSS for optimal website performance and user experience."
+  }
+]

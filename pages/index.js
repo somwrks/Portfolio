@@ -19,7 +19,7 @@ export default function Home({ toggleAudio }) {
           window.innerHeight * window.innerHeight
       );
       const gradient = distance / maxDistance; // Normalize to range [0,1]
-      return `linear-gradient(49deg, rgba(0,38,150,1) 0%, rgba(0,0,0,${gradient}) 100%)`;
+      return `linear-gradient(49deg, rgba(0,38,150,1) 0%, rgba(6,2,37,${gradient}) 100%)`;
     }
     return ""; // Return a default value or handle the case when window is not defined
   };
@@ -77,7 +77,7 @@ export default function Home({ toggleAudio }) {
       ></div>
       <div className="flex flex-row justify-between ">
         <div
-          className="w-[50vw] cursor-pointer bg-[#ffffff22]  shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
+          className="w-[50vw]  bg-[#ffffff22]  shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
           onClick={() => go("/about")}
         >
           <div>
@@ -85,7 +85,7 @@ export default function Home({ toggleAudio }) {
           </div>
         </div>
         <div
-          className="w-[50vw] cursor-pointer bg-[#ffffff22]  shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
+          className="w-[50vw]  bg-[#ffffff22]  shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
           onClick={() => go("/work")}
         >
           <div>
@@ -95,7 +95,7 @@ export default function Home({ toggleAudio }) {
       </div>
       <div className="flex flex-row justify-between ">
         <div
-          className="w-[50vw] cursor-pointer bg-[#ffffff22]  shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
+          className="w-[50vw]  bg-[#ffffff22]  shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
           onClick={() => go("/project")}
         >
           <div>
@@ -103,7 +103,7 @@ export default function Home({ toggleAudio }) {
           </div>
         </div>
         <div
-          className="w-[50vw] cursor-pointer bg-[#ffffff22]  shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
+          className="w-[50vw]  bg-[#ffffff22]  shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
           onClick={() => go("/connect")}
         >
           <div>
