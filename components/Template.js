@@ -1,5 +1,5 @@
 import Loading from "@/components/Loading";
-import Player from "@/components/player";
+import Player from "@/components/Player";
 import Image from "next/image";
 import React, { useState } from "react";
 import { useEffect } from "react";
