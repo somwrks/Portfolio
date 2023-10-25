@@ -1,8 +1,21 @@
 import Template from "@/components/Template";
+import Head from "next/head";
 
 export default function About({ toggleAudio }) {
   return (
     <>
+     <Head>
+        <title>Som Srivastava</title>
+        <meta
+          name="description"
+          content="Passionate and innovative high school senior with expertise in software development and design. Specialized in building impactful solutions that promote mental health awareness and support."
+        />
+        <meta
+          name="keywords"
+          content="Som Srivastava, somwrks, SOMWRKS, SomWrks, Software Developer, Entrepreneur, Mental Health Advocate, Full Stack Developer, Innovator, Technology Enthusiast, About Me"
+        />
+        {/* Add your icon link here if you have one */}
+      </Head>
       <Template
         title={"Som Srivastava"}
         toggleAudio={toggleAudio}

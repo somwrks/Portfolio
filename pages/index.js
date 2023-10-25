@@ -1,44 +1,21 @@
 import Loading from "@/components/Loading";
+import Head from "next/head";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Home({ toggleAudio }) {
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
   const app = useRouter();
   const go = (e) => {
     if (typeof window !== "undefined") {
       app.push(e);
     }
   };
-  const calculateGradient = (x, y) => {
-    if (typeof window !== "undefined") {
-      const distance = Math.sqrt(x * x + y * y);
-      const maxDistance = Math.sqrt(
-        window.innerWidth * window.innerWidth +
-          window.innerHeight * window.innerHeight
-      );
-      const gradient = distance / maxDistance; // Normalize to range [0,1]
-      return `linear-gradient(49deg, rgba(0,38,150,1) 0%, rgba(6,2,37,${gradient}) 100%)`;
-    }
-    return ""; // Return a default value or handle the case when window is not defined
-  };
   const [change, setChange] = useState(true);
   useEffect(() => {
-    const handleMouseMove = (event) => {
-      setX(event.clientX);
-      setY(event.clientY);
-    };
     setTimeout(() => {
       setChange(false);
     }, 3000); 
 
-    window.addEventListener("mousemove", handleMouseMove);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
   }, []);
 
   const start =()=>{
@@ -48,15 +25,26 @@ export default function Home({ toggleAudio }) {
 
   return (
     <>
-
+ <Head>
+        <title>Som Srivastava | Software Developer and Entrepreneur</title>
+        <meta
+          name="description"
+          content="Passionate and innovative high school senior with expertise in software development and design. Specialized in building impactful solutions that promote mental health awareness and support."
+        />
+        <meta
+          name="keywords"
+          content="Som Srivastava, somwrks, SOMWRKS, SomWrks, Software Developer, Entrepreneur, Mental Health Advocate, Full Stack Developer, Innovator, Technology Enthusiast"
+        />
+      
+        <link rel="icon" href="som.webp" />
+      </Head>
     {change && <Loading/>}
     <div
       className={`flex  ${
         change ? " opacity-0 " : " opacity-100 "
-      } transition-all flex-col items-center  justify-center  w-full min-h-screen`}
-      style={{ background: calculateGradient(x, y) }}
+      } transition-all flex-col items-center  justify-center cursor-none  w-full min-h-screen`}
     >
-      <div className="flex flex-col h-[16vw] rounded-full circleoutline w-[16vw] absolute">
+      <div className="flex flex-col cursor-none h-[16vw] rounded-full circleoutline w-[16vw] absolute">
         <div className="circle-word">I</div>
         <div className="circle-word">I</div>
         <div className="circle-word">I</div>
@@ -73,11 +61,11 @@ export default function Home({ toggleAudio }) {
 
       <div
         onClick={start}
-        className="flex flex-col h-[13vw] rounded-full  circle w-[13vw] absolute"
+        className="flex flex-col cursor-none h-[13vw] rounded-full  circle w-[13vw] absolute"
       ></div>
       <div className="flex flex-row justify-between ">
         <div
-          className="w-[50vw]  bg-[#ffffff22]  shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
+          className="w-[50vw]    shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
           onClick={() => go("/about")}
         >
           <div>
@@ -85,7 +73,7 @@ export default function Home({ toggleAudio }) {
           </div>
         </div>
         <div
-          className="w-[50vw]  bg-[#ffffff22]  shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
+          className="w-[50vw]    shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
           onClick={() => go("/work")}
         >
           <div>
@@ -95,7 +83,7 @@ export default function Home({ toggleAudio }) {
       </div>
       <div className="flex flex-row justify-between ">
         <div
-          className="w-[50vw]  bg-[#ffffff22]  shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
+          className="w-[50vw]    shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
           onClick={() => go("/project")}
         >
           <div>
@@ -103,7 +91,7 @@ export default function Home({ toggleAudio }) {
           </div>
         </div>
         <div
-          className="w-[50vw]  bg-[#ffffff22]  shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
+          className="w-[50vw]    shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
           onClick={() => go("/connect")}
         >
           <div>

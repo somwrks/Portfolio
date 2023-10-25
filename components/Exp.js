@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function Exp({change,title,detail1,index}) {
+export default function Exp({setShow,change,title,detail1,index}) {
   return (
     <div
     className={`flex flex-row   ${
@@ -24,7 +24,7 @@ export default function Exp({change,title,detail1,index}) {
       </div>
       <div>
         <button className="px-4 py-2 backdrop-blur-3xl font-bold  rounded-xl text-white border-2 border-gray-200">
-          <a href={`/${index}`}>Explore</a>
+          <a  onClick={()=> setShow(index)}>Explore</a>
         </button>
       </div>
     </div>

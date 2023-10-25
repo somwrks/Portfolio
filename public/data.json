@@ -2,30 +2,30 @@
   {
     "title": "Founder & Chief Executive Officer",
     "link": "https://www.linkedin.com/company/ownboon",
-    "detail1": "Founded OwnBoon, a global startup aimed at creating an all-in-one productivity and self-improvement community platform. Led the establishment and growth of the startup in the United States, building and guiding a diverse team from various countries.",
-    "detail2": "Negotiated more than $100,000 in venture capital funding and achieved over 1000 beta registrations for our innovative project and concept.",
-    "detail3": "Conducted 100+ interviews of talented candidates worldwide from prestigious institutions and backgrounds, managed various company departments, and pioneered AI-driven mental health solutions."
+    "detail1": "Founding OwnBoon, a global startup aimed at creating an all-in-one productivity and self-improvement community platform. Led the establishment and growth of the startup in the United States, building and guiding a diverse team from various countries.",
+    "detail2": "At OwnBoon, I harnessed a wide array of technical skills to transform our vision into reality. I architected our platform using cutting-edge technologies, including Next.js for a seamless user experience and Tailwind CSS for intuitive designs. Leveraging Sanity.io, I ensured our content management system was robust and efficient. On the backend, I engineered robust functionalities using Node.js. Additionally, I engineered a customized Discord bot for OwnBoon utilizing Python, enriching our community engagement.",
+    "detail3": "In addition to technical expertise, my role delved into strategic initiatives. I played a pivotal role in the recruitment process, assembling a talented and diverse team that mirrors our global user base. Negotiated more than $100,000 in venture capital funding and achieved over 1000 beta registrations for our innovative project and concept. Conducted 100+ interviews of talented candidates worldwide from prestigious institutions and backgrounds, managed various company departments, and pioneered AI-driven mental health solutions."
   },
   {
     "title": "Co-Founder & Chief Technology Officer",
     "link": "Link to PearPrep",
-    "detail1": "Co-founded PearPrep, a groundbreaking app designed to assist students in AP courses. Managed a diverse team and integrated advanced AI technologies to enhance the learning experience.",
-    "detail2": "Overcame technical challenges and made significant progress in app development, ensuring seamless user experience and functionality.",
-    "detail3": "Implemented Git, Next.js, and Tailwind CSS to optimize app performance and user interface."
+    "detail1": "Co-founding PearPrep, a groundbreaking app designed to assist students in AP courses. Managed a diverse team and integrated advanced AI technologies to enhance the learning experience.",
+    "detail2": "In my current capacity, I have tackled substantial technical challenges head-on, propelling PearPrep’s app development to new heights. I have been instrumental in ensuring a seamless user experience and robust functionality, driving the project forward. By meticulously addressing technical hurdles, I've made significant strides in app development, ensuring our users encounter a fluid, intuitive interface.",
+    "detail3": "Utilizing my technical prowess, I implemented Git for version control, ensuring a streamlined collaborative environment within our development team. To optimize our app’s performance and enhance user interaction, I deployed Next.js, harnessing its capabilities to deliver a responsive and dynamic user interface. Additionally, I employed Tailwind CSS, a utility-first CSS framework, to craft visually appealing and highly efficient user interfaces. These technical implementations have played a pivotal role in optimizing our app’s performance, contributing to an enriched user experience."
   },
   {
     "title": "Full Stack Developer",
     "link": "https://csya-edu.org",
-    "detail1": "Developed a full-stack website for Computer Science Youth of America (CSYA), utilizing Next.js, Tailwind CSS, Google API, and Figma. Led the web development team and optimized the site's user experience.",
-    "detail2": "Revamped CSYA's online presence, leading to substantial growth through design, coding, and strategic partnerships.",
-    "detail3": "Joined CSYA's board after leading the web development team, earning founder's recommendation for outstanding contributions."
+    "detail1": "I engineered a dynamic website utilizing Next.js, Tailwind CSS, Google API, and Figma. Leading the web development team, I optimized the site's user experience and functionality, contributing significantly to CSYA’s online presence.",
+    "detail2": "Implementing Git for version control and harnessing Next.js and Tailwind CSS, I ensured the seamless functionality and appealing design of CSYA’s website, elevating user engagement.",
+    "detail3": "My strategic revamp of CSYA’s online presence led to substantial growth, marked by innovative design, coding excellence, and strategic partnerships. These efforts earned me a founder's recommendation for outstanding contributions and a pivotal role on CSYA’s board."
   },
   {
     "title": "Chapter Lead",
     "link": "Link to Genxl",
-    "detail1": "Served as the President and Founder of Genxl’s Uttar Pradesh, India Chapter. Organized dynamic events and activities, expanding Genxl's reach and influence through collaborative community engagement.",
+    "detail1": "Serving as President and Founder of Genxl’s Uttar Pradesh, India Chapter, I orchestrated impactful events and activities, expanding Genxl's reach through collaborative community engagement and dynamic initiatives.",
     "detail2": "Received a commendatory letter of recommendation from the renowned CEO for visionary leadership and impactful contributions.",
-    "detail3": "Utilized Git, Next.js, and Tailwind CSS to develop and maintain Genxl's online presence."
+    "detail3": "Utilizing Git, Next.js, and Tailwind CSS, I developed and maintained Genxl's online presence, ensuring a seamless and visually appealing user interface."
   },
   {
     "title": "Full Stack Developer",
@@ -60,6 +60,6 @@
     "link": "Link to Raj Diagnostic Centre",
     "detail1": "Built a full-stack hospital management website for Raj Diagnostic Centre, digitalizing the inefficient system of patient waiting in line.",
     "detail2": "Performed complex data transfers, real-time database updates, and email notifications in collaboration with a developer.",
-    "detail3": "Utilized Figma, Git, React.js, Express.js, Mongoose ODM, and Tailwind CSS for optimal website performance and user experience."
+    "detail3": "Utilizing Figma for design, Git for version control, React.js for the frontend, Express.js and Mongoose ODM for backend, and Tailwind CSS for optimal performance, I ensured a highly efficient and user-friendly website."
   }
 ]
