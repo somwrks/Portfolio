@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function Exp({setShow,change,title,detail1,index}) {
+export default function Exp({setShow,change,title,detail1,index,icon}) {
   return (
     <div
     className={`flex flex-row   ${
@@ -9,7 +9,10 @@ export default function Exp({setShow,change,title,detail1,index}) {
     } md:flex-nowrap flex-wrap space-x-4 items-center`}
   >
     <div className="flex w-3/5  flex-col">
-      <Image src={`/${index}.webp`} width={400} height={400} />
+    {icon? 
+      <Image src={`${icon}`} width={400} height={400} />
+    :  <Image src={`/${index}.webp`} width={400} height={400} />
+    }
     </div>
     <div className="flex flex-col  w-4/5 justify-between text-white  space-y-3">
       <div>

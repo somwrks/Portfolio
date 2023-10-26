@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Player({ toggleAudio }) {
@@ -19,8 +20,8 @@ export default function Player({ toggleAudio }) {
       </div>
       <div
         onClick={() => toggleAudio()}
-        className="flex flex-col h-[10vw] cursor-none rounded-full right-16 top-10 circle w-[10vw] absolute"
-      ></div>
+        className="flex flex-col h-[10vw] hover:backdrop-blur-xl cursor-none rounded-full right-16 top-10 circle w-[10vw] absolute"
+      > </div>
     </>
   );
 }

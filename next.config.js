@@ -19,6 +19,9 @@ const nextConfig = {
     return config;
   },
   reactStrictMode: true,
+  images: {
+    domains: ['img.clerk.com',"i.ibb.co","i.imgur.com"],
+  },
 }
 
 module.exports = nextConfig

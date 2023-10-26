@@ -37,8 +37,11 @@ export default function connect({ toggleAudio }) {
         <div className="flex flex-col w-[60%] mx-auto p-4 space-y-4 backdrop-blur-md">
           <div className="flex items-center flex-row space-x-3">
             <div>
-              <h1 className="text-[4vw] text-gray-400">Super Friendly!</h1>
+              <h1 className="text-[4vw] text-gray-200">Super Friendly!</h1>
             </div>
+          </div>
+          <div>
+            <h1 className="text-white text-[1vw] font-semibold">Business Email : somwrks.queries@gmail.com</h1>
           </div>
           <div className="flex flex-row flex-wrap items-center justify-between gap-5 pt-8 text-[1.5vw]">
             <Box

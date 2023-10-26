@@ -74,10 +74,10 @@ export default function Home({ toggleAudio }) {
         </div>
         <div
           className="w-[50vw]    shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
-          onClick={() => go("/work")}
+          onClick={() => go("/experience")}
         >
           <div>
-            <h1 className="text-7xl text-white effect">Work</h1>
+            <h1 className="text-7xl text-white effect">Experience</h1>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { useEffect } from "react";
 
-export default function Template({img1,img2,img3,toggleAudio,image,title,detail1,detail2,detail3,link,setShow}) {
+export default function Template({icon,img1,img2,img3,toggleAudio,image,title,detail1,detail2,detail3,link,setShow}) {
   const [change, setChange] = useState(true);
   const [animation, setAnimation] = useState(true)
   useEffect(() => {
@@ -20,7 +20,6 @@ export default function Template({img1,img2,img3,toggleAudio,image,title,detail1
     };
 
     window.addEventListener("beforeunload", handleBeforeUnload);
-
     return () => {
       
       window.removeEventListener("beforeunload", handleBeforeUnload);
@@ -42,30 +41,32 @@ export default function Template({img1,img2,img3,toggleAudio,image,title,detail1
       }
       <div className={`flex flex-col  w-[60%] mx-auto p-4 space-y-14 backdrop-blur-md `}>
      <div className={`flex items-center   ${!animation? "enter":"leave"} flex-row space-x-3`}>
-     <div ><Image src={`/${image}.webp`} width={150} height={150}  /></div>
      <div >
-        <h1 className="text-[3vw] text-gray-400">{title}</h1>
+     {icon? <Image src={`${icon}`} width={150} height={150}  />:<Image src={`/${image}.webp`} width={150} height={150}  />}
+     </div>
+     <div >
+        <h1 className="text-[3vw] text-gray-200">{title}</h1>
      </div>
 
      </div>
      <div className="text-gray-300  space-y-12 pt-8 text-[1.5vw]">
-     <div>
-     {img1 && <Image src={`/${image}/${img1}.webp`}/>}
-     <p className={`${!animation? "enter":"leave"}`}>
+     <div className={`${!animation? "enter":"leave"} flex flex-col space-y-3`}>
+     {img1 && <Image width={1000} height={1000} src={`${img1}`}/>}
+     <p >
       {detail1}
      </p>
 
      </div>
-     <div>
-     {img2 && <Image src={`/${image}/${img2}.webp`}/>}
+     <div className={`${!animation? "enter":"leave"} flex flex-col space-y-3`}> 
+     {img2 && <Image width={1000} height={1000} src={`${img2}`}/>}
 
      <p className={`${!animation? "enter":"leave"}`}>
       {detail2}
      </p>
 
      </div>
-     <div>
-     {img3 && <Image src={`/${image}/${img3}.webp`}/>}
+     <div className={`${!animation? "enter":"leave"} flex flex-col space-y-3`}>
+     {img3 && <Image width={1000} height={1000} src={`${img3}`}/>}
      <p className={`${!animation? "enter":"leave"}`}>
       {detail3}
      </p>
@@ -75,7 +76,7 @@ export default function Template({img1,img2,img3,toggleAudio,image,title,detail1
       {link&& 
       <div>
         <button className="px-4 enter py-2 backdrop-blur-3xl font-bold  rounded-xl text-white border-2 border-gray-200">
-          <a href={`${link}`}>Know More</a>
+          <a href={`${link}`} target="_blank" rel="noopener noreferrer">View</a>
         </button>
       </div>
       }

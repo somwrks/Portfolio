@@ -21,7 +21,11 @@ export default function App({ Component, pageProps }) {
       // Initialize the audio element and store it in the ref
       audioRef.current = new Audio("/music.mp3");
       audioRef.current.volume = 0.3;
-
+      audioRef.current.addEventListener("ended", () => {
+        // Reset the audio to the beginning when it ends to loop infinitely
+        audioRef.current.currentTime = 0;
+        audioRef.current.play();
+      });
       // Set up an event listener for the 'ended' event
       audioRef.current.addEventListener("ended", () => {
         // Reset the audio to the beginning when it ends to loop infinitely

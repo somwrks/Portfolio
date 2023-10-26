@@ -1,10 +1,26 @@
+import Exp from "@/components/Exp";
+import Loading from "@/components/Loading";
+import Player from "@/components/Player";
 import Template from "@/components/Template";
 import Head from "next/head";
+import React, { useState } from "react";
+import { useEffect } from "react";
+import data from "../public/project.json";
 
 export default function project({ toggleAudio }) {
+  const [change, setChange] = useState(true);
+const [show, setShow] = useState(null)
+  useEffect(() => {
+    setTimeout(() => {
+      setChange(false);
+    }, 3000);
+  }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [show]);
   return (
     <>
-     <Head>
+       <Head>
         <title>Som Srivastava</title>
         <meta
           name="description"
@@ -14,22 +30,49 @@ export default function project({ toggleAudio }) {
           name="keywords"
           content="Som Srivastava, somwrks, SOMWRKS, SomWrks, Software Developer, Entrepreneur, Mental Health Advocate, Full Stack Developer, Innovator, Technology Enthusiast, About Me"
         />
-        {/* Add your icon link here if you have one */}
       </Head>
+      {show===null ?<>
+
+      {change && <Loading />}
+      <div
+        className={`flex ${
+          change ? "opacity-0" : "opacity-100"
+        }  transition-all flex-col justify-center items-center  w-full min-h-screen  `}
+      >
+        <Player toggleAudio={toggleAudio} />
+        <div className="flex flex-col h-full w-[60%] mx-auto p-4  space-y-12 backdrop-blur-md ">
+          {data.map((item, index) => (
+            <Exp
+              key={index}
+              title={item.title}
+              detail1={item.detail1}
+              index={index}
+              icon={item.icon}
+              setShow={setShow}
+              change={change}
+            />
+          ))}
+        </div>
+      </div>
+      </>
+      : <>
+      {change && <Loading />}
       <Template
-        title={"Som Srivastava"}
-        toggleAudio={toggleAudio}
-        image={"som"}
-        detail1={
-          "Hello! I'm Som Srivastava, a passionate and innovative high school senior with a deep love for technology and its power to transform lives. My journey in the world of computer science started at a young age, and ever since, I've been fascinated by the endless possibilities it offers."
+      img1={data[show].img1? data[show].img1:""}
+      img2={data[show].img2? data[show].img2:""}
+      img3={data[show].img3? data[show].img3:""}
+          toggleAudio={toggleAudio}
+          title={data[show].title}
+          image={show}
+          link={data[show].link}
+          icon={data[show].icon}
+          setShow={setShow}
+          detail1={data[show].detail1}
+          detail2={data[show].detail2}
+          detail3={data[show].detail3}
+        />
+      </> 
         }
-        detail2={
-          "I believe in the intersection of technology and mental well-being. My goal is to leverage my skills as a software developer and designer to create solutions that promote mental health awareness and support. I'm not limited to mental well-being; I'm always eager to explore diverse problems and find creative solutions."
-        }
-        detail3={
-          "In addition to my technical skills, I am an avid learner, always seeking new knowledge and challenges. When I'm not coding, you can find me immersed in books, crafting articles, organizing my thoughts on Notion, or conducting research. I'm driven by a thirst for knowledge and a desire to contribute positively to our ever-changing world."
-        }
-      />
     </>
   );
 }
