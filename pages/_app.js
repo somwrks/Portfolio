@@ -69,7 +69,7 @@ export default function App({ Component, pageProps }) {
           name="keywords"
           content="Som Srivastava, Software Developer, Entrepreneur, Mental Health Advocate, Full Stack Developer, Innovator, Technology Enthusiast"
         />
-      
+      <meta name="google-site-verification" content="aTOZJhusoDASbAL_Ham6HSmn5C_sUWPocQjbu97c7uk" />
         <link rel="icon" href="som.webp" />
       </Head>
       <AnimatedCursor
