@@ -42,9 +42,9 @@ export default function Home({ toggleAudio }) {
     <div
       className={`flex  ${
         change ? " opacity-0 " : " opacity-100 "
-      } transition-all flex-col items-center  justify-center cursor-none  w-full min-h-screen`}
+      } transition-all flex-col  md:items-center  justify-center cursor-none  w-full min-h-screen`}
     >
-      <div className="flex flex-col cursor-none h-[16vw] rounded-full circleoutline w-[16vw] absolute">
+      <div className="flex flex-col cursor-none right-8 top-5 md:h-[17vw] h-[250px] w-[250px] rounded-full circleoutline md:w-[17vw] absolute md:top-auto md:right-auto">
         <div className="circle-word">I</div>
         <div className="circle-word">I</div>
         <div className="circle-word">I</div>
@@ -61,41 +61,41 @@ export default function Home({ toggleAudio }) {
 
       <div
         onClick={start}
-        className="flex flex-col cursor-none h-[13vw] rounded-full  circle w-[13vw] absolute"
+        className="flex flex-col right-16 top-12  md:top-auto md:right-auto cursor-none md:h-[13vw] h-[200px] w-[200px] rounded-full  circle md:w-[13vw] absolute"
       ></div>
-      <div className="flex flex-row justify-between ">
+      <div className="flex flex-col md:flex-row justify-between ">
         <div
-          className="w-[50vw]    shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
+          className="md:w-[50vw]    shadow-2xl flex items-center md:justify-center h-[26.3vw]  effectbg"
           onClick={() => go("/about")}
         >
           <div>
-            <h1 className="text-7xl text-white effect">About</h1>
+            <h1 className="text-[20vw] md:text-[4vw] text-white effect">About</h1>
           </div>
         </div>
         <div
-          className="w-[50vw]    shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
+          className="md:w-[50vw]    shadow-2xl flex items-center md:justify-center h-[26.3vw]  effectbg"
           onClick={() => go("/experience")}
         >
           <div>
-            <h1 className="text-7xl text-white effect">Experience</h1>
+            <h1 className="text-[20vw] md:text-[4vw] text-white effect">Experience</h1>
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-between ">
+      <div className="flex flex-col md:flex-row justify-between ">
         <div
-          className="w-[50vw]    shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
+          className="md:w-[50vw]    shadow-2xl flex items-center md:justify-center h-[26.3vw]  effectbg"
           onClick={() => go("/project")}
         >
           <div>
-            <h1 className="text-7xl text-white effect">Projects</h1>
+            <h1 className="text-[20vw] md:text-[4vw] text-white effect">Projects</h1>
           </div>
         </div>
         <div
-          className="w-[50vw]    shadow-2xl flex items-center justify-center h-[26.3vw]  effectbg"
+          className="md:w-[50vw]    shadow-2xl flex items-center md:justify-center h-[26.3vw]  effectbg"
           onClick={() => go("/connect")}
         >
           <div>
-            <h1 className="text-7xl text-white effect">Connect</h1>
+            <h1 className="text-[20vw] md:text-[4vw] text-white effect">Connect</h1>
           </div>
         </div>
       </div>

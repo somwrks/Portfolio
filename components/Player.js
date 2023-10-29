@@ -1,10 +1,9 @@
-import Image from "next/image";
 import React from "react";
 
 export default function Player({ toggleAudio }) {
   return (
     <>
-      <div className="flex  flex-col cursor-none h-[13vw] rounded-full circleoutline w-[13vw] right-[1.6vw] top-3 absolute">
+      <div className="flex flex-col cursor-none right-8 top-5 w-0 h-0 md:w-[250px] md:h-[250px] rounded-full circleoutline  absolute ">
         <div className="circle-word">I</div>
         <div className="circle-word">I</div>
         <div className="circle-word">I</div>
@@ -20,7 +19,7 @@ export default function Player({ toggleAudio }) {
       </div>
       <div
         onClick={() => toggleAudio()}
-        className="flex flex-col h-[10vw] hover:backdrop-blur-xl cursor-none rounded-full right-16 top-10 circle w-[10vw] absolute"
+        className="flex flex-col right-[55px] top-[45px] w-0 h-0  cursor-none md:h-[200px] md:w-[200px] rounded-full  circle  absolute"
       > </div>
     </>
   );

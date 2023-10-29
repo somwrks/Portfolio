@@ -34,16 +34,14 @@ export default function connect({ toggleAudio }) {
         } transition-all flex-col justify-center items-center w-full min-h-screen`}
       >
         <Player toggleAudio={toggleAudio} />
-        <div className="flex flex-col w-[60%] mx-auto p-4 space-y-4 backdrop-blur-md">
-          <div className="flex items-center flex-row space-x-3">
-            <div>
-              <h1 className="text-[4vw] text-gray-200">Super Friendly!</h1>
-            </div>
+        <div className="flex flex-col w-full  md:w-[60%] md:mx-auto p-4 space-y-4 backdrop-blur-md">
+          <div className="flex items-center flex-row ">
+              <h1 className="text-[9vw] md:text-[4vw] text-gray-200">Super Friendly!</h1>
           </div>
           <div>
-            <h1 className="text-white text-[1vw] font-semibold">Business Email : somwrks.queries@gmail.com</h1>
+            <h1 className="text-white text-[3vw] md:text-[1vw] font-semibold">Business Email : somwrks.queries@gmail.com</h1>
           </div>
-          <div className="flex flex-row flex-wrap items-center justify-between gap-5 pt-8 text-[1.5vw]">
+          <div className="flex flex-col md:flex-row flex-wrap w-full items-center justify-between gap-5 pt-3 ">
             <Box
               imageUrl="/linkedin.webp"
               icon="linkedinicon"

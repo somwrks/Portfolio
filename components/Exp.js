@@ -4,24 +4,24 @@ import React from 'react'
 export default function Exp({setShow,change,title,detail1,index,icon}) {
   return (
     <div
-    className={`flex flex-row   ${
+    className={`flex flex-col md:flex-row   ${
       !change ? "enter" : "leave"
-    } md:flex-nowrap flex-wrap space-x-4 items-center`}
+    }   space-y-5 items-start md:items-center md:justify-center`}
   >
-    <div className="flex w-3/5  flex-col">
+    <div className="flex md:w-3/5  flex-col">
     {icon? 
-      <Image src={`${icon}`} width={400} height={400} />
-    :  <Image src={`/${index}.webp`} width={400} height={400} />
+      <Image src={`${icon}`} className="w-[300px] md:h-[400px] md:w-[400px] h-[300px]" width={400} height={400} />
+    :  <Image src={`/${index}.webp`} width={400} height={400} className="w-[300px] md:h-[400px] md:w-[400px] h-[300px]" />
     }
     </div>
-    <div className="flex flex-col  w-4/5 justify-between text-white  space-y-3">
+    <div className="flex flex-col  md:w-4/5 justify-between text-white  space-y-4">
       <div>
-        <h1 className="text-[1.5vw]">
+        <h1 className=" text-[4vw] md:text-[1.5vw]">
           {title}
         </h1>
       </div>
       <div>
-        <p className="text-justify text-[1vw]">
+        <p className=" text-[3vw] md:text-[1vw]">
           {detail1}
         </p>
       </div>
