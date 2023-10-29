@@ -11,7 +11,9 @@ const [width, setWidth] = useState(null)
 
       if (width <= 768) {
         setIsHovered(true);
-      } 
+      } else{
+        setIsHovered(false);
+      }
     };
 
     // Add event listener for window resize
