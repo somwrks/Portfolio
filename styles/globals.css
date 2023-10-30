@@ -11,8 +11,6 @@
 }
 body {
   cursor: none;
-  height: 100vh;
-  margin: 0;
 }
 .bg{
   background-size: 200% 200%;
@@ -213,7 +211,5 @@ a:hover{
 @media (max-width: 767px) {
   body {
     cursor: pointer;
-    height: 100vh;
-    margin: 0;
   }
 }
