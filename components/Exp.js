@@ -6,12 +6,12 @@ export default function Exp({setShow,change,title,detail1,index,icon}) {
     <div
     className={`flex flex-col md:flex-row   ${
       !change ? "enter" : "leave"
-    }   space-y-5 items-start md:items-center md:justify-center`}
+    }  space-y-5 md:space-x-5 items-start md:items-center md:justify-between`}
   >
-    <div className="flex md:w-3/5  flex-col">
+    <div className="flex md:w-3/5  flex-col ">
     {icon? 
-      <Image src={`${icon}`} className=" md:h-[400px] md:w-[400px] " width={400} height={400} />
-    :  <Image src={`/${index}.webp`} width={400} height={400} className=" md:h-[400px] md:w-[400px] " />
+      <Image src={`${icon}`} className=" " width={400} height={400} />
+    :  <Image src={`/${index}.webp`} width={400} height={400} className=" " />
     }
     </div>
     <div className="flex flex-col w-full md:w-4/5 justify-between text-white  space-y-4">
@@ -21,12 +21,12 @@ export default function Exp({setShow,change,title,detail1,index,icon}) {
         </h1>
       </div>
       <div>
-        <p className=" text-[5w] md:text-[1vw]">
+        <p className=" text-[6w] md:text-[1vw]">
           {detail1}
         </p>
       </div>
       <div>
-        <button className="px-4 py-2 backdrop-blur-3xl font-bold  rounded-xl text-white border-2 border-gray-200">
+        <button className="px-[3.5vw] py-[2vw] md:px-[1.5vw] md:py-[0.5vw] backdrop-blur-3xl font-bold  rounded-xl text-white border-2 border-gray-200">
           <a  onClick={()=> setShow(index)}>Explore</a>
         </button>
       </div>

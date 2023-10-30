@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  transition: 0.5s all;
+  /* transition: 0.5s all; */
   overflow-x: hidden;
 }
 ::-webkit-scrollbar{
