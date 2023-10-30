@@ -42,9 +42,9 @@ export default function Home({ toggleAudio }) {
     <div
       className={`flex  ${
         change ? " opacity-0 " : " opacity-100 "
-      } transition-all flex-col overflow-none md:items-center  justify-center cursor-none  w-full min-h-screen`}
+      } transition-all flex-col overflow-none md:items-center  justify-center   w-full min-h-screen`}
     >
-      <div className="flex flex-col overflow-none cursor-none right-8 top-5 md:h-[17vw] h-[200px] w-[200px] rounded-full circleoutline md:w-[17vw] absolute md:top-auto md:right-auto">
+      <div className="flex flex-col overflow-none  right-8 top-5 md:h-[17vw] h-[200px] w-[200px] rounded-full circleoutline md:w-[17vw] absolute md:top-auto md:right-auto">
         <div className="circle-word">I</div>
         <div className="circle-word">I</div>
         <div className="circle-word">I</div>
@@ -61,7 +61,7 @@ export default function Home({ toggleAudio }) {
 
       <div
         onClick={start}
-        className="flex flex-col overflow-none right-16 top-12  md:top-auto md:right-auto cursor-none md:h-[13vw] h-[150px] w-[150px] rounded-full  circle md:w-[13vw] absolute"
+        className="flex flex-col overflow-none right-16 top-12  md:top-auto md:right-auto  md:h-[13vw] h-[150px] w-[150px] rounded-full  circle md:w-[13vw] absolute"
       ></div>
       <div className="flex flex-col md:flex-row justify-between ">
         <div

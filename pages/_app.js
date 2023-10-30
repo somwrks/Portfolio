@@ -110,8 +110,8 @@ export default function App({ Component, pageProps }) {
       )}
 
       {!yes ? (
-        <div className="flex-col flex w-full justify-center bg items-center min-h-screen  ">
-          <div className="flex flex-col h-[100px] rounded-full circle w-[100px] absolute"></div>
+        <div className="flex-col flex w-full overflow-hidden justify-center bg items-center min-h-screen  ">
+          <div className="flex flex-col h-[100px] rounded-full  circle w-[100px] absolute"></div>
           <div className="flex flex-col backdrop-blur-xl h-[100px] rounded-full  justify-center items-center w-[100px] absolute ">
             <Image src={"/play.svg"} width={200} onClick={start} height={200} />
           </div>

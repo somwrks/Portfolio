@@ -9,8 +9,14 @@
 ::-webkit-scrollbar{
   width: 0;
 }
+@media (max-width: 767px) {
+  body {
+    cursor:auto;
+  }
+}
 body {
   cursor: none;
+  overflow-x: hidden
 }
 .bg{
   background-size: 200% 200%;
@@ -206,10 +212,5 @@ a:hover{
   }
   100%{
     opacity: 1;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    cursor: pointer;
   }
 }
