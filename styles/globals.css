@@ -210,3 +210,10 @@ a:hover{
     opacity: 1;
   }
 }
+@media (max-width: 767px) {
+  body {
+    cursor: pointer;
+    height: 100vh;
+    margin: 0;
+  }
+}

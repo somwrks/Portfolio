@@ -10,18 +10,18 @@ export default function Exp({setShow,change,title,detail1,index,icon}) {
   >
     <div className="flex md:w-3/5  flex-col">
     {icon? 
-      <Image src={`${icon}`} className="w-[300px] md:h-[400px] md:w-[400px] h-[300px]" width={400} height={400} />
-    :  <Image src={`/${index}.webp`} width={400} height={400} className="w-[300px] md:h-[400px] md:w-[400px] h-[300px]" />
+      <Image src={`${icon}`} className=" md:h-[400px] md:w-[400px] " width={400} height={400} />
+    :  <Image src={`/${index}.webp`} width={400} height={400} className=" md:h-[400px] md:w-[400px] " />
     }
     </div>
-    <div className="flex flex-col  md:w-4/5 justify-between text-white  space-y-4">
+    <div className="flex flex-col w-full md:w-4/5 justify-between text-white  space-y-4">
       <div>
-        <h1 className=" text-[4vw] md:text-[1.5vw]">
+        <h1 className=" text-[6vw] md:text-[1.5vw]">
           {title}
         </h1>
       </div>
       <div>
-        <p className=" text-[3vw] md:text-[1vw]">
+        <p className=" text-[5w] md:text-[1vw]">
           {detail1}
         </p>
       </div>

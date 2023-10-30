@@ -60,7 +60,23 @@ export default function App({ Component, pageProps }) {
     setYes(true);
     toggleAudio();
   };
+  const [isMobile, setIsMobile] = useState(false); // New state to track mobile devices
 
+  useEffect(() => {
+    // Check if the screen width is less than or equal to 767 pixels (typical mobile device width)
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+
+    // Call the checkIsMobile function on component mount and window resize
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
   return (
     <>
      <Head>
@@ -76,20 +92,22 @@ export default function App({ Component, pageProps }) {
       <meta name="google-site-verification" content="aTOZJhusoDASbAL_Ham6HSmn5C_sUWPocQjbu97c7uk" />
         <link rel="icon" href="som.webp" />
       </Head>
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={35}
-        innerScale={1}
-        outerScale={2}
-        outerAlpha={0}
-        hasBlendMode={true}
-        innerStyle={{
-          backgroundColor: "white",
-        }}
-        outerStyle={{
-          border: "3px solid white",
-        }}
-      />
+      {!isMobile && (
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: "white",
+          }}
+          outerStyle={{
+            border: "3px solid white",
+          }}
+        />
+      )}
 
       {!yes ? (
         <div className="flex-col flex w-full justify-center bg items-center min-h-screen  ">
