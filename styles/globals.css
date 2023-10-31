@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  transition: 0.5s all;
+  transition: 0.3s all;
   overflow-x: hidden;
 }
 ::-webkit-scrollbar{
@@ -127,21 +127,21 @@ body {
 }
 
 .enter:nth-child(1){
-  animation: enter 4s ease-in-out ;
+  animation: enter 3.5s ease-in-out ;
   animation-delay: -2s;
 }
 .enter:nth-child(2){
-  animation: enter 4.5s ease-in-out ;
+  animation: enter 4s ease-in-out ;
   animation-delay: -2s;
   /* animation-delay: 0.6s; */
 }
 .enter:nth-child(3){
-  animation: enter 5s ease-in-out ;
+  animation: enter 4.5s ease-in-out ;
   animation-delay: -2s;
   /* animation-delay: 0.6s; */
 }
 .enter:nth-child(4){
-  animation: enter 5.5s ease-in-out ;
+  animation: enter 5s ease-in-out ;
   animation-delay: -2s;
   /* animation-delay: 0.6s; */
 }
@@ -155,16 +155,16 @@ body {
   }
 }
 .leave:nth-child(4){
-  animation: leave 4s ease-in-out ;
+  animation: leave 3.5s ease-in-out ;
 }
 .leave:nth-child(3){
-  animation: leave 4.5s ease-in-out ;
+  animation: leave 4s ease-in-out ;
 }
 .leave:nth-child(2){
-  animation: leave 5s ease-in-out ;
+  animation: leave 4.5s ease-in-out ;
 }
 .leave:nth-child(1){
-  animation: leave 5.5s ease-in-out ;
+  animation: leave 5s ease-in-out ;
 }
 @keyframes leave {
   0%{
