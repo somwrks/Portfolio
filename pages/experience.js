@@ -47,48 +47,34 @@ export default function experience({ toggleAudio }) {
                   <div className="flex flex-row justify-between gap-4">
                   <div className="flex flex-col space-y-4">
                     <h2 className=" md:text-[1.4vw]  text-[2.5vw] font-semibold text-gray-400">
-                      • JavaScript <br />
-                      • Python <br />
-                      • Java <br />
-                      • Nodejs <br />
-                      • React <br />• Tailwind
+                      JavaScript <br />
+                      Python <br />
+                      Java <br />
+                      Nodejs <br />
+                      React <br />Tailwind
          
 
                     </h2>
                   </div>
                   <div className="flex flex-col space-y-4">
                     <h2 className=" md:text-[1.4vw]  text-[2.5vw] font-semibold text-gray-400">
-                   • Bootstrap 
-<br /> • Nextjs
-<br />• Git
-<br />• ExpressJS
-<br />• Prisma
-<br />• Firebase
+                   Bootstrap 
+<br /> Nextjs
+<br />Git
+<br />ExpressJS
+<br />Prisma
+<br />Firebase
 
                     </h2>
                   </div>
                   <div className="flex flex-col space-y-4">
                     <h2 className=" md:text-[1.4vw]  text-[2.5vw] font-semibold text-gray-400">
-                             • PostgreSQL
-<br />• Figma
-<br />  • PowerDirector
-<br />• Adobe Lightroom
-<br />• Sanity Database
-<br />• MongoDB
-
-
-
-                    </h2>
-                  </div>
-                  <div className="flex flex-col space-y-4">
-                    <h2 className=" md:text-[1.4vw]  text-[2.5vw] font-semibold text-gray-400">
-                   • SASS
-<br />• Sanity Database
-<br />• MongoDB
-<br />• Google APIs
-<br />• OpenAl APIs
-<br />• TensorFlow
-
+                             PostgreSQL
+<br />Figma
+<br />  PowerDirector
+<br />Adobe Lightroom
+<br />Sanity Database
+<br />MongoDB
 
 
 
@@ -96,9 +82,23 @@ export default function experience({ toggleAudio }) {
                   </div>
                   <div className="flex flex-col space-y-4">
                     <h2 className=" md:text-[1.4vw]  text-[2.5vw] font-semibold text-gray-400">
-                    • HTML
-<br />• CSS
-<br />• Notion
+                   SASS
+<br />Sanity Database
+<br />MongoDB
+<br />Google APIs
+<br />OpenAl APIs
+<br />TensorFlow
+
+
+
+
+                    </h2>
+                  </div>
+                  <div className="flex flex-col space-y-4">
+                    <h2 className=" md:text-[1.4vw]  text-[2.5vw] font-semibold text-gray-400">
+                    HTML
+<br />CSS
+<br />Notion
 
 
 

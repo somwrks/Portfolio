@@ -69,7 +69,7 @@ export default function Home({ toggleAudio }) {
           onClick={() => go("/about")}
         >
           <div>
-            <h1 className="text-[20vw] md:text-[4vw] text-white effect">About</h1>
+            <h1 className="text-[15vw] md:text-[4vw] text-white effect">About</h1>
           </div>
         </div>
         <div
@@ -77,7 +77,7 @@ export default function Home({ toggleAudio }) {
           onClick={() => go("/experience")}
         >
           <div>
-            <h1 className="text-[20vw] md:text-[4vw] text-white effect">Experience</h1>
+            <h1 className="text-[15vw] md:text-[4vw] text-white effect">Experience</h1>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ export default function Home({ toggleAudio }) {
           onClick={() => go("/project")}
         >
           <div>
-            <h1 className="text-[20vw] md:text-[4vw] text-white effect">Projects</h1>
+            <h1 className="text-[15vw] md:text-[4vw] text-white effect">Projects</h1>
           </div>
         </div>
         <div
@@ -95,7 +95,7 @@ export default function Home({ toggleAudio }) {
           onClick={() => go("/connect")}
         >
           <div>
-            <h1 className="text-[20vw] md:text-[4vw] text-white effect">Connect</h1>
+            <h1 className="text-[15vw] md:text-[4vw] text-white effect">Connect</h1>
           </div>
         </div>
       </div>
