@@ -46,7 +46,7 @@
   {
     "title": "Books of Gold",
     "link": "https://github.com/somwrks/Books-of-Gold",
-    "detail1": "Advanced and Updated Version of my old E-Commerce Website. It has both Admin and Client Side Dashboards, making it a potential for large-scale websites.",
+    "detail1": "Full Stack E-Commerce website with payment and login authorization. It has both Admin and Client Side Dashboard along with One-time-password and 2FA Authentication System, making it a potential for large-scale websites.",
     "detail2": "Frontend - ReactJS, and Tailwind Backend - NodeJs, ExpressJs Database - MongoDB Cloud\nFrontend Libraries - Flowbite, Redux, npm overlay navbar, and Sass Backend Libraries - REST API",
     "detail3": "",
     "img1": "",
