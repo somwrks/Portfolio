@@ -40,7 +40,7 @@ const [show, setShow] = useState(null)
         }  transition-all flex-col justify-center items-center  w-full min-h-screen  `}
       >
         <Player toggleAudio={toggleAudio} />
-        <div className="flex flex-col h-full md:w-[60%] mx-auto p-4  space-y-12 backdrop-blur-md ">
+        <div className="flex flex-col h-full md:w-[60%] mx-auto p-4  space-y-12  ">
           {data.map((item, index) => (
             <Exp
               key={index}

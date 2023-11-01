@@ -42,7 +42,7 @@ export default function experience({ toggleAudio }) {
             }  transition-all flex-col justify-center items-center  w-full min-h-screen  `}
           >
             <Player toggleAudio={toggleAudio} />
-            <div className="flex flex-col h-full md:w-[60%] mx-auto p-4  space-y-12 backdrop-blur-md ">
+            <div className="flex flex-col h-full md:w-[60%] mx-auto p-4  space-y-12  ">
                 <div className="flex mt-5 flex-col justify-center  space-y-4">
                   <div className="flex flex-row justify-between gap-4">
                   <div className="flex flex-col space-y-4">
