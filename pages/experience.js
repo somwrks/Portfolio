@@ -114,7 +114,7 @@ export default function experience({ toggleAudio }) {
                   key={index}
                   title={item.title}
                   detail1={item.detail1}
-                
+                  index={index}
                   icon={item.icon}
                   setShow={setShow}
                   change={change}
