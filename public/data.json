@@ -2,6 +2,7 @@
   {
     "title": "Founder & Chief Executive Officer",
     "link": "https://ownboon.com/",
+    "icon": "/0.webp",
     "detail1": "Founding OwnBoon, a global startup aimed at creating an all-in-one productivity and self-improvement community platform. Led the establishment and growth of the startup in the United States, building and guiding a diverse team from various countries.",
     "detail2": "At OwnBoon, I harnessed a wide array of technical skills to transform our vision into reality. I architected our platform using cutting-edge technologies, including Next.js for a seamless user experience and Tailwind CSS for intuitive designs. Leveraging Sanity.io, I ensured our content management system was robust and efficient. On the backend, I engineered robust functionalities using Node.js. Additionally, I engineered a customized Discord bot for OwnBoon utilizing Python, enriching our community engagement.",
     "detail3": "In addition to technical expertise, my role delved into strategic initiatives. I played a pivotal role in the recruitment process, assembling a talented and diverse team that mirrors our global user base. Pitched to several investors and are expected to get $175,000 in venture capital funding for our innovative project and concept. Conducted 100+ interviews of talented candidates worldwide from prestigious institutions and backgrounds, managed various company departments, and pioneered AI-driven mental health solutions.",
@@ -12,6 +13,7 @@
   {
     "title": "Co-Founder & Chief Technology Officer",
     "link": "https://pearprep.com/",
+    "icon": "/1.webp",
     "detail1": "Co-founding PearPrep, a groundbreaking app designed to assist students in AP courses. Managed a diverse team and integrated advanced AI technologies to enhance the learning experience.",
     "detail2": "In my current capacity, I have tackled substantial technical challenges head-on, propelling PearPrep’s app development to new heights. I have been instrumental in ensuring a seamless user experience and robust functionality, driving the project forward. By meticulously addressing technical hurdles, I've made significant strides in app development, ensuring our users encounter a fluid, intuitive interface.",
     "detail3": "Utilizing my technical prowess, I implemented Git for version control, ensuring a streamlined collaborative environment within our development team. To optimize our app’s performance and enhance user interaction, I deployed Next.js, harnessing its capabilities to deliver a responsive and dynamic user interface. Additionally, I employed Tailwind CSS, a utility-first CSS framework, to craft visually appealing and highly efficient user interfaces. These technical implementations have played a pivotal role in optimizing our app’s performance, contributing to an enriched user experience.",
@@ -22,6 +24,7 @@
   {
     "title": "Board Member & Developer",
     "link": "https://www.csya-edu.org/",
+    "icon": "/2.webp",
     "detail1": "I engineered a dynamic website utilizing Next.js, Tailwind CSS, Google API, and Figma. Leading the web development team, I optimized the site's user experience and functionality, contributing significantly to CSYA’s online presence.",
     "detail2": "Implementing Git for version control and harnessing Next.js and Tailwind CSS, I ensured the seamless functionality and appealing design of CSYA’s website, elevating user engagement.",
     "detail3": "My strategic revamp of CSYA’s online presence led to substantial growth, marked by innovative design, coding excellence, and strategic partnerships. These efforts earned me a founder's recommendation for outstanding contributions and a pivotal role on CSYA’s board.",
@@ -32,6 +35,7 @@
   {
     "title": "Full Stack Developer",
     "link": "https://unitedhacks.hackunited.org/",
+    "icon": "/3.webp",
     "detail1": "Developed and optimized Hack United's online presence, creating a dynamic, registration-optimized website. Orchestrated the creation of 'United Hacks,' a record-breaking hackathon event with 300+ registrations and global participants.",
     "detail2": "Implemented Git, Next.js, and Tailwind CSS to ensure seamless functionality and user experience.",
     "detail3": "Received a letter of recommendation from the president of Hack United for pivotal contributions to the organization.\n Appointed as Judge for future hackathons and events.",
@@ -41,6 +45,7 @@
   },
   {
     "title": "Mobile App Developer",
+    "icon": "/4.webp",
     "link": "https://www.linkedin.com/in/somwrks/details/experience/",
     "detail1": "Freelanced as a mobile app developer for Aesthetic Gold, a top jewelry company. Built a secure and user-friendly app for team management and business transactions, redefining transaction dynamics in the jewelry industry.",
     "detail2": "Collaborated closely with a fellow developer to deliver a harmonious digital solution, receiving laudatory recognition for dynamic creation.",
@@ -52,6 +57,7 @@
   
   {
     "title": "Full Stack Development Intern",
+    "icon": "/5.webp",
     "link": "https://www.linkedin.com/in/somwrks/details/experience/",
     "detail1": "Navigated a rigorous IIT Bhubaneswar-backed internship, immersing in advanced projects, bridging industry–academic gaps, and earning a coveted IIT Bhubaneswar Certificate.",
     "detail2": "Galvanized full-stack development challenges, maneuvering intricate APIs, data parsing, and complex JavaScript Libraries.",
@@ -63,6 +69,7 @@
   {
     "title": "Frontend Developer",
     "link": "https://rajdiagnostic.vercel.app/",
+    "icon": "/6.webp",
     "detail1": "Built a full-stack hospital management website for Raj Diagnostic Centre, digitalizing the inefficient system of patient waiting in line.",
     "detail2": "Performed complex data transfers, real-time database updates, and email notifications in collaboration with a developer.",
     "detail3": "Utilizing Figma for design, Git for version control, React.js for the frontend, Express.js and Mongoose ODM for backend, and Tailwind CSS for optimal performance, I ensured a highly efficient and user-friendly website.",
@@ -74,6 +81,7 @@
   {
     "title": "Chapter Lead",
     "link": "https://www.genxl.org/",
+    "icon": "/7.webp",
     "detail1": "Serving as President and Founder of Genxl’s Uttar Pradesh, India Chapter, I orchestrated impactful events and activities, expanding Genxl's reach through collaborative community engagement and dynamic initiatives.",
     "detail2": "Received a commendatory letter of recommendation from the renowned CEO for visionary leadership and impactful contributions.",
     "detail3": "Utilizing Git, Next.js, and Tailwind CSS, I developed and maintained Genxl's online presence, ensuring a seamless and visually appealing user interface.",
@@ -83,6 +91,7 @@
   },
   {
     "title": "Student Volunteer",
+    "icon": "/8.webp",
     "link": "https://www.linkedin.com/in/somwrks/details/experience/",
     "detail1": "Distinguished as a catalyst in Green Bhumi’s mission, orchestrated reforestation interviews and pioneered biodiversity research, expanding the legacy of green innovation.",
     "detail2": "Attained laurels from the Green Bhumi CEO among 100 passionate individuals for exceptional contributions.",

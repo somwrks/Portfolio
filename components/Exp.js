@@ -9,10 +9,10 @@ export default function Exp({setShow,change,title,detail1,index,icon}) {
     }  space-y-5 md:space-x-5 items-start md:items-center md:justify-between`}
   >
     <div className="flex md:w-3/5  flex-col ">
-    {icon? 
+    
       <Image src={`${icon}`} className=" " width={400} height={400} />
-    :  <Image src={`/${index}.webp`} width={400} height={400} className=" " />
-    }
+   
+   
     </div>
     <div className="flex flex-col w-full md:w-4/5 justify-between text-white  space-y-4">
       <div>
