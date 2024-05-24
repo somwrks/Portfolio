@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "github": "git add . && git commit -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && git push"
-  },
+    "github": "git add . && git commit -m \"Workin\" && git push"  }
+    ,
   "dependencies": {
     "@nextui-org/react": "^2.1.13",
     "@vercel/speed-insights": "^1.0.10",
