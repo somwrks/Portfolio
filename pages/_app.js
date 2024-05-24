@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       if (!yes) {
-        document.body.style.background = "black";
+        document.body.style.background = "black" ;
       } else {
         document.body.style.background = "transparent";
         document.body.style.backgroundImage =
