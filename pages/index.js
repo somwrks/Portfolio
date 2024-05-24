@@ -2,6 +2,7 @@ import Loading from "@/components/Loading";
 import Head from "next/head";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function Home({ toggleAudio }) {
   const app = useRouter();
@@ -14,7 +15,7 @@ export default function Home({ toggleAudio }) {
   useEffect(() => {
     setTimeout(() => {
       setChange(false);
-    }, 3000); 
+    }, 1000); 
 
   }, []);
 
@@ -44,7 +45,7 @@ export default function Home({ toggleAudio }) {
         change ? " opacity-0 " : " opacity-100 "
       } transition-all flex-col overflow-none md:items-center  justify-center   w-full min-h-screen`}
     >
-      <div className="flex flex-col overflow-none  right-8 top-5 md:h-[17vw] h-[200px] w-[200px] rounded-full circleoutline md:w-[17vw] absolute md:top-auto md:right-auto">
+      <div className="flex flex-col overflow-hidden  right-8 top-5 md:h-[17vw] h-[200px] w-[200px] rounded-full circleoutline md:w-[17vw] absolute md:top-auto md:right-auto">
         <div className="circle-word">I</div>
         <div className="circle-word">I</div>
         <div className="circle-word">I</div>
@@ -100,6 +101,8 @@ export default function Home({ toggleAudio }) {
         </div>
       </div>
     </div>
+    <SpeedInsights />
+
     </>
 
   );

@@ -62,12 +62,12 @@ export default function Template({
           </div>
         )}
         <div
-          className={`flex flex-col  w-full md:w-[60%] mx-auto p-4 space-y-14  `}
+          className={`flex flex-col overflow-hidden w-full md:w-[60%] mx-auto p-4 space-y-14  `}
         >
           <div
             className={`flex items-center   ${
               !animation ? "enter" : "leave"
-            } flex-row space-x-3`}
+            } flex-row space-x-3 overflow-hidden`}
           >
             <div>
               {icon ? (
@@ -82,7 +82,7 @@ export default function Template({
               </h1>
             </div>
           </div>
-          <div className="text-gray-300  space-y-10  text-[4vw] md:text-[1.5vw]">
+          <div className="text-gray-300  space-y-1 overflow-hidden  text-[4vw] md:text-[1.5vw]">
             <div
               className={`${
                 !animation ? "enter" : "leave"
@@ -94,19 +94,19 @@ export default function Template({
             <div
               className={`${
                 !animation ? "enter" : "leave"
-              } flex flex-col space-y-3`}
+              } flex flex-col space-y-3 overflow-hidden`}
             >
               {img2 && <Image width={1000} height={1000} src={`${img2}`} />}
 
-              <p className={`${!animation ? "enter" : "leave"}`}>{detail2}</p>
+              <p className={`${!animation ? "enter" : "leave"} overflow-hidden `}>{detail2}</p>
             </div>
             <div
               className={`${
                 !animation ? "enter" : "leave"
-              } flex flex-col space-y-3`}
+              } flex flex-col space-y-3 overflow-hidden`}
             >
               {img3 && <Image width={1000} height={1000} src={`${img3}`} />}
-              <p className={`${!animation ? "enter" : "leave"}`}>{detail3}</p>
+              <p className={`${!animation ? "enter" : "leave"} overflow-hidden`}>{detail3}</p>
             </div>
           </div>
           {link && (

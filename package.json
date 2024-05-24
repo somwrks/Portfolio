@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "github": "git add . && git commit -m \"$(date '+%Y-%m-%d %H:%M:%S')\" && git push"
   },
   "dependencies": {
     "@nextui-org/react": "^2.1.13",
+    "@vercel/speed-insights": "^1.0.10",
     "framer-motion": "^10.16.4",
     "kursor": "^0.1.6",
     "next": "^13.5.4",
