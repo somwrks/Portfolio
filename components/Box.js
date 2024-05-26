@@ -10,9 +10,9 @@ const [width, setWidth] = useState(null)
     const handleResize = () => {
 
       if (width <= 768) {
-        setIsHovered(true);
-      } else{
         setIsHovered(false);
+      } else{
+        setIsHovered(true);
       }
     };
 

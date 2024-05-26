@@ -5,6 +5,7 @@
 * {
   transition: 0.3s all;
   overflow-x: hidden;
+  font-family:serif;
 }
 ::-webkit-scrollbar{
   width: 0;
@@ -49,7 +50,6 @@ body {
   background-size: cover;
   background-blend-mode: darken;
   background-repeat: no-repeat;
-  cursor: pointer;
 }
 .circle:hover{
   transform: scale(1.03);
@@ -213,4 +213,28 @@ a:hover{
   100%{
     opacity: 1;
   }
+}
+
+
+
+.story-container {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.scrolling-text {
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.scrolling-text .scrolling-text-content {
+  color: #fff;
+  font-size: 120px;
+  white-space: nowrap;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  line-height: 1em;
+  margin: 50px 0;
 }

@@ -31,7 +31,7 @@ export default function connect({ toggleAudio }) {
       <div
         className={`flex ${
           change ? "opacity-0" : "opacity-100"
-        } transition-all flex-col justify-center items-center w-full min-h-screen`}
+        } transition-all flex-col justify-center items-center w-full `}
       >
         <Player toggleAudio={toggleAudio} />
         <div className="flex flex-col w-full  md:w-[60%] md:mx-auto p-4 space-y-4 backdrop-blur-md">

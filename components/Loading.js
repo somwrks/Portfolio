@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Loading() {
   return (
-    <div className="flex flex-col fade overflow-hidden w-full min-h-screen bg justify-center items-center fixed z-50">
+    <div className="flex flex-col select-none fade overflow-hidden w-full min-h-screen bg justify-center items-center fixed z-50">
       <div
         className="flex z-50 flex-col h-[100px]  rounded-full circleoutline w-[100px]  fixed"
       >

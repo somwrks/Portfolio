@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import AnimatedCursor from "react-animated-cursor";
 import Head from "next/head";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function App({ Component, pageProps }) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -119,6 +120,8 @@ export default function App({ Component, pageProps }) {
       ) : (
         <Component {...pageProps} toggleAudio={toggleAudio} />
       )}
+      <SpeedInsights />
+
     </>
   );
 }

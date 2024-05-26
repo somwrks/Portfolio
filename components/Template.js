@@ -45,7 +45,7 @@ export default function Template({
       <div
         className={`flex ${
           change ? "opacity-0" : "opacity-100"
-        }  transition-all flex-col justify-start mt-12 items-center  w-full h-full  `}
+        }  transition-all flex-col select-none justify-start mt-12 items-center  w-full h-full  `}
       >
         {!isNaN(image) && (
           <div className="absolute top-0 md:top-10 left-0 md:left-10 m-4">
