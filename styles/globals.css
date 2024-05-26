@@ -239,3 +239,21 @@ a:hover{
   line-height: 1em;
   margin: 50px 0;
 }
+
+.fadein{
+  animation: fade 1s ease-in-out;
+}
+.fadeout{
+  animation: fadeout 1s ease-in-out;
+}
+@keyframes fadeout {
+  0%{
+    opacity: 100%;
+  }
+  50%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}

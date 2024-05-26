@@ -82,7 +82,7 @@ export default function Template({
               </h1>
             </div>
           </div>
-          <div className="text-gray-300  space-y-1 overflow-hidden  text-[4vw] md:text-[1.5vw]">
+          <div className="text-gray-300  space-y-1 overflow-hidden  text-[4vw] md:text-[1.3vw]">
             <div
               className={`${
                 !animation ? "enter" : "leave"

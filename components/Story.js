@@ -4,11 +4,12 @@ import posts from "../public/post.json";
 
 
 export default function Story() {
+  
   return (
-    <div className="flex flex-col items-center  w-full text-white  h-[90vh]  mx-2  overflow-y-scroll">
-    {posts ? posts.map((post, index) => (
+    <div className="flex flex-col items-center  w-full text-white  h-[850px]  mx-2  overflow-y-scroll">
+    {posts[0] ? posts.map((post, index) => (
         <Posts key={index} post={post}/>
-    )) : "Nothing here to see..."}
+    )) : <div className='flex text-2xl mt-5'>Nothing to see here...</div>}
     </div>
   )
 }

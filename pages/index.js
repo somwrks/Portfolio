@@ -35,7 +35,7 @@ export default function Home({ toggleAudio }) {
       if (scrollingText) {
         const windowWidth = window.innerWidth;
         const scrollingTextWidth = scrollingText.scrollWidth;
-        const transformSpeed = 9; // Adjust speed as needed
+        const transformSpeed = 10; // Adjust speed as needed
         const maxTransform = scrollingTextWidth - windowWidth;
 
         if (delta > 0) {
@@ -163,9 +163,9 @@ export default function Home({ toggleAudio }) {
           </div>
         </div>
       </div>
-      <div className="story-container">
-        <div className="scrolling-text">
-          <h2 className="scrolling-text-content">
+      <div className="story-container overflow-y-hidden">
+        <div className="scrolling-text overflow-y-hidden">
+          <h2 className="scrolling-text-content overflow-y-hidden">
           STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY 
           </h2>
         </div>

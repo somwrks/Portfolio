@@ -1,12 +1,12 @@
+// pages/connect.js
 import Box from "@/components/Box";
 import Loading from "@/components/Loading";
 import Player from "@/components/Player";
 import Head from "next/head";
-import Image from "next/image";
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import ContactForm from "@/components/ContactForm";
 
-export default function connect({ toggleAudio }) {
+export default function Connect({ toggleAudio }) {
   const [change, setChange] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -16,7 +16,7 @@ export default function connect({ toggleAudio }) {
 
   return (
     <>
-     <Head>
+      <Head>
         <title>Som Srivastava</title>
         <meta
           name="description"
@@ -36,11 +36,14 @@ export default function connect({ toggleAudio }) {
         <Player toggleAudio={toggleAudio} />
         <div className="flex flex-col w-full  md:w-[60%] md:mx-auto p-4 space-y-4 backdrop-blur-md">
           <div className="flex items-center flex-row ">
-              <h1 className="text-[9vw] md:text-[4vw] text-gray-200">Super Friendly!</h1>
+            <h1 className="text-[9vw] md:text-[4vw] text-gray-200">Connect</h1>
           </div>
           <div>
-            <h1 className="text-white text-[3vw] md:text-[1vw] font-semibold">Business Email : somwrks.queries@gmail.com</h1>
+            <h1 className="text-white text-[3vw] md:text-[1vw] font-semibold">
+              Business Email : somwrks.queries@gmail.com
+            </h1>
           </div>
+          <ContactForm />
           <div className="flex flex-col md:flex-row flex-wrap w-full items-center justify-between gap-5 pt-3 ">
             <Box
               imageUrl="/linkedin.webp"

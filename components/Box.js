@@ -3,16 +3,16 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Box = ({ imageUrl, overlayText, icon }) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(null);
 const [width, setWidth] = useState(null)
   useEffect(() => {
     setWidth(window.innerWidth);
     const handleResize = () => {
 
       if (width <= 768) {
-        setIsHovered(false);
-      } else{
         setIsHovered(true);
+      } else{
+        setIsHovered(false);
       }
     };
 

@@ -20,8 +20,8 @@ export default function Carousel({ images }) {
   };
 
   return (
-    <div className="relative w-full">
-      <div className="relative h-56 md:h-96 overflow-hidden rounded-lg">
+    <div className="relative overflow-y-hidden w-full">
+      <div className="relative h-[300px] md:h-[500px] overflow-hidden rounded-lg">
         {images.map((image, index) => (
           <div
             key={index}
