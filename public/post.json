@@ -2,28 +2,28 @@
     
     {
       "date": "21st September, 2024",
-      "image": "/2.webp",
+      "images": ["/2.webp"],
       "title": "A Busy day",
       "description": "Another description story with more details about the busy day.",
       "buttons": [{"text":"Read More", "link":""}, {"text":"Read More", "link":""},{"text":"Read More", "link":""}]
     },
     {
       "date": "21st September, 2024",
-      "image": "/2.webp",
+      "images": ["/2.webp"],
       "title": "A Busy day",
       "description": "Another description story with more details about the busy day.",
       "buttons": [{"text":"Read More", "link":""}, {"text":"Read More", "link":""},{"text":"Read More", "link":""}]
     },
     {
       "date": "21st September, 2024",
-      "image": "/2.webp",
+      "images": ["/2.webp"],
       "title": "A Busy day",
       "description": "Another description story with more details about the busy day.",
       "buttons": [{"text":"Read More", "link":""}, {"text":"Read More", "link":""},{"text":"Read More", "link":""}]
     },
     {
       "date": "21st September, 2024",
-      "image": "/2.webp",
+      "images": ["/2.webp"],
       "title": "A Busy day",
       "description": "Another description story with more details about the busy day.",
       "buttons": [{"text":"Read More", "link":""}, {"text":"Read More", "link":""},{"text":"Read More", "link":""}]
