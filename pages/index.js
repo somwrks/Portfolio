@@ -25,6 +25,9 @@ export default function Home({ toggleAudio }) {
 
   // Ref to store the scroll amount
   const transformAmountRef = useRef(0);
+  const targetTransformRef = useRef(0);
+  const scrollingRef = useRef(null);
+  const previousScrollRef = useRef(0);
 
   useEffect(() => {
     const handleScroll = (e) => {
@@ -35,47 +38,46 @@ export default function Home({ toggleAudio }) {
       if (scrollingText) {
         const windowWidth = window.innerWidth;
         const scrollingTextWidth = scrollingText.scrollWidth;
-        const transformSpeed = 10; // Adjust speed as needed
         const maxTransform = scrollingTextWidth - windowWidth;
 
-        if (delta > 0) {
-          transformAmountRef.current = Math.min(transformAmountRef.current + transformSpeed, maxTransform);
-        } else {
-          transformAmountRef.current = Math.max(transformAmountRef.current - transformSpeed, 0);
-        }
+        targetTransformRef.current = Math.max(
+          0,
+          Math.min(maxTransform, targetTransformRef.current - delta)
+        );
 
-        scrollingText.style.transform = `translateX(-${transformAmountRef.current}px)`;
+        if (!scrollingRef.current) {
+          scrollingRef.current = true;
+          requestAnimationFrame(scrollStep);
+        }
       }
     };
 
-    const throttledHandleScroll = throttle(handleScroll, 50); // Throttle to reduce frequency
+    const scrollStep = () => {
+      const container = document.querySelector(".story-container");
+      const scrollingText = container.querySelector(".scrolling-text-content");
 
-    window.addEventListener("wheel", throttledHandleScroll);
+      if (scrollingText) {
+        const currentTransform = transformAmountRef.current;
+        const distance = targetTransformRef.current - currentTransform;
+        const easing = 0.1; // Adjust the easing value for smoother scrolling
+
+        if (Math.abs(distance) > 0.1) {
+          transformAmountRef.current += distance * easing;
+          scrollingText.style.transform = `translateX(-${transformAmountRef.current}px)`;
+          requestAnimationFrame(scrollStep);
+        } else {
+          scrollingRef.current = false;
+          transformAmountRef.current = targetTransformRef.current;
+        }
+      }
+    };
+
+    window.addEventListener("wheel", handleScroll, { passive: true });
 
     return () => {
-      window.removeEventListener("wheel", throttledHandleScroll);
+      window.removeEventListener("wheel", handleScroll);
     };
   }, []);
-
-  // Throttle function to limit scroll event calls
-  const throttle = (func, limit) => {
-    let lastFunc;
-    let lastRan;
-    return function (...args) {
-      if (!lastRan) {
-        func.apply(this, args);
-        lastRan = Date.now();
-      } else {
-        clearTimeout(lastFunc);
-        lastFunc = setTimeout(() => {
-          if (Date.now() - lastRan >= limit) {
-            func.apply(this, args);
-            lastRan = Date.now();
-          }
-        }, limit - (Date.now() - lastRan));
-      }
-    };
-  };
 
 
   return (
@@ -166,12 +168,13 @@ export default function Home({ toggleAudio }) {
       <div className="story-container overflow-y-hidden">
         <div className="scrolling-text overflow-y-hidden">
           <h2 className="scrolling-text-content overflow-y-hidden">
-          STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY 
+            STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY
+            STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY
+            STORIES STATUS JOURNEY STORIES STATUS JOURNEY
           </h2>
         </div>
       </div>
-      <Story/>
-
+      <Story />
     </>
   );
 }
