@@ -36,8 +36,8 @@ const [width, setWidth] = useState(null)
       onMouseEnter={() => width>768? setIsHovered(true):""}
       onMouseLeave={() => width>768?setIsHovered(false):""}
     >
-      {isHovered && (
-        <div className="absolute inset-0 flex  fade items-center justify-center bg-black bg-opacity-50 backdrop-blur-xl ">
+       
+        <div className={`absolute ${isHovered ? "visible":"hidden"} inset-0 flex  fade items-center justify-center bg-black bg-opacity-50 backdrop-blur-xl `}>
           <Link
             href={overlayText}
             className="text-white text-[1vw] font-semibold  up"
@@ -45,7 +45,7 @@ const [width, setWidth] = useState(null)
             <Image src={`/${icon}.svg`} width={50} height={50} />
           </Link>
         </div>
-      )}
+      
     </div>
   );
 };
