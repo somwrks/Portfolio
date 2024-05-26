@@ -50,8 +50,14 @@ export default function App({ Component, pageProps }) {
     if (audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause();
+        // Add the 'no-animation' class to stop the animation
+        const circleWords = document.querySelectorAll('.circle-word');
+        circleWords.forEach(word => word.classList.add('no-animation'));
       } else {
         audioRef.current.play();
+        // Remove the 'no-animation' class to start the animation
+        const circleWords = document.querySelectorAll('.circle-word');
+        circleWords.forEach(word => word.classList.remove('no-animation'));
       }
       setIsPlaying(!isPlaying);
     }

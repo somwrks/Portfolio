@@ -257,3 +257,6 @@ a:hover{
     opacity: 100%;
   }
 }
+.circle-word.no-animation {
+  animation: none;
+}
