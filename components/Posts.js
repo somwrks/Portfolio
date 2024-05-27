@@ -30,7 +30,7 @@ export default function Posts({ post }) {
           {post.buttons.map((button, btnIndex) => (
             button &&
             <button key={btnIndex} className="px-4 py-2 bg-gray-600 text-white hover:mt-2 origin-top">
-              <Link href={button.link}>
+              <Link target="_blank" rel="noopener noreferrer" href={button.link}>
                 {button.text}
               </Link>
             </button>

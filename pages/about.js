@@ -44,7 +44,7 @@ export default function About({ toggleAudio, isPlaying }) {
             </h2>
           </div>
           <div className="flex flex-col ">
-          <Link href={"https://youtu.be/Z1NimVSJ8XI?si=Upwvi9LE3hS6heiU"}>
+          <Link  href={"https://youtu.be/Z1NimVSJ8XI?si=Upwvi9LE3hS6heiU"}>
                          <SuspenseImage loading="lazy" src={"https://i.ibb.co/LJYxrB7/444883849-1442136866670626-8703902264842006915-n.jpg"} width={500} height={500} />
 
 
@@ -61,7 +61,7 @@ export default function About({ toggleAudio, isPlaying }) {
             </h2>
           </div>
           <div className="flex flex-col">
-          <Link href={"https://youtu.be/4Tm6Z1y3h94?si=yNaGK79xcMes3bRX"}>
+          <Link target="_blank" rel="noopener noreferrer" href={"https://youtu.be/4Tm6Z1y3h94?si=yNaGK79xcMes3bRX"}>
           <SuspenseImage loading="lazy" src={"https://i.ibb.co/jD2gYsX/IMG20240514131416.jpg"} width={500} height={500} />
 
 
@@ -78,7 +78,7 @@ export default function About({ toggleAudio, isPlaying }) {
             </h2>
           </div>
           <div className="flex flex-col ">
-          <Link href={"https://www.youtube.com/watch?v=GL-uWmw4YMA"}>
+          <Link target="_blank" rel="noopener noreferrer" href={"https://www.youtube.com/watch?v=GL-uWmw4YMA"}>
           <SuspenseImage loading="lazy" src={"https://i.ibb.co/BsmzD3v/image.png"} width={500} height={500} />
 
           </Link>
@@ -94,7 +94,7 @@ export default function About({ toggleAudio, isPlaying }) {
             </h2>
           </div>
           <div className="flex flex-col ">
-          <Link href={"https://www.youtube.com/watch?v=EiKK04Ht8QI"}>
+          <Link target="_blank" rel="noopener noreferrer" href={"https://www.youtube.com/watch?v=EiKK04Ht8QI"}>
           <SuspenseImage loading="lazy" src={"https://i.ibb.co/yY54XW9/IMG20240514131416.jpg"} width={500} height={500} />
 
 
@@ -112,7 +112,7 @@ export default function About({ toggleAudio, isPlaying }) {
             </h2>
           </div>
           <div className="flex flex-col ">
-          <Link href={"https://www.youtube.com/watch?v=pQgxiQAMTTo"}>
+          <Link target="_blank" rel="noopener noreferrer" href={"https://www.youtube.com/watch?v=pQgxiQAMTTo"}>
           <SuspenseImage loading="lazy" src={"https://i.ibb.co/x8BVhQb/image.png"} width={500} height={500} />
 
 
@@ -129,7 +129,7 @@ export default function About({ toggleAudio, isPlaying }) {
             </h2>
           </div>
           <div className="flex flex-col ">
-          <Link href={"https://www.youtube.com/watch?v=J-5x1yL9hSc"}>
+          <Link target="_blank" rel="noopener noreferrer" href={"https://www.youtube.com/watch?v=J-5x1yL9hSc"}>
           <SuspenseImage loading="lazy" src={"https://i.ibb.co/NV3zs2M/image.png"} width={500} height={500} />
 
 
