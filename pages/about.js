@@ -8,15 +8,24 @@ export default function About({ toggleAudio, isPlaying }) {
   return (
     <>
       <Head>
-        <title>Som Srivastava</title>
+      <title>Som Srivastava | About Me</title>
         <meta
           name="description"
-          content="Passionate and innovative high school senior with expertise in software development and design. Specialized in building impactful solutions that promote mental health awareness and support."
+          content="Discover the multifaceted world of Som Srivastava, a passionate individual exploring the realms of technology, creativity, and social impact. Dive into his unique blend of entrepreneurial spirit, software development expertise, and a curiosity that transcends boundaries"
         />
         <meta
-          name="keywords"
-          content="Som Srivastava, somwrks, SOMWRKS, SomWrks, Software Developer, Entrepreneur, Mental Health Advocate, Full Stack Developer, Innovator, Technology Enthusiast, About Me"
+          name="og:description"
+          content="Discover the multifaceted world of Som Srivastava, a passionate individual exploring the realms of technology, creativity, and social impact. Dive into his unique blend of entrepreneurial spirit, software development expertise, and a curiosity that transcends boundaries"
         />
+          <meta property="og:title" content="Som Srivastava | About Me" />
+          <meta property="og:url" content="https://somwrks.com/about" />
+          <meta property="og:image" content="me2.webp" />
+
+        <meta
+          name="keywords"
+          content="Som Srivastava, About, High School Graduate, Software Developer, Entrepreneur, Tech Enthusiast, Creative Thinker, Mental Health Advocate, Innovation, Self-Development, Passion, Curiosity"
+        />
+        
       </Head>
       <Template
       isPlaying={isPlaying}

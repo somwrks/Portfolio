@@ -18,15 +18,18 @@ export default function Connect({ toggleAudio,isPlaying }) {
   return (
     <>
       <Head>
-        <title>Som Srivastava</title>
+        <title>Som Srivastava | Connect</title>
         <meta
-          name="description"
-          content="Connect with me! I'm available on almost all social platforms. You can reach me out via email at somwrks.queries@gmail.com"
-        />
+    name="description"
+    content="Connect with Som Srivastava, an innovative entrepreneur and software developer. Explore opportunities for collaboration, partnerships, or simply engage in thought-provoking discussions. Reach out via email or connect on social media platforms."
+  />
         <meta
-          name="keywords"
-          content="Som Srivastava, somwrks, SOMWRKS, SomWrks, Software Developer, Entrepreneur, Mental Health Advocate, Full Stack Developer, Innovator, Technology Enthusiast, About Me"
-        />
+    name="keywords"
+    content="Som Srivastava, Connect, Collaboration, Partnerships, Software Developer, Entrepreneur, Social Media, LinkedIn, Instagram, Twitter, GitHub, Contact"
+  />
+    <meta property="og:url" content="https://somwrks.com/connect" />
+    <meta property="og:image" content="me2.webp" />
+
       </Head>
       {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying}/>}
       <div

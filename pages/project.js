@@ -8,9 +8,9 @@ import { useEffect } from "react";
 import data from "../public/project.json";
 import Buttons from "@/components/Buttons";
 
-export default function project({ toggleAudio,isPlaying }) {
+export default function project({ toggleAudio, isPlaying }) {
   const [change, setChange] = useState(true);
-const [show, setShow] = useState(null)
+  const [show, setShow] = useState(null);
   useEffect(() => {
     setTimeout(() => {
       setChange(false);
@@ -21,61 +21,73 @@ const [show, setShow] = useState(null)
   }, [show]);
   return (
     <>
-       <Head>
-        <title>Som Srivastava</title>
+      <Head>
+        <title>Som Srivastava | Projects</title>
         <meta
           name="description"
-          content="Passionate and innovative high school senior with expertise in software development and design. Specialized in building impactful solutions that promote mental health awareness and support."
+          content="Explore the innovative projects and initiatives undertaken by Som Srivastava, a software developer and entrepreneur driven by a passion for solving real-world problems. Discover his diverse portfolio showcasing his technical expertise and creative problem-solving abilities."
         />
         <meta
           name="keywords"
-          content="Som Srivastava, somwrks, SOMWRKS, SomWrks, Software Developer, Entrepreneur, Mental Health Advocate, Full Stack Developer, Innovator, Technology Enthusiast, About Me"
+          content="Som Srivastava, Projects, Software Development, Entrepreneurship, Portfolio, Innovative Solutions, Problem-Solving, Technical Expertise, Creativity"
         />
+        <meta property="og:title" content="Som Srivastava | Projects" />
+        <meta
+          property="og:description"
+          content="Explore the innovative projects and initiatives undertaken by Som Srivastava, a software developer and entrepreneur driven by a passion for solving real-world problems. Discover his diverse portfolio showcasing his technical expertise and creative problem-solving abilities."
+        />
+        <meta property="og:image" content="me.webp" />
+        <meta property="og:url" content="https://somwrks/projects" />
       </Head>
-      {show===null ?<>
-
-      {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying}/>}
-      <div
-        className={`flex ${
-          change ? "opacity-0" : "opacity-100"
-        }  transition-all flex-col justify-center items-center  w-full min-h-screen  `}
-      >
-       <Buttons/>
-        <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
-        <div className="flex flex-col h-full md:w-[60%] mx-auto p-4  space-y-12  ">
-          {data.map((item, index) => (
-            <Exp
-              key={index}
-              title={item.title}
-              detail1={item.detail1}
-              index={index}
-              icon={item.icon}
-              setShow={setShow}
-              change={change}
-            />
-          ))}
-        </div>
-      </div>
-      </>
-      : <>
-      {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying}/>}
-      <Template
-      img1={data[show].img1? data[show].img1:""}
-      img2={data[show].img2? data[show].img2:""}
-      img3={data[show].img3? data[show].img3:""}
-          toggleAudio={toggleAudio}
-          title={data[show].title}
-          image={show}
-          isPlaying={isPlaying}
-          link={data[show].link}
-          icon={data[show].icon}
-          setShow={setShow}
-          detail1={data[show].detail1}
-          detail2={data[show].detail2}
-          detail3={data[show].detail3}
-        />
-      </> 
-        }
+      {show === null ? (
+        <>
+          {change && (
+            <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />
+          )}
+          <div
+            className={`flex ${
+              change ? "opacity-0" : "opacity-100"
+            }  transition-all flex-col justify-center items-center  w-full min-h-screen  `}
+          >
+            <Buttons />
+            <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
+            <div className="flex flex-col h-full md:w-[60%] mx-auto p-4  space-y-12  ">
+              {data.map((item, index) => (
+                <Exp
+                  key={index}
+                  title={item.title}
+                  detail1={item.detail1}
+                  index={index}
+                  icon={item.icon}
+                  setShow={setShow}
+                  change={change}
+                />
+              ))}
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          {change && (
+            <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />
+          )}
+          <Template
+            img1={data[show].img1 ? data[show].img1 : ""}
+            img2={data[show].img2 ? data[show].img2 : ""}
+            img3={data[show].img3 ? data[show].img3 : ""}
+            toggleAudio={toggleAudio}
+            title={data[show].title}
+            image={show}
+            isPlaying={isPlaying}
+            link={data[show].link}
+            icon={data[show].icon}
+            setShow={setShow}
+            detail1={data[show].detail1}
+            detail2={data[show].detail2}
+            detail3={data[show].detail3}
+          />
+        </>
+      )}
     </>
   );
 }

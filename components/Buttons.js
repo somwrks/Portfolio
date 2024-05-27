@@ -9,10 +9,16 @@ export default function Buttons() {
     >
       <div className="flex fade bg-gray-900 space-y-3 flex-col w-full md:w-1/2 mt-14  min-h-[700px] md:min-h-[50vw]  items-start">
         <div className="flex flex-row w-full justify-between h-full ">
-          <button onClick={() => setShow("resume")} className="w-full py-4 text-black text-xl  bg-gray-100">
+          <button
+            onClick={() => setShow("resume")}
+            className="w-full py-4 text-black text-xl  bg-gray-100"
+          >
             Resume
           </button>
-          <button   onClick={() => setShow("freelance")} className="w-full py-4  text-white bg-black text-xl  ">
+          <button
+            onClick={() => setShow("freelance")}
+            className="w-full py-4  text-white bg-black text-xl  "
+          >
             Freelance
           </button>
         </div>
@@ -22,7 +28,6 @@ export default function Buttons() {
           </div>
         ) : (
           <div className="flex flex-col p-2 w-full h-full">
-
             <h1 className="text-2xl text-white">Coming Soon...</h1>
           </div>
         )}

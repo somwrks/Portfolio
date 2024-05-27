@@ -23,15 +23,22 @@ export default function experience({ toggleAudio,isPlaying }) {
   return (
     <>
       <Head>
-        <title>Som Srivastava</title>
+        <title>Som Srivastava | Experience</title>
         <meta
-          name="description"
-          content="Passionate and innovative high school senior with expertise in software development and design. Specialized in building impactful solutions that promote mental health awareness and support."
-        />
-        <meta
-          name="keywords"
-          content="Som Srivastava, somwrks, SOMWRKS, SomWrks, Software Developer, Entrepreneur, Mental Health Advocate, Full Stack Developer, Innovator, Technology Enthusiast, About Me"
-        />
+    name="description"
+    content="Explore the diverse experiences and projects that have shaped Som Srivastava's journey as a software developer and entrepreneur. Discover his expertise across various technologies, programming languages, and tools, showcasing his versatility and passion for innovation."
+  />
+       <meta
+    name="keywords"
+    content="Som Srivastava, Experience, Software Development, Entrepreneurship, Projects, Technologies, Programming Languages, Tools, Skills, Expertise, Innovation"
+  /> <meta property="og:title" content="Som Srivastava | Experience" />
+  <meta
+    property="og:description"
+    content="Explore the diverse experiences and projects that have shaped Som Srivastava's journey as a software developer and entrepreneur. Discover his expertise across various technologies, programming languages, and tools, showcasing his versatility and passion for innovation."
+  />
+    <meta property="og:url" content="https://somwrks.com/experience" />
+    <meta property="og:image" content="me2.webp" />
+
       </Head>
       {show === null ? (
         <>

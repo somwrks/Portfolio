@@ -6,7 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Story from "@/components/Story";
 import Buttons from "@/components/Buttons";
 
-export default function Home({ toggleAudio,isPlaying }) {
+export default function Home({ toggleAudio, isPlaying }) {
   const app = useRouter();
   const go = (e) => {
     if (typeof window !== "undefined") {
@@ -80,34 +80,35 @@ export default function Home({ toggleAudio,isPlaying }) {
     };
   }, []);
 
-
   return (
     <>
       <Head>
         <title>Som Srivastava | Software Developer and Entrepreneur</title>
         <meta
           name="description"
-          content="Passionate and innovative high school senior with expertise in software development and design. Specialized in building impactful solutions that promote mental health awareness and support."
+          content="Passionate and forward-thinking tech enthusiast with a focus on constant learning. Experienced in software development, AI, and diverse areas of knowledge. Ready to create impactful solutions and contribute to a better world."
         />
         <meta
           name="keywords"
-          content="Som Srivastava, somwrks, SOMWRKS, SomWrks, Software Developer, Entrepreneur, Mental Health Advocate, Full Stack Developer, Innovator, Technology Enthusiast"
+          content="Som Srivastava, Som, Aishwarya, Aishwarya Srivastava somwrks, SOMWRKS, SomWrks, Entrepreneur, Software Developer, Startup Founder, Mental Health, App Development, Web Development, AI, Machine Learning, Deep Learning, Tech Innovator, Problem Solver, Product Development, Som Srivastava, somwrks, SOMWRKS, SomWrks, Entrepreneur, Tech Innovator, Startup Founder, Software Developer, AI Developer, ML Developer, DL Developer, Web Developer, App Developer, Problem Solver, Investing, Impactful Solutions"
         />
-
+        <meta property="og:image" content="me.webp" />
         <link rel="icon" href="som.webp" />
       </Head>
-      {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying}/>}
+      {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />}
 
       <div
         className={`flex  ${
           change ? " opacity-0 " : " opacity-100 "
         } select-none transition-all flex-col overflow-none md:items-center  justify-center cursor-none  w-full min-h-screen`}
       >
-      <Buttons/>
+        <Buttons />
 
         <div
           onClick={start}
-          className={`flex ${isPlaying? "circleanimation":""} flex-col overflow-none right-16 top-12  md:top-auto md:right-auto  md:h-[13vw] h-[150px] w-[150px] rounded-full  circle md:w-[13vw] absolute cursor-none`}
+          className={`flex ${
+            isPlaying ? "circleanimation" : ""
+          } flex-col overflow-none right-16 top-12  md:top-auto md:right-auto  md:h-[13vw] h-[150px] w-[150px] rounded-full  circle md:w-[13vw] absolute cursor-none`}
         ></div>
         <div className="flex flex-col md:flex-row justify-between ">
           <div
