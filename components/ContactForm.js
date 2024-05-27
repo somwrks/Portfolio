@@ -41,11 +41,15 @@ export default function ContactForm() {
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      setFade(formData.message === "");
+      setFade(
+        formData.message !== ""  &&
+          formData.name !== "" &&
+          formData.email !== ""
+      );
     }, 1000);
 
     return () => clearTimeout(timeoutId);
-  }, [formData.message]);
+  }, [formData.message,formData.email,formData.name]);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -132,13 +136,13 @@ export default function ContactForm() {
       </div>
       <div className={`mb-4 items-center transition-all duration-1000 `}>
         <h1
-          className={`text-xl text-white ${fade ? "opacity-0" : "opacity-100"}`}
+          className={`text-xl text-white ${!fade ? "opacity-0" : "opacity-100"}`}
         >
           Press Enter To Send
         </h1>
         <h1
           className={`text-xl text-white ${
-            !fade ? "opacity-0" : "opacity-100"
+            fade ? "opacity-0" : "opacity-100"
           }`}
         >
           Response can take up to 3-5 business days
