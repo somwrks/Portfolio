@@ -34,7 +34,7 @@ export default function experience({ toggleAudio,isPlaying }) {
       </Head>
       {show === null ? (
         <>
-          {change && <Loading />}
+          {change &&  <Loading toggleAudio={toggleAudio} isPlaying={isPlaying}/>}
           <div
             className={`flex ${
               change ? "opacity-0" : "opacity-100"
@@ -120,6 +120,7 @@ export default function experience({ toggleAudio,isPlaying }) {
           {change && <Loading />}
           {/* Displaying detailed experience */}
           <Template
+          isPlaying={isPlaying}
             img1={data[show].img1 || ""}
             img2={data[show].img2 || ""}
             img3={data[show].img3 || ""}

@@ -38,7 +38,7 @@ export default function Template({
 
   return (
     <>
-      {change && <Loading />}
+      {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />}
       <Player toggleAudio={toggleAudio} isPlaying={isPlaying}/>
       <div
         className={`flex ${

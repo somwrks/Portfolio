@@ -27,7 +27,7 @@ export default function Connect({ toggleAudio,isPlaying }) {
           content="Som Srivastava, somwrks, SOMWRKS, SomWrks, Software Developer, Entrepreneur, Mental Health Advocate, Full Stack Developer, Innovator, Technology Enthusiast, About Me"
         />
       </Head>
-      {change && <Loading />}
+      {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying}/>}
       <div
         className={`flex ${
           change ? "opacity-0" : "opacity-100"

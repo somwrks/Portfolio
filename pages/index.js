@@ -95,7 +95,7 @@ export default function Home({ toggleAudio,isPlaying }) {
 
         <link rel="icon" href="som.webp" />
       </Head>
-      {change && <Loading />}
+      {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying}/>}
       <div
         className={`flex  ${
           change ? " opacity-0 " : " opacity-100 "

@@ -1,24 +1,12 @@
 import React from "react";
+import Player from "./Player";
 
-export default function Loading() {
+export default function Loading({toggleAudio,isPlaying}) {
   return (
     <div className="flex flex-col select-none fade overflow-hidden w-full min-h-screen bg justify-center items-center fixed z-50">
-      <div
-        className="flex z-50 flex-col h-[100px]  rounded-full circleoutline w-[100px]  fixed"
-      >
-        <div className="circle-word text-white">I</div>
-        <div className="circle-word text-white">I</div>
-        <div className="circle-word text-white">I</div>
-        <div className="circle-word text-white">I</div>
-        <div className="circle-word text-white">I</div>
-        <div className="circle-word text-white">I</div>
-        <div className="circle-word text-white">I</div>
-        <div className="circle-word text-white">I</div>
-        <div className="circle-word text-white">I</div>
-        <div className="circle-word text-white">I</div>
-        <div className="circle-word text-white">I</div>
-        <div className="circle-word text-white">I</div>
-      </div>
+          <div
+          className={`flex circleanimation flex-col overflow-none right-16 top-12  md:top-auto md:right-auto  md:h-[13vw] h-[150px] w-[150px] rounded-full  circle md:w-[13vw] absolute cursor-none`}
+        ></div>
     </div>
   );
 }

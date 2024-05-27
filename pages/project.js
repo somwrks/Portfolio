@@ -33,7 +33,7 @@ const [show, setShow] = useState(null)
       </Head>
       {show===null ?<>
 
-      {change && <Loading />}
+      {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying}/>}
       <div
         className={`flex ${
           change ? "opacity-0" : "opacity-100"
@@ -56,7 +56,7 @@ const [show, setShow] = useState(null)
       </div>
       </>
       : <>
-      {change && <Loading />}
+      {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying}/>}
       <Template
       img1={data[show].img1? data[show].img1:""}
       img2={data[show].img2? data[show].img2:""}
@@ -64,6 +64,7 @@ const [show, setShow] = useState(null)
           toggleAudio={toggleAudio}
           title={data[show].title}
           image={show}
+          isPlaying={isPlaying}
           link={data[show].link}
           icon={data[show].icon}
           setShow={setShow}
