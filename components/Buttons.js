@@ -7,7 +7,7 @@ export default function Buttons() {
       onClick={(e) => e.target.classList.contains("outer-box") && setShow("")}
       className="flex fade flex-col w-full min-h-screen fixed outer-box items-center backdrop-blur-lg z-50 "
     >
-      <div className="flex fade bg-gray-800 space-y-3 flex-col w-full md:w-1/2 mt-14  min-h-[700px] md:min-h-[50vw]  items-start">
+      <div className="flex fade bg-gray-900 space-y-3 flex-col w-full md:w-1/2 mt-14  min-h-[700px] md:min-h-[50vw]  items-start">
         <div className="flex flex-row w-full justify-between h-full ">
           <button onClick={() => setShow("resume")} className="w-full py-4 text-black text-xl  bg-gray-100">
             Resume
