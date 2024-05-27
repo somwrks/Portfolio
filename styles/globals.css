@@ -47,10 +47,30 @@ body {
   transform: translateY(-10px);
 }
 .circle {
-  background-image: url("../public/code.jpeg");
+  background-image: url("../public/me.webp");
   background-size: cover;
   background-blend-mode: darken;
   background-repeat: no-repeat;
+}
+@keyframes fadeInOut {
+  0%, 100% {
+    background-image: url("../public/me.webp"); /* Start and end with the original image */
+  }
+  50% {
+    background-image: url("../public/me2.webp"); /* Change to another image halfway through */
+  }
+}
+.circleanimation{
+  animation: rotateAnimation 15s linear infinite forwards,fadeInOut 20s linear infinite; 
+  animation-fill-mode: forwards;
+}
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .circle:hover{
   transform: scale(1.03);
@@ -257,6 +277,6 @@ a:hover{
     opacity: 100%;
   }
 }
-.circle-word.no-animation {
+.no-animation {
   animation: none;
 }

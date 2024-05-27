@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       if (!yes) {
-        document.body.style.background = "black" ;
+        document.body.style.background = "black";
       } else {
         document.body.style.background = "transparent";
         document.body.style.backgroundImage =
@@ -48,16 +48,13 @@ export default function App({ Component, pageProps }) {
 
   const toggleAudio = () => {
     if (audioRef.current) {
+      const circle = document.querySelector(".circle");
       if (isPlaying) {
         audioRef.current.pause();
         // Add the 'no-animation' class to stop the animation
-        const circleWords = document.querySelectorAll('.circle-word');
-        circleWords.forEach(word => word.classList.add('no-animation'));
       } else {
         audioRef.current.play();
         // Remove the 'no-animation' class to start the animation
-        const circleWords = document.querySelectorAll('.circle-word');
-        circleWords.forEach(word => word.classList.remove('no-animation'));
       }
       setIsPlaying(!isPlaying);
     }
@@ -86,7 +83,7 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <>
-     <Head>
+      <Head>
         <title>Som Srivastava | Software Developer and Entrepreneur</title>
         <meta
           name="description"
@@ -96,7 +93,10 @@ export default function App({ Component, pageProps }) {
           name="keywords"
           content="Som Srivastava, Software Developer, Entrepreneur, Mental Health Advocate, Full Stack Developer, Innovator, Technology Enthusiast"
         />
-      <meta name="google-site-verification" content="aTOZJhusoDASbAL_Ham6HSmn5C_sUWPocQjbu97c7uk" />
+        <meta
+          name="google-site-verification"
+          content="aTOZJhusoDASbAL_Ham6HSmn5C_sUWPocQjbu97c7uk"
+        />
         <link rel="icon" href="som.webp" />
       </Head>
       {!isMobile && (
@@ -120,14 +120,20 @@ export default function App({ Component, pageProps }) {
         <div className="flex-col flex w-full overflow-hidden justify-center bg items-center min-h-screen  ">
           <div className="flex flex-col h-[100px] rounded-full  circle w-[100px] absolute"></div>
           <div className="flex flex-col backdrop-blur-xl h-[100px] rounded-full  justify-center items-center w-[100px] absolute ">
-            <Image src={"/play.svg"} width={200} onClick={start} height={200} />
+            <Image
+              loading="lazy"
+              onError={(err) => console.error("Error loading image:", err)}
+              src={"/play.svg"}
+              width={200}
+              onClick={start}
+              height={200}
+            />
           </div>
         </div>
       ) : (
-        <Component {...pageProps} toggleAudio={toggleAudio} />
+        <Component {...pageProps} toggleAudio={toggleAudio} isPlaying={isPlaying} />
       )}
       <SpeedInsights />
-
     </>
   );
 }

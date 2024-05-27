@@ -1,9 +1,10 @@
+import SuspenseImage from "@/components/SuspenseImage";
 import Template from "@/components/Template";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function About({ toggleAudio }) {
+export default function About({ toggleAudio, isPlaying }) {
   return (
     <>
       <Head>
@@ -18,6 +19,7 @@ export default function About({ toggleAudio }) {
         />
       </Head>
       <Template
+      isPlaying={isPlaying}
         title={"Som Srivastava"}
         toggleAudio={toggleAudio}
         image={"som"}
@@ -31,8 +33,8 @@ export default function About({ toggleAudio }) {
           "In addition to my technical skills, I am an avid learner, always seeking new knowledge and challenges. When I'm not coding, you can find me immersed in books about media theories, journaling, or just meditating in a soccer field (lol)"
         }
       />
-      <div className="flex select-none flex-col my-6 justify-center w-full items-center  gap-y-8 ">
-        <div className="flex flex-row gap-x-4 items-center w-2/4 justify-between">
+      <div className="flex select-none flex-col my-6 justify-center md:px-0 px-4 w-full md:items-center  gap-y-8 ">
+        <div className="flex flex-wrap md:flex-nowrap flex-row  gap-y-4 md:gap-x-4 items-center w-full md:w-2/4 justify-between">
           <div className="flex flex-col w-full space-y-2">
             <h1 className="text-[4vw] md:text-[1.5vw] text-gray-200">
             Legacy Seeker: Stories of Greatness
@@ -43,13 +45,14 @@ export default function About({ toggleAudio }) {
           </div>
           <div className="flex flex-col ">
           <Link href={"https://youtu.be/Z1NimVSJ8XI?si=Upwvi9LE3hS6heiU"}>
-            <Image src={"https://i.ibb.co/LJYxrB7/444883849-1442136866670626-8703902264842006915-n.jpg"} width={500} height={500} />
+                         <SuspenseImage loading="lazy" src={"https://i.ibb.co/LJYxrB7/444883849-1442136866670626-8703902264842006915-n.jpg"} width={500} height={500} />
+
 
           </Link>
           </div>
         </div>
-        <div className="flex  flex-row gap-x-4 items-center w-2/4 justify-between">
-          <div className="flex flex-col w-full order-2 space-y-2">
+        <div className="flex flex-wrap md:flex-nowrap flex-row  gap-y-4 md:gap-x-4 items-center w-full md:w-2/4 justify-between">
+          <div className="flex flex-col w-full md:order-2 space-y-2">
             <h1 className="text-[4vw] md:text-[1.5vw] text-gray-200">
               Who, Where and Why?
             </h1>
@@ -59,12 +62,13 @@ export default function About({ toggleAudio }) {
           </div>
           <div className="flex flex-col">
           <Link href={"https://youtu.be/4Tm6Z1y3h94?si=yNaGK79xcMes3bRX"}>
-            <Image src={"https://i.ibb.co/jD2gYsX/IMG20240514131416.jpg"} width={500} height={500} />
+          <SuspenseImage loading="lazy" src={"https://i.ibb.co/jD2gYsX/IMG20240514131416.jpg"} width={500} height={500} />
+
 
           </Link>
           </div>
         </div>
-        <div className="flex flex-row gap-x-4 items-center w-2/4 justify-between">
+        <div className="flex flex-wrap md:flex-nowrap flex-row  gap-y-4 md:gap-x-4 items-center w-full md:w-2/4 justify-between">
           <div className="flex flex-col w-full space-y-2">
             <h1 className="text-[4vw] md:text-[1.5vw] text-gray-200">
               Some Casual Games
@@ -75,13 +79,13 @@ export default function About({ toggleAudio }) {
           </div>
           <div className="flex flex-col ">
           <Link href={"https://www.youtube.com/watch?v=GL-uWmw4YMA"}>
-            <Image src={"https://i.ibb.co/BsmzD3v/image.png"} width={500} height={500} />
+          <SuspenseImage loading="lazy" src={"https://i.ibb.co/BsmzD3v/image.png"} width={500} height={500} />
 
           </Link>
           </div>
         </div>
-        <div className="flex flex-row gap-x-4  items-center w-2/4 justify-between">
-          <div className="flex flex-col w-full order-1 space-y-2">
+        <div className="flex flex-wrap md:flex-nowrap flex-row  gap-y-4 md:gap-x-4 items-center w-full md:w-2/4 justify-between">
+          <div className="flex flex-col w-full md:order-1 space-y-2">
             <h1 className="text-[4vw] md:text-[1.5vw] text-gray-200">
               Building Meaningful Things | Not just a tech guy
             </h1>
@@ -91,12 +95,13 @@ export default function About({ toggleAudio }) {
           </div>
           <div className="flex flex-col ">
           <Link href={"https://www.youtube.com/watch?v=EiKK04Ht8QI"}>
-            <Image src={"https://i.ibb.co/yY54XW9/IMG20240514131416.jpg"} width={500} height={500} />
+          <SuspenseImage loading="lazy" src={"https://i.ibb.co/yY54XW9/IMG20240514131416.jpg"} width={500} height={500} />
+
 
           </Link>
           </div>
         </div>
-        <div className="flex flex-row gap-x-4 items-center w-2/4 justify-between">
+        <div className="flex flex-wrap md:flex-nowrap flex-row  gap-y-4 md:gap-x-4 items-center w-full md:w-2/4 justify-between">
           <div className="flex flex-col w-full  space-y-2">
             <h1 className="text-[4vw] md:text-[1.5vw] text-gray-200">
               The GPT Effect
@@ -108,13 +113,14 @@ export default function About({ toggleAudio }) {
           </div>
           <div className="flex flex-col ">
           <Link href={"https://www.youtube.com/watch?v=pQgxiQAMTTo"}>
-            <Image src={"https://i.ibb.co/x8BVhQb/image.png"} width={500} height={500} />
+          <SuspenseImage loading="lazy" src={"https://i.ibb.co/x8BVhQb/image.png"} width={500} height={500} />
+
 
           </Link>
           </div>
         </div>
-        <div className="flex flex-row gap-x-4 items-center w-2/4 justify-between">
-          <div className="flex flex-col w-full order-2 space-y-2">
+        <div className="flex flex-wrap md:flex-nowrap flex-row  gap-y-4 md:gap-x-4 items-center w-full md:w-2/4 justify-between">
+          <div className="flex flex-col w-full md:order-2 space-y-2">
             <h1 className="text-[4vw] md:text-[1.5vw] text-gray-200">
               Beep Boop
             </h1>
@@ -124,7 +130,8 @@ export default function About({ toggleAudio }) {
           </div>
           <div className="flex flex-col ">
           <Link href={"https://www.youtube.com/watch?v=J-5x1yL9hSc"}>
-            <Image src={"https://i.ibb.co/NV3zs2M/image.png"} width={500} height={500} />
+          <SuspenseImage loading="lazy" src={"https://i.ibb.co/NV3zs2M/image.png"} width={500} height={500} />
+
 
           </Link>
           </div>

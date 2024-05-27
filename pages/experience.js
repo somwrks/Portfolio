@@ -5,7 +5,7 @@ import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import data from "../public/data.json";
 
-export default function experience({ toggleAudio }) {
+export default function experience({ toggleAudio,isPlaying }) {
   const [change, setChange] = useState(true);
   const [show, setShow] = useState(null);
 
@@ -52,6 +52,8 @@ export default function experience({ toggleAudio }) {
                       Java <br />
                       Node JS <br />
                       Javascript
+                       <br />
+                      MySQL
                       
                     </h2>
                   </div>

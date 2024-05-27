@@ -1,5 +1,27 @@
 [
   {
+    "title": "AR-Quiz",
+    "link": "https://github.com/somwrks/AR-Quiz",
+    "detail1": "This project is a test-taking website with facial recognition to detect cheating behaviors. Users will be required to keep looking into the camera during the test, and if they look away or exhibit cheating behaviors, the test will be terminated. The project uses Next.js for the frontend, Flask for the backend, OpenCV/Mediapipe for facial recognition, and Supabase/Prisma for the database.",
+    "detail2": "The tech stack is robust and modern, incorporating Next.js and Tailwind CSS for a responsive frontend, React Webcam for camera functionality, and Flask for the backend API. Facial recognition is achieved using OpenCV and Mediapipe, which process images from the user's webcam to detect face and eye movements. The database setup includes Supabase, a scalable PostgreSQL database, with Prisma providing an ORM layer to interact with the database. The backend processes and analyzes the captured images to determine if the user is looking away, which is a potential indicator of cheating.",
+    "detail3": "Getting started with the project involves cloning the repository, setting up the backend and frontend environments, and configuring necessary environment variables. The project structure is well-organized, with separate directories for backend code, frontend code, database scripts, and documentation. Developers can contribute to the project by following the provided guidelines and submitting pull requests. The facial recognition logic in the backend captures images periodically during the test, processes them to detect face and eye positions, and determines if the user is cheating based on predefined thresholds. If cheating is detected, the test session is interrupted, and appropriate actions are taken.",
+    "icon": "https://i.ibb.co/3SrqMSv/image.png",
+    "img1": "https://i.ibb.co/zrH8dgV/image.png",
+    "img2": "https://i.ibb.co/3SrqMSv/image.png",
+    "img3": ""
+  },
+  {
+    "title": "Sentimental Analysis",
+    "link": "https://github.com/somwrks/Sentimental-Analysis",
+    "detail1": "Next.js application that performs sentiment analysis on text data using a TensorFlow.js model. The application is built with TypeScript and utilizes the TensorFlow.js library for training and evaluating the machine learning model.",
+    "detail2": "This project is focused on building a sentiment analysis tool using TensorFlow.js, which can classify text into positive, neutral, or negative sentiments. The process begins with tokenizing and vectorizing the text input, converting each word into its ASCII character codes. This transformation standardizes the text data, ensuring consistency by padding or truncating sequences to a fixed length, known as sequenceLength. The tokenized text is then prepared for model training by creating uniform-length sequences, making the data suitable for input into the neural network.",
+    "detail3": "The Project trains a neural network model using TensorFlow.js. The model architecture includes dense layers and dropout layers, designed to handle the tokenized text input and predict sentiment accurately. The training process involves compiling the model with a binary cross-entropy loss function and the Adam optimizer, followed by fitting the model on the preprocessed data. After training, the sentimentAnalysisFunction leverages the trained model to predict the sentiment of new text inputs. By reshaping and padding the input text to match the model’s expected input shape, the function provides a sentiment score, which is interpreted based on predefined thresholds to classify the text as positive, neutral, or negative.",
+    "icon": "https://i.ibb.co/b64mHgS/image.png",
+    "img1": "",
+    "img2": "https://i.ibb.co/b64mHgS/image.png",
+    "img3": ""
+  },
+  {
     "title": "EduMon",
     "link": "https://github.com/somwrks/EduMon",
     "detail1": "EduMon is a web platform designed to revolutionize the educational experience. It starts with a strong authentication system to ensure a secure environment. Users can select their school and access a wide range of educational resources, including clubs, events, webinars, and competitions. It also offers AI-powered tools for scheduling and to-do lists to help students manage their time effectively.",

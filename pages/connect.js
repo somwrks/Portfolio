@@ -6,7 +6,7 @@ import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
 
-export default function Connect({ toggleAudio }) {
+export default function Connect({ toggleAudio,isPlaying }) {
   const [change, setChange] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -33,7 +33,7 @@ export default function Connect({ toggleAudio }) {
           change ? "opacity-0" : "opacity-100"
         } transition-all flex-col justify-center items-center w-full `}
       >
-        <Player toggleAudio={toggleAudio} />
+        <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
         <div className="flex flex-col w-full  md:w-[60%] md:mx-auto p-4 space-y-4 backdrop-blur-md">
           <div className="flex items-center flex-row ">
             <h1 className="text-[9vw] md:text-[4vw] text-gray-200">Connect</h1>

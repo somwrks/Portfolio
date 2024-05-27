@@ -18,7 +18,8 @@ const Box = ({ imageUrl, overlayText, icon }) => {
             href={overlayText}
             className="text-white text-[1vw] font-semibold  up"
           >
-            <Image src={`/${icon}.svg`} width={50} height={50} />
+                        <Image loading="lazy"    onError={(err) => console.error('Error loading image:', err)}
+  src={`/${icon}.svg`} width={50} height={50} />
           </Link>
         </div>
       

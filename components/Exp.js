@@ -10,7 +10,8 @@ export default function Exp({setShow,change,title,detail1,index,icon}) {
   >
     <div className="flex md:w-3/5  flex-col ">
     
-      <Image src={`${icon}`} className=" " width={400} height={400} />
+                  <Image loading="lazy"    onError={(err) => console.error('Error loading image:', err)}
+  src={`${icon}`} className=" " width={400} height={400} />
    
    
     </div>
@@ -26,8 +27,8 @@ export default function Exp({setShow,change,title,detail1,index,icon}) {
         </p>
       </div>
       <div>
-        <button className="px-[3.5vw] py-[2vw] md:px-[1.5vw] md:py-[0.5vw] backdrop-blur-3xl font-bold  rounded-xl text-white border-2 border-gray-200">
-          <a  onClick={()=> setShow(index)}>Explore</a>
+        <button onClick={()=> setShow(index)}  className="px-[3.5vw] py-[2vw] md:px-[1.5vw] md:py-[0.5vw] backdrop-blur-3xl font-bold  rounded-xl text-white border-2 border-gray-200">
+          <a  >Explore</a>
         </button>
       </div>
     </div>
