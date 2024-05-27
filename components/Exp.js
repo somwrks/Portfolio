@@ -27,7 +27,7 @@ export default function Exp({setShow,change,title,detail1,index,icon}) {
         </p>
       </div>
       <div>
-        <button onClick={()=> setShow(index)}  className="px-[3.5vw] py-[2vw] md:px-[1.5vw] md:py-[0.5vw] backdrop-blur-3xl font-bold  rounded-xl text-white border-2 border-gray-200">
+        <button onClick={()=> setShow(index)}  className="w-full py-[2vw]  md:py-[0.5vw] backdrop-blur-3xl font-bold  rounded-xl text-white border-2 border-gray-200">
           <a  >Explore</a>
         </button>
       </div>
