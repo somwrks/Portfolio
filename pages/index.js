@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Story from "@/components/Story";
+import Buttons from "@/components/Buttons";
 
 export default function Home({ toggleAudio,isPlaying }) {
   const app = useRouter();
@@ -96,12 +97,13 @@ export default function Home({ toggleAudio,isPlaying }) {
         <link rel="icon" href="som.webp" />
       </Head>
       {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying}/>}
+
       <div
         className={`flex  ${
           change ? " opacity-0 " : " opacity-100 "
         } select-none transition-all flex-col overflow-none md:items-center  justify-center cursor-none  w-full min-h-screen`}
       >
-      
+      <Buttons/>
 
         <div
           onClick={start}

@@ -4,6 +4,7 @@ import Template from "@/components/Template";
 import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import data from "../public/data.json";
+import Buttons from "@/components/Buttons";
 
 export default function experience({ toggleAudio,isPlaying }) {
   const [change, setChange] = useState(true);
@@ -40,6 +41,7 @@ export default function experience({ toggleAudio,isPlaying }) {
               change ? "opacity-0" : "opacity-100"
             } transition-all flex-col justify-center items-center w-full min-h-screen`}
           >
+           <Buttons/>
             <div className="flex flex-col h-full md:w-[60%] mx-auto p-4 space-y-12">
               <div className="flex mt-5 flex-col justify-center space-y-4">
                 <div className="flex flex-row justify-between gap-4">

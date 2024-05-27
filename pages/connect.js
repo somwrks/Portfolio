@@ -5,6 +5,7 @@ import Player from "@/components/Player";
 import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
+import Buttons from "@/components/Buttons";
 
 export default function Connect({ toggleAudio,isPlaying }) {
   const [change, setChange] = useState(true);
@@ -33,6 +34,7 @@ export default function Connect({ toggleAudio,isPlaying }) {
           change ? "opacity-0" : "opacity-100"
         } transition-all flex-col justify-center items-center w-full `}
       >
+       <Buttons/>
         <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
         <div className="flex flex-col w-full  md:w-[60%] md:mx-auto p-4 space-y-4 backdrop-blur-md">
           <div className="flex items-center flex-row ">

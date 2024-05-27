@@ -6,6 +6,7 @@ import Head from "next/head";
 import React, { useState } from "react";
 import { useEffect } from "react";
 import data from "../public/project.json";
+import Buttons from "@/components/Buttons";
 
 export default function project({ toggleAudio,isPlaying }) {
   const [change, setChange] = useState(true);
@@ -39,6 +40,7 @@ const [show, setShow] = useState(null)
           change ? "opacity-0" : "opacity-100"
         }  transition-all flex-col justify-center items-center  w-full min-h-screen  `}
       >
+       <Buttons/>
         <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
         <div className="flex flex-col h-full md:w-[60%] mx-auto p-4  space-y-12  ">
           {data.map((item, index) => (

@@ -3,6 +3,7 @@ import Player from "@/components/Player";
 import React, { useState, useEffect } from "react";
 import SuspenseImage from "@/components/SuspenseImage";
 import 'react-loading-skeleton/dist/skeleton.css';
+import Buttons from "./Buttons";
 
 export default function Template({
   icon,
@@ -45,6 +46,7 @@ export default function Template({
           change ? "opacity-0" : "opacity-100"
         }  transition-all flex-col select-none justify-start mt-12 items-center w-full h-full`}
       >
+       <Buttons/>
         {!isNaN(image) && (
           <div className="absolute top-0 md:top-10 left-0 md:left-10 m-4">
             <SuspenseImage
