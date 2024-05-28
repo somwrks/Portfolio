@@ -83,20 +83,17 @@ export default function App({ Component, pageProps }) {
   }, []);
   return (
     <>
-      <Head>
+       <Head>
         <title>Som Srivastava | Software Developer and Entrepreneur</title>
         <meta
           name="description"
-          content="Passionate and innovative high school senior with expertise in software development and design. Specialized in building impactful solutions that promote mental health awareness and support."
+          content="Passionate and forward-thinking tech enthusiast with a focus on constant learning. Experienced in software development, AI, and diverse areas of knowledge. Ready to create impactful solutions and contribute to a better world."
         />
         <meta
           name="keywords"
-          content="Som Srivastava, Software Developer, Entrepreneur, Mental Health Advocate, Full Stack Developer, Innovator, Technology Enthusiast"
+          content="Som Srivastava, Som, Aishwarya, Aishwarya Srivastava somwrks, SOMWRKS, SomWrks, Entrepreneur, Software Developer, Startup Founder, Mental Health, App Development, Web Development, AI, Machine Learning, Deep Learning, Tech Innovator, Problem Solver, Product Development, Som Srivastava, somwrks, SOMWRKS, SomWrks, Entrepreneur, Tech Innovator, Startup Founder, Software Developer, AI Developer, ML Developer, DL Developer, Web Developer, App Developer, Problem Solver, Investing, Impactful Solutions"
         />
-        <meta
-          name="google-site-verification"
-          content="aTOZJhusoDASbAL_Ham6HSmn5C_sUWPocQjbu97c7uk"
-        />
+        <meta property="og:image" content="me.webp" />
         <link rel="icon" href="som.webp" />
       </Head>
       {!isMobile && (
