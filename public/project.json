@@ -8,7 +8,9 @@
     "icon": "https://i.ibb.co/3SrqMSv/image.png",
     "img1": "https://i.ibb.co/zrH8dgV/image.png",
     "img2": "https://i.ibb.co/3SrqMSv/image.png",
-    "img3": ""
+    "img3": "",
+    "skills":["NextJS","TailwindCSS","Supabase","OpenCV","Flask","Python"],
+    "category":["Website Development", "Artificial Intelligence"]
   },
   {
     "title": "Sentimental Analysis",
@@ -19,10 +21,12 @@
     "icon": "https://i.ibb.co/b64mHgS/image.png",
     "img1": "",
     "img2": "https://i.ibb.co/b64mHgS/image.png",
-    "img3": ""
+    "img3": "",
+    "skills":["NextJS","TailwindCSS","Tensorflow"],
+    "category":["Website Development","Artificial Intelligence"]
   },
   {
-    "title": "EduMon",
+    "title": "EduMon | Hackathon Project",
     "link": "https://github.com/somwrks/EduMon",
     "detail1": "EduMon is a web platform designed to revolutionize the educational experience. It starts with a strong authentication system to ensure a secure environment. Users can select their school and access a wide range of educational resources, including clubs, events, webinars, and competitions. It also offers AI-powered tools for scheduling and to-do lists to help students manage their time effectively.",
     "detail2": "EduMon was built through a collaborative effort, leveraging the latest technology. We combined web development expertise with AI API's to create the platform's functionality. User-friendly design and robust security measures were integral components of the development process.",
@@ -30,10 +34,12 @@
     "icon": "https://i.ibb.co/HnpZtXg/image.png",
     "img1": "",
     "img2": "https://i.ibb.co/HnpZtXg/image.png",
-    "img3": "https://i.ibb.co/2NhkNyr/image.png"
+    "img3": "https://i.ibb.co/2NhkNyr/image.png",
+    "skills":["NextJS","TailwindCSS","Openai API","Clerk API","MongoDB"],
+    "category":["Website Development","Artificial Intelligence"]
   },
   {
-    "title": "SafeSentry",
+    "title": "SafeSentry | Hackathon Project",
     "link": "https://github.com/somwrks/SafeSentry",
     "detail1": "SafeSentry is a mobile app that has a wide variety of personal security and safety features that allow high school students to take their own initiative and action towards preventing a possible gun violence threat.",
     "detail2": "SafeSentry features a log-in/authentication system, where a student can use their student ID # or any applicable information (school email, etc…) to register with our app. After being registered and added to their own school ecosystem, the student has the ability to file evidence-based incident reports in the event of suspicious activity or if they get any information about crimes that take place or will take place. Filing reports can often be painstaking and slow, but our app allows a student to securely file one that can make the difference towards the prevention of a school shooting.",
@@ -41,7 +47,9 @@
     "img1": "",
     "icon": "https://i.ibb.co/bN1fTc7/image.png",
     "img2": "https://i.ibb.co/bN1fTc7/image.png",
-    "img3": "https://i.ibb.co/8m0zkR2/image.png"
+    "img3": "https://i.ibb.co/8m0zkR2/image.png",
+    "skills":["React Native","TailwindCSS","JSON API"],
+    "category":["App Development"]
   },
   {
     "title": "BlindChat",
@@ -52,7 +60,9 @@
     "img1": "",
     "icon": "https://i.ibb.co/VgC5jXZ/image.png",
     "img2": "https://i.ibb.co/VgC5jXZ/image.png",
-    "img3": ""
+    "img3": "",
+    "skills":["NextJS","TailwindCSS","Firestore","Firebase API"],
+    "category":["Website Development"]
   },
   {
     "title": "SomFlix",
@@ -63,7 +73,9 @@
     "icon": "https://i.ibb.co/Ky05SvS/image.png",
     "img1": "https://i.ibb.co/Ky05SvS/image.png",
     "img2": "https://i.ibb.co/p2rM4Np/image.png",
-    "img3": "https://i.ibb.co/HPFhkT1/image.png"
+    "img3": "https://i.ibb.co/HPFhkT1/image.png",
+    "skills":["NextJS","TailwindCSS","Google API"],
+    "category":["Website Development", "Website Design"]
   },
   {
     "title": "Books of Gold",
@@ -74,7 +86,9 @@
     "img1": "",
     "icon": "https://i.ibb.co/SQcbYRR/image.png",
     "img2": "https://i.ibb.co/SQcbYRR/image.png",
-    "img3": ""
+    "img3": "",
+    "skills":["React","TailwindCSS","NodeJS","ExpressJS","MongoDB","Redux","Rest API"],
+    "category":["Website Development","Website Design"]
   },
   {
     "title": "Book Recommendor",
@@ -85,6 +99,8 @@
     "icon": "https://i.ibb.co/FVyZDcv/image.png",
     "img1": "",
     "img2": "https://i.ibb.co/FVyZDcv/image.png",
-    "img3": ""
+    "img3": "",
+    "skills":["NextJS","TailwindCSS","Openai API"],
+    "category":["Website Development","Artificial Intelligence"]
   }
 ]

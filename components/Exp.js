@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function Exp({setShow,change,title,detail1,index,icon}) {
+export default function Exp({setShow,change,title,detail1,index,icon,skills}) {
   return (
     <div
-    className={`flex flex-col md:flex-row   ${
+    className={`flex flex-col md:flex-row z-0  ${
       !change ? "enter" : "leave"
     }  space-y-5 md:space-x-5 items-start md:items-center md:justify-between`}
   >
@@ -21,9 +21,12 @@ export default function Exp({setShow,change,title,detail1,index,icon}) {
           {title}
         </h1>
       </div>
-      <div>
+      <div className='space-y-2 flex flex-col'>
         <p className=" text-[6w] md:text-[1vw]">
           {detail1}
+        </p>
+        <p className=" text-[5.9w] text-gray-300 md:text-[0.9vw]">
+          {skills?.map(e=> e+", ")}
         </p>
       </div>
       <div>

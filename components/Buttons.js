@@ -5,7 +5,7 @@ export default function Buttons() {
   return show ? (
     <div
       onClick={(e) => e.target.classList.contains("outer-box") && setShow("")}
-      className="flex fade flex-col w-full min-h-screen fixed outer-box items-center backdrop-blur-lg z-50 "
+      className="flex fade flex-col top-0 w-full min-h-screen fixed outer-box items-center backdrop-blur-lg z-50 "
     >
       <div className="flex fade bg-gray-900 space-y-3 flex-col w-full md:w-1/2 mt-14  min-h-[700px] md:min-h-[50vw]  items-start">
         <div className="flex flex-row w-full justify-between h-full ">
@@ -34,16 +34,16 @@ export default function Buttons() {
       </div>
     </div>
   ) : (
-    <div className="flex flex-col -right-8 gap-y-16 h-full  top-64 fixed ">
+    <div className="flex flex-col fade -right-8 gap-y-16 h-full z-50  top-64 fixed ">
       <button
         onClick={() => setShow("freelance")}
-        className=" px-4 bg-black rounded-sm -rotate-90 mt-12 text-white border-b-0 border text-xl z-50 "
+        className=" px-4 bg-black rounded-sm fade -rotate-90 mt-12 text-white border-b-0 border text-xl z-50 "
       >
         Freelance
       </button>
       <button
         onClick={() => setShow("resume")}
-        className=" px-4 bg-white rounded-sm -rotate-90 mt-12 text-black border-b-0 border text-xl z-50"
+        className=" px-4 bg-white rounded-sm fade -rotate-90 mt-12 text-black border-b-0 border text-xl z-50"
       >
         Resume
       </button>

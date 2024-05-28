@@ -17,7 +17,7 @@ export default function Template({
   detail2,
   detail3,
   link,
-  setShow, isPlaying
+  setShow, isPlaying,skills,category
 }) {
   const [change, setChange] = useState(true);
   const [animation, setAnimation] = useState(true);
@@ -44,7 +44,7 @@ export default function Template({
       <div
         className={`flex ${
           change ? "opacity-0" : "opacity-100"
-        }  transition-all flex-col select-none justify-start mt-12 items-center w-full h-full`}
+        }  transition-all flex-col select-none justify-start mt-12 items-center z-0 w-full h-full`}
       >
        <Buttons/>
         {!isNaN(image) && (
@@ -80,7 +80,7 @@ export default function Template({
               <h1 className="text-[7vw] md:text-[3vw] text-gray-200">{title}</h1>
             </div>
           </div>
-          <div className="text-gray-300 space-y-1 overflow-hidden text-[4vw] md:text-[1.3vw]">
+          <div className="text-gray-300 space-y-3 overflow-hidden text-[4vw] md:text-[1.3vw]">
             <div className={`${!animation ? "enter" : "leave"} flex flex-col space-y-3`}>
               {img1 && <SuspenseImage loading="lazy" width={1000} height={1000} src={`${img1}`} />}
               <p>{detail1}</p>
@@ -93,11 +93,16 @@ export default function Template({
               {img3 && <SuspenseImage loading="lazy" width={1000} height={1000} src={`${img3}`} />}
               <p className={`${!animation ? "enter" : "leave"} overflow-hidden`}>{detail3}</p>
             </div>
+            <div className={`${!animation ? "enter" : "leave"} flex flex-col space-y-3 overflow-hidden`}>
+            <p className=" text-gray-300 ">
+          {skills?.map(e=> e+", ")}
+        </p>
+            </div>
           </div>
           {link && (
   <div>
     <a href={`${link}`} target="_blank" rel="noopener noreferrer">
-      <button className="px-4 enter py-2 backdrop-blur-3xl font-bold rounded-xl text-white border-2 border-gray-200">
+      <button className="w-full enter py-2 backdrop-blur-3xl font-bold rounded-xl text-white border-2 border-gray-200">
         View
       </button>
     </a>

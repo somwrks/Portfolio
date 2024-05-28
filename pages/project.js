@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import data from "../public/project.json";
 import Buttons from "@/components/Buttons";
+import Sorting from "@/components/Sorting";
 
 export default function project({ toggleAudio, isPlaying }) {
   const [change, setChange] = useState(true);
@@ -16,9 +17,25 @@ export default function project({ toggleAudio, isPlaying }) {
       setChange(false);
     }, 3000);
   }, []);
+  const [search, setSearch] = useState("All");
+  const options = [
+    "All",
+    "Presidential",
+    "Artificial Intelligence",
+    "Software Development",
+    "Website Development",
+    "App Development",
+    "Software Design",
+    "Website Design",
+    "App Design",
+    "Video Editing",
+    "Community Service",
+  ];
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [show]);
+  const filteredData = data.filter((item) => item.category.includes(search));
+
   return (
     <>
       <Head>
@@ -44,25 +61,113 @@ export default function project({ toggleAudio, isPlaying }) {
           {change && (
             <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />
           )}
+          <Buttons />
+
           <div
             className={`flex ${
               change ? "opacity-0" : "opacity-100"
             }  transition-all flex-col justify-center items-center  w-full min-h-screen  `}
           >
-            <Buttons />
             <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
-            <div className="flex flex-col h-full md:w-[60%] mx-auto p-4  space-y-12  ">
-              {data.map((item, index) => (
-                <Exp
-                  key={index}
-                  title={item.title}
-                  detail1={item.detail1}
-                  index={index}
-                  icon={item.icon}
-                  setShow={setShow}
-                  change={change}
-                />
-              ))}
+            <div className="flex flex-col flex-grow h-full md:w-[60%] mx-auto p-4  space-y-12  ">
+            <div className="flex mt-5 flex-col justify-center space-y-4">
+                <div className="flex flex-row justify-between gap-4">
+                  {/* Updated technical skills section */}
+                  <div className="flex flex-col space-y-4">
+                    <h2 className="md:text-[1.4vw] text-[2.5vw] font-semibold text-gray-400">
+                      C# <br />
+                      C++ <br />
+                      Python <br />
+                      Java <br />
+                      Node JS <br />
+                      Javascript
+                       <br />
+                      MySQL
+                      
+                    </h2>
+                  </div>
+                  <div className="flex flex-col space-y-4">
+                    <h2 className="md:text-[1.4vw] text-[2.5vw] font-semibold text-gray-400">
+                      Django <br />
+                      Flask <br />
+                      Electron JS <br />
+                      TensorFlow <br />
+                      Three JS <br />
+                      Next JS <br />
+                      React
+                       <br />
+                      Tailwind
+                       <br />
+                      Scikit Learn
+                       <br />
+                       LangChain
+                       <br />
+                       Keras
+                      
+                    </h2>
+                  </div>
+                  <div className="flex flex-col space-y-4">
+                    <h2 className="md:text-[1.4vw] text-[2.5vw] font-semibold text-gray-400">
+                      PostgreSQL <br />
+                      MongoDB <br />
+                      Sanity Database
+                      <br />Firestore 
+                      <br />Amazon Web Services Cloud
+                      <br />Google Cloud 
+                    </h2>
+                  </div>
+                  <div className="flex flex-col space-y-4">
+                    <h2 className="md:text-[1.4vw] text-[2.5vw] font-semibold text-gray-400">
+                      Git <br />
+                      Linux<br />
+                      Figma <br />
+                      Adobe After Effects <br />
+                      Adobe Premiere Pro<br />
+                      Adobe Illustrator
+                    </h2>
+                  </div>
+                </div>
+              </div>
+
+              <Sorting
+                setSearch={setSearch}
+                options={options}
+                search={search}
+              />
+              {/* Mapping experience data */}
+              {search == "All" ? (
+                data.map(
+                  (item, index) =>
+                   
+                      <Exp
+                        key={index}
+                        title={item.title}
+                        detail1={item.detail1}
+                        index={index}
+                        icon={item.icon}
+                        setShow={setShow}
+                        change={change}
+                      />
+                )
+              ) : filteredData != 0 ? (
+                data.map(
+                  (item, index) =>
+                    item.category.includes(search) &&
+                      <Exp
+                        key={index}
+                        title={item.title}
+                        detail1={item.detail1}
+                        index={index}
+                        icon={item.icon}
+                        setShow={setShow}
+                        change={change}
+                      />
+                )
+              ) : (
+                <div className="flex flex-col  w-full text-white text-2xl text-center mt-10 z-50">
+                  Nothing to see here...
+                </div>
+              )}
             </div>
           </div>
         </>
@@ -85,6 +190,8 @@ export default function project({ toggleAudio, isPlaying }) {
             detail1={data[show].detail1}
             detail2={data[show].detail2}
             detail3={data[show].detail3}
+            skills={data[show].skills}
+            category={data[show].category}
           />
         </>
       )}

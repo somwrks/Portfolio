@@ -107,7 +107,7 @@ export default function Home({ toggleAudio, isPlaying }) {
         <div
           onClick={start}
           className={`flex ${
-            isPlaying ? "circleanimation" : ""
+            isPlaying ? "circleanimation" : "circleanimation pause"
           } flex-col overflow-none right-16 top-12  md:top-auto md:right-auto  md:h-[13vw] h-[150px] w-[150px] rounded-full  circle md:w-[13vw] absolute cursor-none`}
         ></div>
         <div className="flex flex-col md:flex-row justify-between ">
