@@ -20,7 +20,6 @@ export default function project({ toggleAudio, isPlaying }) {
   const [search, setSearch] = useState("All");
   const options = [
     "All",
-    "Presidential",
     "Artificial Intelligence",
     "Software Development",
     "Website Development",
@@ -71,10 +70,10 @@ export default function project({ toggleAudio, isPlaying }) {
             <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
             <div className="flex flex-col flex-grow h-full md:w-[60%] mx-auto p-4  space-y-12  ">
             <div className="flex mt-5 flex-col justify-center space-y-4">
-                <div className="flex flex-row justify-between gap-4">
+                <div className="flex flex-row justify-between w-full gap-4">
                   {/* Updated technical skills section */}
-                  <div className="flex flex-col space-y-4">
-                    <h2 className="md:text-[1.4vw] text-[2.5vw] font-semibold text-gray-400">
+                  <div className="flex flex-col w-full space-y-4">
+                    <h2 className="md:text-[1.4vw] text-[2.3vw] font-semibold text-gray-400">
                       C# <br />
                       C++ <br />
                       Python <br />
@@ -86,7 +85,7 @@ export default function project({ toggleAudio, isPlaying }) {
                       
                     </h2>
                   </div>
-                  <div className="flex flex-col space-y-4">
+                  <div className="flex w-full flex-col space-y-4">
                     <h2 className="md:text-[1.4vw] text-[2.5vw] font-semibold text-gray-400">
                       Django <br />
                       Flask <br />
@@ -106,7 +105,7 @@ export default function project({ toggleAudio, isPlaying }) {
                       
                     </h2>
                   </div>
-                  <div className="flex flex-col space-y-4">
+                  <div className="flex w-full flex-col space-y-4">
                     <h2 className="md:text-[1.4vw] text-[2.5vw] font-semibold text-gray-400">
                       PostgreSQL <br />
                       MongoDB <br />
@@ -116,7 +115,7 @@ export default function project({ toggleAudio, isPlaying }) {
                       <br />Google Cloud 
                     </h2>
                   </div>
-                  <div className="flex flex-col space-y-4">
+                  <div className="flex w-full flex-col space-y-4">
                     <h2 className="md:text-[1.4vw] text-[2.5vw] font-semibold text-gray-400">
                       Git <br />
                       Linux<br />
