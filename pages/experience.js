@@ -80,7 +80,7 @@ export default function experience({ toggleAudio, isPlaying }) {
                   change={change}
                 />
               ) : (
-                <div className="flex flex-col w-full text-white text-2xl text-center mt-5">
+                <div className="flex flex-col w-full  text-white text-2xl text-center mt-5">
                   Nothing to see here...
                 </div>
               )}
@@ -122,7 +122,7 @@ export default function experience({ toggleAudio, isPlaying }) {
                     )
                 )
               ) : (
-                <div className="flex flex-col  w-full text-white text-2xl text-center mt-5 z-50">
+                <div className="flex flex-col   w-full text-white text-2xl text-center mt-5 ">
                   Nothing to see here...
                 </div>
               )}
