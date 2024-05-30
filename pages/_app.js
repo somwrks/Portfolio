@@ -4,12 +4,12 @@ import Image from "next/image";
 import AnimatedCursor from "react-animated-cursor";
 import Head from "next/head";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [yes, setYes] = useState(false);
   const audioRef = useRef(null);
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       if (!yes) {
@@ -81,8 +81,10 @@ export default function App({ Component, pageProps }) {
       window.removeEventListener("resize", checkIsMobile);
     };
   }, []);
+  const router = useRouter();
+
   return (
-    <>
+    <>{router.pathname!="/about" &&
        <Head>
         <title>Som Srivastava | Software Developer and Entrepreneur</title>
         <meta
@@ -91,11 +93,12 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="keywords"
-          content="Som Srivastava, Som, Aishwarya, Aishwarya Srivastava somwrks, SOMWRKS, SomWrks, Entrepreneur, Software Developer, Startup Founder, Mental Health, App Development, Web Development, AI, Machine Learning, Deep Learning, Tech Innovator, Problem Solver, Product Development, Som Srivastava, somwrks, SOMWRKS, SomWrks, Entrepreneur, Tech Innovator, Startup Founder, Software Developer, AI Developer, ML Developer, DL Developer, Web Developer, App Developer, Problem Solver, Investing, Impactful Solutions"
+          content="Som Srivastava, Aishwarya, Aishwarya Srivastava, Arizona State University, ASU, Go Devils, Devils, Sun Devils, Lucknow, India, Indian, Uttar Pradesh, Mesa, Phoenix, Metro Phoenix,  Som, Aishwarya, Aishwarya Srivastava somwrks, SOMWRKS, SomWrks, Entrepreneur, Software Developer, Startup Founder, Mental Health, App Development, Web Development, AI, Machine Learning, Deep Learning, Tech Innovator, Problem Solver, Product Development, Som Srivastava, somwrks, SOMWRKS, SomWrks, Entrepreneur, Tech Innovator, Startup Founder, Software Developer, AI Developer, ML Developer, DL Developer, Web Developer, App Developer, Problem Solver, Investing, Impactful Solutions"
         />
         <meta property="og:image" content="me.webp" />
         <link rel="icon" href="som.webp" />
       </Head>
+    }
       {!isMobile && (
         <AnimatedCursor
           innerSize={8}

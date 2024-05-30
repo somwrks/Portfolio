@@ -46,7 +46,7 @@ export default function experience({ toggleAudio, isPlaying }) {
         />
         <meta
           name="keywords"
-          content="Som Srivastava, Experience, Software Development, Entrepreneurship, Projects, Technologies, Programming Languages, Tools, Skills, Expertise, Innovation"
+          content="Som Srivastava, Aishwarya, Aishwarya Srivastava, Arizona State University, ASU, Go Devils, Devils, Sun Devils, Lucknow, India, Indian, Uttar Pradesh, Mesa, Phoenix, Metro Phoenix,  Experience, Software Development, Entrepreneurship, Projects, Technologies, Programming Languages, Tools, Skills, Expertise, Innovation"
         />{" "}
         <meta property="og:title" content="Som Srivastava | Experience" />
         <meta

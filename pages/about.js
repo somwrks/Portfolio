@@ -23,7 +23,7 @@ export default function About({ toggleAudio, isPlaying }) {
 
         <meta
           name="keywords"
-          content="Som Srivastava, About, High School Graduate, Software Developer, Entrepreneur, Tech Enthusiast, Creative Thinker, Mental Health Advocate, Innovation, Self-Development, Passion, Curiosity"
+          content="Som Srivastava, Aishwarya, Aishwarya Srivastava, Arizona State University, ASU, Go Devils, Devils, Sun Devils, Lucknow, India, Indian, Uttar Pradesh, Mesa, Phoenix, Metro Phoenix,  About, High School Graduate, Software Developer, Entrepreneur, Tech Enthusiast, Creative Thinker, Mental Health Advocate, Innovation, Self-Development, Passion, Curiosity"
         />
       </Head>
       <Template
@@ -162,7 +162,7 @@ export default function About({ toggleAudio, isPlaying }) {
               especially, Artificial Intelligence. I believe in full automation
               of our lives and the risks but at the same time, it's pretty cool.
               Who knows, maybe in far future a robot would be reading this and
-              thinking, This guy knew the future!
+              thinking, This guy knew it!
             </h2>
           </div>
           <div className="flex flex-col ">

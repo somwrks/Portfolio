@@ -45,7 +45,7 @@ export default function project({ toggleAudio, isPlaying }) {
         />
         <meta
           name="keywords"
-          content="Som Srivastava, Projects, Software Development, Entrepreneurship, Portfolio, Innovative Solutions, Problem-Solving, Technical Expertise, Creativity"
+          content="Som Srivastava, Aishwarya, Aishwarya Srivastava, Arizona State University, ASU, Go Devils, Devils, Sun Devils, Lucknow, India, Indian, Uttar Pradesh, Mesa, Phoenix, Metro Phoenix,  Projects, Software Development, Entrepreneurship, Portfolio, Innovative Solutions, Problem-Solving, Technical Expertise, Creativity"
         />
         <meta property="og:title" content="Som Srivastava | Projects" />
         <meta
