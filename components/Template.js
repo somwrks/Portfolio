@@ -23,6 +23,7 @@ export default function Template({
   skills,
   category,
 }) {
+  console.log(icon)
   const [change, setChange] = useState(true);
   const [animation, setAnimation] = useState(true);
   useEffect(() => {

@@ -136,6 +136,7 @@ export default function experience({ toggleAudio, isPlaying }) {
           <Template
             isPlaying={isPlaying}
             img1={data[show].img1 || ""}
+            icon={data[show].icon || ""}
             img2={data[show].img2 || ""}
             img3={data[show].img3 || ""}
             toggleAudio={toggleAudio}

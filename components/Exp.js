@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 
 export default function Exp({setShow,change,title,detail1,index,icon,skills}) {
+
   return (
     <div
     className={`flex flex-col md:flex-row z-0  ${
