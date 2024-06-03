@@ -1,5 +1,21 @@
 [
-    
-    
-  ]
   
+  {
+    "date": "3 June, 2024",
+    "images": ["https://i.ibb.co/8Bpf8zk/IMG20240603155637.jpg"],
+    "title": "Joining up the job season",
+    "description": "Refining up new resume templates and preparing for the worst LOL. Also fixing my freelance gig, will put it up on website soon!",
+    "buttons": [
+      { "text": "Access Resumem", "link": "https://somwrks/contact" }
+    ]
+  },
+  {
+    "date": "2 June, 2024",
+    "images": ["https://i.ibb.co/HHsWBQZ/IMG20240603154937.jpg"],
+    "title": "My First Software Development Project | Desktop",
+    "description": "Building a readme generator app that scans through your repository or project locally to develop a nice readme. I wanna keep refining this project and bring more updates to this, because i have better ideas in mind that could optimize this very well by using different algorithms.",
+    "buttons": [
+      { "text": "Visit Project", "link": "https://github.com/somwrks/OneAI" }
+    ]
+  }
+]
