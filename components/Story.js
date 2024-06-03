@@ -6,7 +6,7 @@ import posts from "../public/post.json";
 export default function Story() {
   
   return (
-    <div className="flex flex-col items-center  w-full text-white    mx-2 ">
+    <div className="flex flex-col items-center  w-full text-white  ">
     {posts[0] ? posts.map((post, index) => (
         <Posts key={index} post={post}/>
     )) 

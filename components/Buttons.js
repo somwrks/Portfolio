@@ -34,7 +34,7 @@ export default function Buttons() {
       </div>
     </div>
   ) : (
-    <div className="flex flex-col fade -right-10 gap-y-16 h-full z-40  top-64 fixed ">
+    <div className="flex flex-col fade md:-right-10 -right-11 gap-y-16 h-full z-40  top-64 fixed ">
       <button
         onClick={() => setShow("freelance")}
         className=" px-4 bg-black rounded-sm fade -rotate-90 mt-12 text-white border-b-0 border text-xl z-40 "
