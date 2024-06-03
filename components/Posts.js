@@ -24,7 +24,7 @@ export default function Posts({ post }) {
           {post.title}
         </div>
         <div className="flex flex-col overflow-hidden text-gray-300 text-md">
-          <p className="overflow-hidden">{post.description}</p>
+          <p style={{ whiteSpace: "pre-wrap" }} className="overflow-hidden">{post.description}</p>
         </div>
         <div className="flex flex-row space-x-3 overflow-hidden  text-md">
           {post.buttons.map((button, btnIndex) => (
