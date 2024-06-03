@@ -1,4 +1,13 @@
 [
+    {
+    "date": "3 June, 2024",
+    "images": ["https://i.ibb.co/jLSkYZ1/IMG20240603170010.jpg"],
+    "title": "Reinforcement Learning Project",
+    "description": "Working on a collaborative project to demonstrate educational stats for ML nerds",
+    "buttons": [
+      { "text": "Visit Project", "link": "https://github.com/somwrks/RL-Maze" }
+    ]
+  },
   {
     "date": "3 June, 2024",
     "images": ["https://i.ibb.co/8Bpf8zk/IMG20240603155637.jpg"],
