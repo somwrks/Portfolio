@@ -12,9 +12,9 @@ export default function Posts({ post }) {
   //   "buttons": [{"text":"Read More", "link":""}, {"text":"Read More", "link":""},{"text":"Read More", "link":""}]
   // },
   return (
-    <div className="flex flex-col overflow-hidden justify-between  min-h-[600px] min-w-[500px]   p-3 md:w-1/3">
+    <div className="flex  flex-col overflow-hidden justify-between  min-h-[600px]    p-3 md:w-1/3">
       <div className="flex flex-col overflow-hidden w-full gap-y-5">
-        <div className="flex flex-col  overflow-hidden text-left text-gray-300 text-2xl">
+        <div className="flex flex-col  overflow-hidden  text-gray-300 text-2xl">
           {post.date}
         </div>
         <div className="flex flex-col overflow-hidden justify-center ">
