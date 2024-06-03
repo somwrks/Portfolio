@@ -12,24 +12,24 @@ export default function Posts({ post }) {
   //   "buttons": [{"text":"Read More", "link":""}, {"text":"Read More", "link":""},{"text":"Read More", "link":""}]
   // },
   return (
-    <div className="flex flex-col overflow-none justify-between space-y-4 min-h-[600px] min-w-[500px] md:min-h-[700px]  p-3 md:min-w-[600px]">
-      <div className="flex flex-col space-y-4">
-        <div className="flex flex-col w-full text-left text-gray-300 text-2xl">
+    <div className="flex flex-col overflow-hidden justify-between  min-h-[600px] min-w-[500px]   p-3 md:w-1/3">
+      <div className="flex flex-col overflow-hidden w-full gap-y-5">
+        <div className="flex flex-col  overflow-hidden text-left text-gray-300 text-2xl">
           {post.date}
         </div>
-        <div className="flex flex-col justify-center w-full">
+        <div className="flex flex-col overflow-hidden justify-center ">
           <Carousel images={post.images} />
         </div>
-        <div className="flex flex-col w-full text-left text-xl">
+        <div className="flex flex-col overflow-hidden  text-xl">
           {post.title}
         </div>
-        <div className="flex flex-col w-full text-left text-md">
-          <p>{post.description}</p>
+        <div className="flex flex-col overflow-hidden text-gray-300 text-md">
+          <p className="overflow-hidden">{post.description}</p>
         </div>
-        <div className="flex flex-row space-x-3 w-full text-left text-md">
+        <div className="flex flex-row space-x-3 overflow-hidden  text-md">
           {post.buttons.map((button, btnIndex) => (
             button &&
-            <button key={btnIndex} className="px-4 py-2 bg-gray-600 text-white hover:mt-2 origin-top">
+            <button key={btnIndex} className="px-4 py-2 overflow-hidden bg-gray-600 text-white hover:mt-2 origin-top">
               <Link target="_blank" rel="noopener noreferrer" href={button.link}>
                 {button.text}
               </Link>

@@ -157,7 +157,7 @@ export default function Home({ toggleAudio, isPlaying }) {
       </div>
       <div className="story-container overflow-y-hidden">
         <div className="scrolling-text overflow-y-hidden">
-          <h2 className="scrolling-text-content overflow-y-hidden">
+          <h2 className="scrolling-text-content text-gray-300 overflow-y-hidden">
             STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY
             STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY
             STORIES STATUS JOURNEY STORIES STATUS JOURNEY
