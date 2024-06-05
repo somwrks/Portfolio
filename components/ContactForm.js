@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from "react";
-
+import {  useUser } from "@clerk/nextjs";
 export default function ContactForm() {
+  const { isSignedIn, user } = useUser();
+  useEffect(() => {
+    if (isSignedIn && user) {
+      setFormData({
+        ...formData,
+        email: user.primaryEmailAddress.emailAddress,
+      });
+    }
+  }, [isSignedIn, user]);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -113,8 +122,8 @@ export default function ContactForm() {
           required
           className="shadow bg-gray-600 appearance-none w-full py-2 px-3 text-gray-200 leading-tight "
         >
-          <option value="Project Inquiry">Resume Inquiry</option>
           <option value="Project Inquiry">Project Inquiry</option>
+          <option value="Resume Inquiry">Resume Inquiry</option>
           <option value="Freelance Work">Freelance Work</option>
           <option value="General Inquiry">General Inquiry</option>
         </select>

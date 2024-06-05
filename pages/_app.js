@@ -83,6 +83,7 @@ export default function App({ Component, pageProps }) {
     };
   }, []);
   const router = useRouter();
+  const [emailSent, setEmailSent] = useState(false);
 
   return (
     
@@ -122,7 +123,7 @@ export default function App({ Component, pageProps }) {
       )}
 
       {!yes ? (
-        <div className="flex-col flex w-full overflow-hidden justify-center bg items-center min-h-screen  ">
+        <div className="flex-col flex w-full overflow-hidden justify-center  items-center h-screen  ">
           <div className="flex flex-col h-[100px] rounded-full  circle w-[100px] absolute"></div>
           <div className="flex flex-col backdrop-blur-xl h-[100px] rounded-full  justify-center items-center w-[100px] absolute ">
             <Image
@@ -136,7 +137,7 @@ export default function App({ Component, pageProps }) {
           </div>
         </div>
       ) : (
-        <Component {...pageProps} toggleAudio={toggleAudio} isPlaying={isPlaying} />
+        <Component {...pageProps} emailSent={emailSent} setEmailSent={setEmailSent} toggleAudio={toggleAudio} isPlaying={isPlaying} />
       )}
       </ClerkProvider>
       <SpeedInsights />

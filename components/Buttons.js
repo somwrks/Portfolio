@@ -1,22 +1,26 @@
 import React, { useState, useEffect, useRef } from "react";
 import { SignInButton, SignedIn, SignedOut, useUser } from "@clerk/nextjs";
 
-export default function Buttons() {
+export default function Buttons({ emailSent, setEmailSent }) {
   const [show, setShow] = useState("");
   const [iframeVisible, setIframeVisible] = useState(false);
   const iframeRef = useRef(null);
   const { isSignedIn, user } = useUser();
-  const [emailSent, setEmailSent] = useState(false);
 
   useEffect(() => {
     if (isSignedIn && user && !emailSent) {
-      const updatedFormData = {
-        name: user.fullName,
-        email: user.primaryEmailAddress.emailAddress,
-        subject: `${show.toUpperCase()} Access`,
-        message: `${user.fullName} accessed your resume`,
-      };
-      handleSubmit(updatedFormData);
+      const lastEmailSentTime = localStorage.getItem("lastEmailSentTime");
+      const currentTime = new Date().getTime();
+
+      if (!lastEmailSentTime || currentTime - lastEmailSentTime > 3600000) {
+        const updatedFormData = {
+          name: user.fullName,
+          email: user.primaryEmailAddress.emailAddress,
+          subject: `${show.toUpperCase()} Access`,
+          message: `${user.fullName} accessed your resume`,
+        };
+        handleSubmit(updatedFormData);
+      }
     }
   }, [isSignedIn, user, emailSent]);
 
@@ -29,7 +33,8 @@ export default function Buttons() {
       body: JSON.stringify(updatedFormData),
     });
     if (res.ok) {
-      setEmailSent(true); 
+      localStorage.setItem("lastEmailSentTime", new Date().getTime());
+      setEmailSent(true);
     } else {
       alert("Failed to send the message. Please try again.");
     }

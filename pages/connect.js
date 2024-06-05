@@ -7,13 +7,14 @@ import React, { useState, useEffect } from "react";
 import ContactForm from "@/components/ContactForm";
 import Buttons from "@/components/Buttons";
 
-export default function Connect({ toggleAudio, isPlaying }) {
+export default function Connect({ toggleAudio, isPlaying, setEmailSent,emailSent }) {
   const [change, setChange] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setChange(false);
     }, 3000);
   }, []);
+
   return (
     <>
       <Head>
@@ -38,7 +39,7 @@ export default function Connect({ toggleAudio, isPlaying }) {
           change ? "opacity-0" : "opacity-100"
         } transition-all flex-col justify-center items-center w-full `}
       >
-        <Buttons />
+        <Buttons setEmailSent={setEmailSent} emailSent={emailSent} />
         <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
         <div className="flex flex-col w-full  md:w-[60%] md:mx-auto p-4 space-y-4 backdrop-blur-md">
           <div className="flex items-center flex-row ">

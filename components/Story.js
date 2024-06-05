@@ -42,7 +42,7 @@ export default function Story() {
           key={index}
           data-index={index}
           ref={el => postRefs.current[index] = el}
-          className={`post flex flex-col items-center w-full text-white ${visiblePosts[index] ? 'fade-in' : 'fade-out'}`}
+          className={`post flex flex-col md:items-center w-full text-white ${visiblePosts[index] ? 'fade-in' : 'fade-out'}`}
         >
           <Posts post={post} />
         </div>

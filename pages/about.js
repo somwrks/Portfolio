@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function About({ toggleAudio, isPlaying }) {
+export default function About({ toggleAudio, isPlaying,setEmailSent,emailSent}) {
   return (
     <>
       <Head>

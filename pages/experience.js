@@ -8,7 +8,7 @@ import Buttons from "@/components/Buttons";
 import Sorting from "@/components/Sorting";
 import Player from "@/components/Player";
 
-export default function experience({ toggleAudio, isPlaying }) {
+export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSent }) {
   const [change, setChange] = useState(true);
   const [show, setShow] = useState(null);
   const [search, setSearch] = useState("All");
@@ -61,7 +61,7 @@ export default function experience({ toggleAudio, isPlaying }) {
           {change && (
             <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />
           )}
-          <Buttons />
+          <Buttons setEmailSent={setEmailSent} emailSent={emailSent}/>
           <div
             className={`flex ${
               change ? "opacity-0" : "opacity-100"

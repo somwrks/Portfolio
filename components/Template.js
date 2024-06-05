@@ -21,7 +21,7 @@ export default function Template({
   setShow,
   isPlaying,
   skills,
-  category,
+  category,setEmailSent,emailSent
 }) {
   console.log(icon)
   const [change, setChange] = useState(true);
@@ -71,7 +71,7 @@ export default function Template({
           change ? "opacity-0" : "opacity-100"
         }  transition-all flex-col select-none justify-start mt-12 items-center z-0 w-full h-full`}
       >
-        <Buttons />
+        <Buttons setEmailSent={setEmailSent} emailSent={emailSent} />
         {!isNaN(image) && (
           <div className="absolute top-0 md:top-10 left-0 md:left-10 m-4">
             <SuspenseImage

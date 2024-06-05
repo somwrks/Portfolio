@@ -9,7 +9,7 @@ import data from "../public/project.json";
 import Buttons from "@/components/Buttons";
 import Sorting from "@/components/Sorting";
 
-export default function project({ toggleAudio, isPlaying }) {
+export default function project({ toggleAudio, isPlaying ,setEmailSent,emailSent}) {
   const [change, setChange] = useState(true);
   const [show, setShow] = useState(null);
   useEffect(() => {
@@ -60,7 +60,7 @@ export default function project({ toggleAudio, isPlaying }) {
           {change && (
             <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />
           )}
-          <Buttons />
+          <Buttons setEmailSent={setEmailSent} emailSent={emailSent}/>
 
           <div
             className={`flex ${

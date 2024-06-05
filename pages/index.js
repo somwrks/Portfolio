@@ -8,7 +8,7 @@ import Buttons from "@/components/Buttons";
 
 const DynamicStory = dynamic(() => import('@/components/Story'));
 
-export default function Home({ toggleAudio, isPlaying }) {
+export default function Home({ toggleAudio, isPlaying ,setEmailSent, emailSent}) {
   const app = useRouter();
   const go = (e) => {
     if (typeof window !== "undefined") {
@@ -133,7 +133,7 @@ export default function Home({ toggleAudio, isPlaying }) {
           change ? " opacity-0 " : " opacity-100 "
         } select-none transition-all flex-col overflow-none md:items-center  justify-center cursor-none  w-full min-h-screen`}
       >
-        <Buttons />
+        <Buttons setEmailSent={setEmailSent} emailSent={emailSent} />
 
         <div
           onClick={start}
