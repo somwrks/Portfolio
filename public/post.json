@@ -1,5 +1,14 @@
 [
     {
+    "date": "5 June, 2024",
+    "images": ["https://i.ibb.co/QvKSZ5k/IMG20240605135513.jpg"],
+    "title": "Andrew's Courses",
+    "description": "Past week i've been revising andrew's courses and honestly it's THE best for anyone getting into AI",
+    "buttons": [
+      { "text": "Visit Project", "link": "https://github.com/somwrks/RL-Maze" }
+    ]
+  },
+    {
     "date": "3 June, 2024",
     "images": ["https://i.ibb.co/jLSkYZ1/IMG20240603170010.jpg"],
     "title": "Reinforcement Learning Project",
