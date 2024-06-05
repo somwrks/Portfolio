@@ -92,7 +92,7 @@ export default function Buttons({ emailSent, setEmailSent }) {
           <div className="flex flex-col p-2 w-full h-full" ref={iframeRef}>
             {iframeVisible ? (
               <>
-                // <SignedIn>
+                 {/* <SignedIn> */}
                   <iframe
                     src={process.env.NEXT_PUBLIC_RESUME_LINK}
                     width="100%"
@@ -108,25 +108,25 @@ export default function Buttons({ emailSent, setEmailSent }) {
                   >
                     Download Resume
                   </a>
-                // </SignedIn>
-                // <SignedOut>
-                //   <div
-                //     className={`flex flex-col text-white md:w-1/2 w-full h-[800px] items-center  bg-gray-900 bg-opacity-80 backdrop-blur-md fixed z-50`}
-                //   >
-                //     <div className="p-3 border text-md rounded-2xl">
-                //       <SignInButton>
-                //         <button>Sign in to access</button>
-                //       </SignInButton>
-                //     </div>
-                //   </div>
-                //   <img
-                //     src="/resume.jpg"
-                //     width="100%"
-                //     height="100%"
-                //     className="h-[800px] -z-1 flex items-center justify-center"
-                //     allow="autoplay"
-                //   ></img>
-                // </SignedOut>
+                 {/* </SignedIn> */}
+                 {/* <SignedOut> */}
+                   {/* <div
+                     className={`flex flex-col text-white md:w-1/2 w-full h-[800px] items-center  bg-gray-900 bg-opacity-80 backdrop-blur-md fixed z-50`}
+                   >
+                     <div className="p-3 border text-md rounded-2xl">
+                       <SignInButton>
+                         <button>Sign in to access</button>
+                       </SignInButton>
+                     </div>
+                   </div>
+                   <img
+                     src="/resume.jpg"
+                     width="100%"
+                     height="100%"
+                     className="h-[800px] -z-1 flex items-center justify-center"
+                     allow="autoplay"
+                   ></img> */}
+                 {/* </SignedOut> */}
               </>
             ) : (
               <div className="flex justify-center items-center h-full">
@@ -138,7 +138,7 @@ export default function Buttons({ emailSent, setEmailSent }) {
           <div className="flex flex-col p-2 w-full h-full" ref={iframeRef}>
             {iframeVisible ? (
               <>
-                // <SignedIn>
+                 {/* <SignedIn> */}
                   <iframe
                     src={process.env.NEXT_PUBLIC_FREELANCE_LINK}
                     width="100%"
@@ -153,25 +153,25 @@ export default function Buttons({ emailSent, setEmailSent }) {
                   >
                     Download Freelance
                   </Link>
-                // </SignedIn>
-                // <SignedOut>
-                //   <div
-                //     className={`flex flex-col text-white md:w-1/2 w-full h-[800px] items-center  bg-gray-900 bg-opacity-80 backdrop-blur-md fixed z-50`}
-                //   >
-                //     <div className="p-3 border text-md rounded-2xl">
-                //       <SignInButton>
-                //         <button>Sign in to access</button>
-                //       </SignInButton>
-                //     </div>
-                //   </div>
-                //   <img
-                //     src="/resume.jpg"
-                //     width="100%"
-                //     height="100%"
-                //     className="h-[800px] -z-1 flex items-center justify-center"
-                //     allow="autoplay"
-                //   ></img>
-                // </SignedOut>
+                 {/* </SignedIn> */}
+                 {/* <SignedOut>
+                   <div
+                     className={`flex flex-col text-white md:w-1/2 w-full h-[800px] items-center  bg-gray-900 bg-opacity-80 backdrop-blur-md fixed z-50`}
+                   >
+                     <div className="p-3 border text-md rounded-2xl">
+                       <SignInButton>
+                         <button>Sign in to access</button>
+                       </SignInButton>
+                     </div>
+                   </div>
+                   <img
+                     src="/resume.jpg"
+                     width="100%"
+                     height="100%"
+                     className="h-[800px] -z-1 flex items-center justify-center"
+                     allow="autoplay"
+                   ></img>
+                 </SignedOut> */}
               </>
             ) : (
               <div className="flex justify-center items-center h-full">
