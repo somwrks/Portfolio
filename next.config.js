@@ -18,6 +18,13 @@ const nextConfig = {
 
     return config;
   },
+   experimental: {
+     turbo: {
+       resolveAlias: {
+         canvas: './empty-module.ts',
+   },
+     },
+   },
   reactStrictMode: true,
   images: {
     domains: ['img.clerk.com',"i.ibb.co","i.imgur.com",'picsum.photos'],

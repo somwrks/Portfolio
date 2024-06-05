@@ -113,6 +113,7 @@ export default function ContactForm() {
           required
           className="shadow bg-gray-600 appearance-none w-full py-2 px-3 text-gray-200 leading-tight "
         >
+          <option value="Project Inquiry">Resume Inquiry</option>
           <option value="Project Inquiry">Project Inquiry</option>
           <option value="Freelance Work">Freelance Work</option>
           <option value="General Inquiry">General Inquiry</option>
