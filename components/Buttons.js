@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { SignInButton, SignedIn, SignedOut, useUser } from "@clerk/nextjs";
+import Link from "next/link";
 
 export default function Buttons({ emailSent, setEmailSent }) {
   const [show, setShow] = useState("");
@@ -41,7 +42,7 @@ export default function Buttons({ emailSent, setEmailSent }) {
   };
 
   useEffect(() => {
-    if (show === "resume") {
+    if (show === "resume" || show === "freelance") {
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
@@ -94,12 +95,20 @@ export default function Buttons({ emailSent, setEmailSent }) {
               <>
                 <SignedIn>
                   <iframe
-                    src="https://drive.google.com/file/d/165w5EF5gtC2w7vRot5xZiRWuhIg38A4z/preview"
+                    src={process.env.NEXT_PUBLIC_RESUME_LINK}
                     width="100%"
                     height="100%"
+                    
                     className="h-[800px] -z-1"
                     allow="autoplay"
                   ></iframe>
+                  <a
+                    href="/api/download?type=resume"
+                    className="mt-4 px-4 py-2 bg-gray-600 text-center text-white rounded"
+                    download
+                  >
+                    Download Resume
+                  </a>
                 </SignedIn>
                 <SignedOut>
                   <div
@@ -132,12 +141,19 @@ export default function Buttons({ emailSent, setEmailSent }) {
               <>
                 <SignedIn>
                   <iframe
-                    src="https://drive.google.com/file/d/1v2R4Ui9GBApIwQQj5x_F6KBaEtuJGY4-/preview"
+                    src={process.env.NEXT_PUBLIC_FREELANCE_LINK}
                     width="100%"
                     height="100%"
                     className="h-[800px] -z-1"
                     allow="autoplay"
                   ></iframe>
+                  <Link
+                    href="/api/download?type=freelance"
+                    className="mt-4 px-4 py-2 bg-gray-600 text-center text-white rounded"
+                    download
+                  >
+                    Download Freelance
+                  </Link>
                 </SignedIn>
                 <SignedOut>
                   <div

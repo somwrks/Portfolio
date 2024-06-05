@@ -296,3 +296,6 @@ a:hover{
 .post.fade-out {
   opacity: 0;
 }
+#toolbar {
+  display: none;
+}
