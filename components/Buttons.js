@@ -98,7 +98,7 @@ export default function Buttons({ emailSent, setEmailSent }) {
                     width="100%"
                     height="100%"
                     
-                    className="h-[800px] -z-1"
+                    className="h-[500px] md:h-[800px] -z-1"
                     allow="autoplay"
                   ></iframe>
                   <a
@@ -111,7 +111,7 @@ export default function Buttons({ emailSent, setEmailSent }) {
                 </SignedIn>
                 <SignedOut>
                   <div
-                    className={`flex flex-col text-white md:w-1/2 w-full h-[800px] items-center justify-center bg-gray-900 bg-opacity-80 backdrop-blur-md fixed z-50`}
+                    className={`flex flex-col text-white md:w-1/2 w-full h-[800px] items-center  bg-gray-900 bg-opacity-80 backdrop-blur-md fixed z-50`}
                   >
                     <div className="p-3 border text-md rounded-2xl">
                       <SignInButton>
@@ -143,7 +143,7 @@ export default function Buttons({ emailSent, setEmailSent }) {
                     src={process.env.NEXT_PUBLIC_FREELANCE_LINK}
                     width="100%"
                     height="100%"
-                    className="h-[800px] -z-1"
+                    className="h-[500px] md:h-[800px] -z-1"
                     allow="autoplay"
                   ></iframe>
                   <Link
@@ -156,7 +156,7 @@ export default function Buttons({ emailSent, setEmailSent }) {
                 </SignedIn>
                 <SignedOut>
                   <div
-                    className={`flex flex-col text-white md:w-1/2 w-full h-[800px] items-center justify-center bg-gray-900 bg-opacity-80 backdrop-blur-md fixed z-50`}
+                    className={`flex flex-col text-white md:w-1/2 w-full h-[800px] items-center  bg-gray-900 bg-opacity-80 backdrop-blur-md fixed z-50`}
                   >
                     <div className="p-3 border text-md rounded-2xl">
                       <SignInButton>
