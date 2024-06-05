@@ -28,9 +28,27 @@
     "date": "29 April, 2024",
     "images": ["https://i.ibb.co/SvsBgJp/image.png"],
     "title": "starting my website blogs",
-    "description": "I may post sometimes about my work or fun related stuff on this website...\n Also finished the office for 3rd time!",
+    "description": "I may post sometimes about my work or fun related stuff on this website...\nAlso finished the office for 3rd time!",
     "buttons": [
       { "text": "The Office", "link": "https://en.wikipedia.org/wiki/The_Office_(American_TV_series)" }
+    ]
+  },
+      {
+    "date": "18 November, 2023",
+    "images": ["https://i.ibb.co/WB2n0ds/image.png"],
+    "title": "Featured startup in School Magazine (LOL)",
+    "description": "Glad to be featured in school's year magazine for our work",
+    "buttons": [
+      { "text": "View Post", "link": "https://www.facebook.com/photo/?fbid=376400898075425&set=a.189456243436559" }
+    ]
+  },
+      {
+    "date": "14 November, 2023",
+    "images": ["https://i.ibb.co/SvsBgJp/image.png"],
+    "title": "Featured Entrepreneur",
+    "description": "Talked about my progress",
+    "buttons": [
+      { "text": "Visit", "link": "https://thefuturemogulmagazine.webflow.io/issues" }
     ]
   }
 ]
