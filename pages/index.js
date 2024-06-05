@@ -3,8 +3,10 @@ import Head from "next/head";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Story from "@/components/Story";
+import dynamic from 'next/dynamic';
 import Buttons from "@/components/Buttons";
+
+const DynamicStory = dynamic(() => import('@/components/Story'));
 
 export default function Home({ toggleAudio, isPlaying }) {
   const app = useRouter();
@@ -14,6 +16,9 @@ export default function Home({ toggleAudio, isPlaying }) {
     }
   };
   const [change, setChange] = useState(true);
+  const [isStoryVisible, setIsStoryVisible] = useState(false);
+  const storyRef = useRef(null);
+
   useEffect(() => {
     setTimeout(() => {
       setChange(false);
@@ -77,6 +82,32 @@ export default function Home({ toggleAudio, isPlaying }) {
 
     return () => {
       window.removeEventListener("wheel", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsStoryVisible(true);
+          observer.disconnect(); // Stop observing once the component is visible
+        }
+      },
+      {
+        root: null, // Use the viewport as the root
+        rootMargin: "0px",
+        threshold: 0.01, // Trigger when 10% of the component is visible
+      }
+    );
+
+    if (storyRef.current) {
+      observer.observe(storyRef.current);
+    }
+
+    return () => {
+      if (storyRef.current) {
+        observer.unobserve(storyRef.current);
+      }
     };
   }, []);
 
@@ -155,7 +186,7 @@ export default function Home({ toggleAudio, isPlaying }) {
           </div>
         </div>
       </div>
-      <div  className="story-container overflow-y-hidden">
+      <div className="story-container overflow-y-hidden" ref={storyRef}>
         <div className="scrolling-text overflow-y-hidden">
           <h2 className="scrolling-text-content text-gray-300 overflow-y-hidden">
             STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY
@@ -164,7 +195,7 @@ export default function Home({ toggleAudio, isPlaying }) {
           </h2>
         </div>
       </div>
-      <Story />
+      {isStoryVisible && <DynamicStory />}
     </>
   );
 }

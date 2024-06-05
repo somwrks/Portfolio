@@ -284,3 +284,15 @@ a:hover{
 .no-animation {
   animation: none;
 }
+.post {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.post.fade-in {
+  opacity: 1;
+}
+
+.post.fade-out {
+  opacity: 0;
+}
