@@ -10,6 +10,7 @@
     "git": "git add . && git commit -m \"Workin\" && git push"
   },
   "dependencies": {
+    "@clerk/nextjs": "^5.1.3",
     "@nextui-org/react": "^2.1.13",
     "@react-pdf-viewer/core": "^3.12.0",
     "@sendgrid/mail": "^8.1.3",

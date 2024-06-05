@@ -5,6 +5,7 @@ import AnimatedCursor from "react-animated-cursor";
 import Head from "next/head";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { useRouter } from "next/router";
+import { ClerkProvider } from "@clerk/nextjs";
 
 export default function App({ Component, pageProps }) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -84,7 +85,11 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   return (
-    <>{router.pathname!="/about" &&
+    
+    <>
+    <ClerkProvider publishableKey="pk_test_cHJvdmVuLWJhYm9vbi03Ny5jbGVyay5hY2NvdW50cy5kZXYk">
+
+    {router.pathname!="/about" &&
        <Head>
         <title>Som Srivastava | Software Developer and Entrepreneur</title>
         <meta
@@ -133,6 +138,7 @@ export default function App({ Component, pageProps }) {
       ) : (
         <Component {...pageProps} toggleAudio={toggleAudio} isPlaying={isPlaying} />
       )}
+      </ClerkProvider>
       <SpeedInsights />
     </>
   );

@@ -14,7 +14,6 @@ export default function Connect({ toggleAudio, isPlaying }) {
       setChange(false);
     }, 3000);
   }, []);
-  // const [display, setDisplay] = useState(false);
   return (
     <>
       <Head>
@@ -32,23 +31,7 @@ export default function Connect({ toggleAudio, isPlaying }) {
         <link rel="icon" href="som.webp" />
       </Head>
       {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />}
-      {/* <div className="flex  fixed h-full w-full right-5 bottom-5 items-end justify-end  flex-col">
-        {display && (
-          <iframe
-            className="mb-4 z-50 h-1/2"
-            src="https://www.chatbase.co/chatbot-iframe/kPOPka9XYJQlI1nISptE2"
-            title="Som"
-          ></iframe>
-        )}
-        <button
-          onClick={() => {
-            display ? setDisplay(false) : setDisplay(true);
-          }}
-          className="py-4 px-3 w-1/12 rounded-full bg-white text-xl text-center"
-        >
-          {display ? "Close" : "Chat"}
-        </button>
-      </div> */}
+     
 
       <div
         className={`flex ${
@@ -91,18 +74,6 @@ export default function Connect({ toggleAudio, isPlaying }) {
           </div>
         </div>
       </div>
-      {/* <script>
-        {`window.embeddedChatbotConfig = {
-          chatbotId: "kPOPka9XYJQlI1nISptE2",
-          domain: "www.chatbase.co"
-        }`}
-      </script>
-      <script
-        src="https://www.chatbase.co/embed.min.js"
-        chatbotId="kPOPka9XYJQlI1nISptE2"
-        domain="www.chatbase.co"
-        defer
-      ></script> */}
     </>
   );
 }
