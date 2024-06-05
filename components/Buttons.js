@@ -68,7 +68,6 @@ export default function Buttons({ emailSent, setEmailSent }) {
       };
     }
   }, [show]);
-
   return show ? (
     <div
       onClick={(e) => e.target.classList.contains("outer-box") && setShow("")}
