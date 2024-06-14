@@ -6,6 +6,9 @@ import Head from "next/head";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { useRouter } from "next/router";
 import { ClerkProvider } from "@clerk/nextjs";
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 export default function App({ Component, pageProps }) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -20,9 +23,9 @@ export default function App({ Component, pageProps }) {
         document.body.style.backgroundImage =
           "linear-gradient(45deg, #2355d5, #000000)";
       }
-      // Initialize the audio element and store it in the ref
+      // Initialize the audio 7 and store it in the ref
       audioRef.current = new Audio("/music.mp3");
-      audioRef.current.volume = 0.3;
+      audioRef.current.volume = 0.1;
       audioRef.current.addEventListener("ended", () => {
         // Reset the audio to the beginning when it ends to loop infinitely
         audioRef.current.currentTime = 0;
@@ -123,7 +126,7 @@ export default function App({ Component, pageProps }) {
       )}
 
       {!yes ? (
-        <div className="flex-col flex w-full overflow-hidden justify-center  items-center h-screen  ">
+        <div className="flex-col flex w-full overflow-hidden justify-center  items-center min-h-screen  ">
           <div className="flex flex-col h-[100px] rounded-full  circle w-[100px] absolute"></div>
           <div className="flex flex-col backdrop-blur-xl h-[100px] rounded-full  justify-center items-center w-[100px] absolute ">
             <Image

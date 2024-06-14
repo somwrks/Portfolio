@@ -299,3 +299,21 @@ a:hover{
 #toolbar {
   display: none;
 }
+
+.animatearrow{
+  opacity: 0;
+  animation: animatearrow 5s ease-in-out forwards ;
+  animation-delay: 1s;
+transform: translateY(20px);
+}
+
+@keyframes animatearrow {
+  0%{
+    opacity: 1;
+    }
+    100%{
+      transform: translateY(500px);
+      
+      opacity: 0;
+  }
+}

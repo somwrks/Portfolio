@@ -73,7 +73,7 @@ export default function Buttons({ emailSent, setEmailSent }) {
       onClick={(e) => e.target.classList.contains("outer-box") && setShow("")}
       className="flex fade flex-col top-0 w-full min-h-screen fixed outer-box items-center backdrop-blur-lg z-40 "
     >
-      <div className="flex fade bg-gray-900 space-y-3 flex-col w-full md:w-1/2 mt-14 min-h-[700px] md:min-h-[50vw] items-start">
+      <div className="flex fade bg-gray-900 space-y-3 flex-col w-full md:w-1/2 mt-14 min-h-[100vw] md:min-h-[50vw] items-start">
         <div className="flex flex-row w-full justify-between h-full">
           <button
             onClick={() => setShow("resume")}
@@ -89,16 +89,18 @@ export default function Buttons({ emailSent, setEmailSent }) {
           </button>
         </div>
         {show === "resume" ? (
-          <div className="flex flex-col p-2 w-full h-full" ref={iframeRef}>
+          <div className="flex flex-col p-2 w-full " ref={iframeRef}>
             {iframeVisible ? (
               <>
                  {/* <SignedIn> */}
+                 {/* <div className="flex flex-col h-full w-full"> */}
+
                   <iframe
                     src={process.env.NEXT_PUBLIC_RESUME_LINK}
-                    width="100%"
-                    height="100%"
+                    // width="100%"
+                    // height="100%"
                     
-                    className="h-[500px] md:h-[800px] -z-1"
+                    className="w-full md:h-[50vw] h-[100vw] -z-1"
                     allow="autoplay"
                   ></iframe>
                   <a
@@ -108,6 +110,7 @@ export default function Buttons({ emailSent, setEmailSent }) {
                   >
                     Download Resume
                   </a>
+                 {/* </div> */}
                  {/* </SignedIn> */}
                  {/* <SignedOut> */}
                    {/* <div
