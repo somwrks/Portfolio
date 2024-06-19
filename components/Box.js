@@ -9,7 +9,7 @@ const Box = ({ imageUrl, overlayText, icon }) => {
 
   return (
     <div
-      className="relative transition-all w-[70vw] h-[100vw] md:w-[12vw]  md:h-[30vw] bg-cover bg-center "
+      className="relative transition-all h-[100vw] w-full md:gap-y-0 gap-y-1 md:h-[30vw] bg-cover bg-center "
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
        
@@ -19,7 +19,7 @@ const Box = ({ imageUrl, overlayText, icon }) => {
             className="text-white text-[1vw] font-semibold  up"
           >
                         <Image loading="lazy"    onError={(err) => console.error('Error loading image:', err)}
-  src={`/${icon}.svg`} width={50} height={50} />
+  src={`/${icon}.svg`} width={70} height={70} />
           </Link>
         </div>
       

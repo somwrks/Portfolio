@@ -46,12 +46,12 @@ export default function Connect({ toggleAudio, isPlaying, setEmailSent,emailSent
             <h1 className="text-[9vw] md:text-[4vw] text-gray-200">Connect</h1>
           </div>
           <div>
-            <h1 className="text-white text-[3vw] md:text-[1vw] font-semibold">
-              Business Email : somwrks.queries@gmail.com
+            <h1 className="text-white text-[3vw] md:text-[1vw] ">
+             somwrks.queries@gmail.com
             </h1>
           </div>
           <ContactForm />
-          <div className="flex flex-col md:flex-row flex-wrap w-full items-center justify-between  pt-3 ">
+          <div className="flex flex-col md:flex-row flex-wrap md:flex-nowrap w-full items-center   pt-3 ">
             <Box
               imageUrl="/linkedin.webp"
               icon="linkedinicon"

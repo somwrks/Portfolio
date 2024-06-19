@@ -87,7 +87,7 @@ export default function ContactForm() {
           value={formData.name}
           onChange={handleChange}
           required
-          className="shadow bg-gray-600 appearance-none w-full py-2 px-3 text-gray-200 leading-tight "
+          className="shadow bg-black appearance-none w-full py-2 px-3 text-gray-200 leading-tight "
         />
       </div>
       <div className="mb-4">
@@ -104,7 +104,7 @@ export default function ContactForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="shadow bg-gray-600 appearance-none w-full py-2 px-3 text-gray-200 leading-tight "
+          className="shadow bg-black appearance-none w-full py-2 px-3 text-gray-200 leading-tight "
         />
       </div>
       <div className="mb-4">
@@ -120,7 +120,7 @@ export default function ContactForm() {
           value={formData.subject}
           onChange={handleChange}
           required
-          className="shadow bg-gray-600 appearance-none w-full py-2 px-3 text-gray-200 leading-tight "
+          className="shadow bg-black appearance-none w-full py-2 px-3 text-gray-200 leading-tight "
         >
           <option value="Project Inquiry">Project Inquiry</option>
           <option value="Resume Inquiry">Resume Inquiry</option>
@@ -141,7 +141,7 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           required
-          className="shadow bg-gray-600 appearance-none w-full py-2 px-3 text-gray-200 leading-tight  h-32"
+          className="shadow bg-black appearance-none w-full py-2 px-3 text-gray-200 leading-tight  h-32"
         ></textarea>
       </div>
       <div className={`mb-4 items-center transition-all duration-1000 `}>
