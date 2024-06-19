@@ -51,7 +51,7 @@ export default function Connect({ toggleAudio, isPlaying, setEmailSent,emailSent
             </h1>
           </div>
           <ContactForm />
-          <div className="flex flex-col md:flex-row flex-wrap w-full items-center justify-between gap-5 pt-3 ">
+          <div className="flex flex-col md:flex-row flex-wrap w-full items-center justify-between  pt-3 ">
             <Box
               imageUrl="/linkedin.webp"
               icon="linkedinicon"
