@@ -70,7 +70,7 @@ export default function Home({
       if (scrollingText) {
         const currentTransform = transformAmountRef.current;
         const distance = targetTransformRef.current - currentTransform;
-        const easing = 0.7; // Adjust the easing value for smoother scrolling
+        const easing = 0.04; // Adjust the easing value for smoother scrolling
 
         if (Math.abs(distance) > 0.1) {
           transformAmountRef.current += distance * easing;
