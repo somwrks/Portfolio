@@ -29,7 +29,7 @@ export default function Posts({ post }) {
         <div className="flex flex-row space-x-3 overflow-hidden  text-md">
           {post.buttons.map((button, btnIndex) => (
             button &&
-            <button key={btnIndex} className="px-4 py-2 overflow-hidden bg-gray-600 text-white hover:scale-105 origin-top">
+            <button key={btnIndex} className="px-4 py-2 overflow-hidden bg-black border text-white hover:scale-105 origin-top">
               <Link target="_blank" rel="noopener noreferrer" href={button.link}>
                 {button.text}
               </Link>

@@ -50,7 +50,11 @@ body {
   background-image: url("../public/me.webp");
   background-size: cover;
   background-blend-mode: darken;
+  transition: all 0.5s;
   background-repeat: no-repeat;
+}
+.circle:hover{
+  scale: 1.03;
 }
 @keyframes fadeInOut {
   0%, 100% {

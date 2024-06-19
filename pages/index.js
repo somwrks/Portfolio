@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import dynamic from 'next/dynamic';
 import Buttons from "@/components/Buttons";
-import Downarrow from "@/components/Downarrow";
 
 const DynamicStory = dynamic(() => import('@/components/Story'));
 
@@ -128,7 +127,7 @@ export default function Home({ toggleAudio, isPlaying ,setEmailSent, emailSent})
         <link rel="icon" href="som.webp" />
       </Head>
       {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />}
-      <Downarrow/>
+      
       <div
         className={`flex  ${
           change ? " opacity-0 " : " opacity-100 "
@@ -140,12 +139,12 @@ export default function Home({ toggleAudio, isPlaying ,setEmailSent, emailSent})
           onClick={start}
           className={`flex ${
             isPlaying ? "circleanimation" : "circleanimation pause"
-          } flex-col overflow-none right-16 top-12  md:top-auto md:right-auto  md:h-[13vw] h-[150px] w-[150px] rounded-full  circle md:w-[13vw] absolute cursor-none`}
+          } flex-col overflow-none right-16 top-12  md:top-auto md:right-auto transition-all  md:h-[13vw] h-[150px] w-[150px] rounded-full  circle md:w-[13vw] absolute cursor-none`}
         ></div>
         
         <div className="flex flex-col md:flex-row justify-between ">
           <div
-            className="md:w-[50vw]    shadow-2xl flex items-center md:justify-center h-[26.3vw]  effectbg"
+            className="md:w-[50vw]  border border-l-0 border-t-0    shadow-2xl flex items-center md:justify-center h-[26.3vw]  effectbg"
             onClick={() => go("/about")}
           >
             <div>
@@ -155,7 +154,7 @@ export default function Home({ toggleAudio, isPlaying ,setEmailSent, emailSent})
             </div>
           </div>
           <div
-            className="md:w-[50vw]    shadow-2xl flex items-center md:justify-center h-[26.3vw]  effectbg"
+            className="md:w-[50vw]  border border-r-0 border-l-0 border-t-0   shadow-2xl flex items-center md:justify-center h-[26.3vw]  effectbg"
             onClick={() => go("/experience")}
           >
             <div>
@@ -167,7 +166,7 @@ export default function Home({ toggleAudio, isPlaying ,setEmailSent, emailSent})
         </div>
         <div className="flex flex-col md:flex-row justify-between ">
           <div
-            className="md:w-[50vw]    shadow-2xl flex items-center md:justify-center h-[26.3vw]  effectbg"
+            className="md:w-[50vw] border border-l-0  border-t-0 md:border-b-0   shadow-2xl flex items-center md:justify-center h-[26.3vw]  effectbg"
             onClick={() => go("/project")}
           >
             <div>
@@ -177,7 +176,7 @@ export default function Home({ toggleAudio, isPlaying ,setEmailSent, emailSent})
             </div>
           </div>
           <div
-            className="md:w-[50vw]    shadow-2xl flex items-center md:justify-center h-[26.3vw]  effectbg"
+            className="md:w-[50vw] border border-l-0 border-r-0  border-t-0 md:border-b-0   shadow-2xl flex items-center md:justify-center h-[26.3vw]  effectbg"
             onClick={() => go("/connect")}
           >
             <div>
@@ -188,7 +187,7 @@ export default function Home({ toggleAudio, isPlaying ,setEmailSent, emailSent})
           </div>
         </div>
       </div>
-      <div className="story-container overflow-y-hidden" ref={storyRef}>
+      <div className="story-container sticky top-0 overflow-y-hidden" ref={storyRef}>
         <div className="scrolling-text overflow-y-hidden">
           <h2 className="scrolling-text-content text-gray-300 overflow-y-hidden">
             STORIES STATUS JOURNEY STORIES STATUS JOURNEY STORIES STATUS JOURNEY

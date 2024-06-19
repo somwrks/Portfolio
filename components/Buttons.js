@@ -146,7 +146,7 @@ export default function Buttons({ emailSent, setEmailSent }) {
                     src={process.env.NEXT_PUBLIC_FREELANCE_LINK}
                     width="100%"
                     height="100%"
-                    className="h-[500px] md:h-[800px] -z-1"
+                    className="w-full md:h-[50vw] h-[100vw] -z-1"
                     allow="autoplay"
                   ></iframe>
                   <Link

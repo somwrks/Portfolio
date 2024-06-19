@@ -23,7 +23,7 @@ export default function About({ toggleAudio, isPlaying,setEmailSent,emailSent}) 
 
         <meta
           name="keywords"
-          content="Som Srivastava, Aishwarya, Aishwarya Srivastava, Arizona State University, ASU, Go Devils, Devils, Sun Devils, Lucknow, India, Indian, Uttar Pradesh, Mesa, Phoenix, Metro Phoenix,  About, High School Graduate, Software Developer, Entrepreneur, Tech Enthusiast, Creative Thinker, Mental Health Advocate, Innovation, Self-Development, Passion, Curiosity"
+          content="Som Srivastava, Som Developer, Srivastava Developer, Aishwarya Developer, Srivastava Aishwarya, Aishwarya Srivastava, Arizona State University, ASU, Go Devils, Devils, Sun Devils, Lucknow, India, Indian, Uttar Pradesh, Mesa, Phoenix, Metro Phoenix,  About, High School Graduate, Software Developer, Entrepreneur, Tech Enthusiast, Creative Thinker, Mental Health Advocate, Innovation, Self-Development, Passion, Curiosity"
         />
       </Head>
       <Template
@@ -63,7 +63,7 @@ export default function About({ toggleAudio, isPlaying,setEmailSent,emailSent}) 
               <SuspenseImage
                 loading="lazy"
                 src={
-                  "https://i.ibb.co/LJYxrB7/444883849-1442136866670626-8703902264842006915-n.jpg"
+                  "https://i.ibb.co/zrhCfVm/image.png"
                 }
                 width={500}
                 height={500}

@@ -21,16 +21,19 @@ export default function Template({
   setShow,
   isPlaying,
   skills,
-  category,setEmailSent,emailSent
+  category,
+  setEmailSent,
+  emailSent
 }) {
-  console.log(icon)
   const [change, setChange] = useState(true);
   const [animation, setAnimation] = useState(true);
+
   useEffect(() => {
     setTimeout(() => {
       setChange(false);
       setAnimation(false);
     }, 3000);
+
     const handleBeforeUnload = (event) => {
       setAnimation(true);
     };
@@ -40,36 +43,27 @@ export default function Template({
       window.removeEventListener("beforeunload", handleBeforeUnload);
     };
   }, []);
+
   const [fullback, setFullback] = useState(false);
 
   return (
     <>
       <Head>
         <title>Som Srivastava | {title}</title>
-        <meta
-          name="description"
-          content={`${detail1}`}
-
-        />
-        <meta
-          name="og:description"
-          content={`${detail1}`}
-        />
+        <meta name="description" content={`${detail1}`} />
+        <meta name="og:description" content={`${detail1}`} />
         <meta property="og:title" content={`Som Srivastava | ${title}`} />
         <meta property="og:image" content="/me2.webp" />
         <link rel="icon" href="som.webp" />
-
         <meta
           name="keywords"
-          content="Som Srivastava, Aishwarya, Aishwarya Srivastava, Arizona State University, ASU, Go Devils, Devils, Sun Devils, Lucknow, India, Indian, Uttar Pradesh, Mesa, Phoenix, Metro Phoenix,  About, High School Graduate, Software Developer, Entrepreneur, Tech Enthusiast, Creative Thinker, Mental Health Advocate, Innovation, Self-Development, Passion, Curiosity"
+          content="Som Srivastava, Som Developer, Srivastava Developer, Aishwarya Developer, Srivastava Aishwarya, Aishwarya Srivastava, Arizona State University, ASU, Go Devils, Devils, Sun Devils, Lucknow, India, Indian, Uttar Pradesh, Mesa, Phoenix, Metro Phoenix,  About, High School Graduate, Software Developer, Entrepreneur, Tech Enthusiast, Creative Thinker, Mental Health Advocate, Innovation, Self-Development, Passion, Curiosity"
         />
       </Head>
       {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />}
       <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
       <div
-        className={`flex ${
-          change ? "opacity-0" : "opacity-100"
-        }  transition-all flex-col select-none justify-start mt-12 items-center z-0 w-full h-full`}
+        className={`flex ${change ? "opacity-0" : "opacity-100"} transition-all flex-col select-none justify-start items-center z-0 w-full h-full`}
       >
         <Buttons setEmailSent={setEmailSent} emailSent={emailSent} />
         {!isNaN(image) && (
@@ -86,13 +80,12 @@ export default function Template({
             />
           </div>
         )}
-        <div
-          className={`flex flex-col overflow-hidden w-full md:w-[60%] mx-auto p-4 space-y-14`}
-        >
+        <div className="flex flex-col w-full md:w-[60%] mx-auto p-4 space-y-14">
           <div
             className={`flex items-center ${
               !animation ? "enter" : "leave"
-            } flex-row space-x-3 overflow-hidden`}
+            } flex-row sticky top-0 space-x-3`}
+            style={{ zIndex: 10 }}
           >
             <div>
               {icon ? (
@@ -118,11 +111,9 @@ export default function Template({
             </div>
           </div>
           <div className="text-gray-300 space-y-3 overflow-hidden text-[4vw] md:text-[1.3vw]">
-            <div
-              className={`${
+            <div className={`${
                 !animation ? "enter" : "leave"
-              } flex flex-col space-y-3`}
-            >
+              } flex flex-col space-y-3`}>
               {img1 && (
                 <SuspenseImage
                   loading="lazy"
@@ -133,11 +124,9 @@ export default function Template({
               )}
               <p style={{ whiteSpace: "pre-wrap" }}>{detail1}</p>
             </div>
-            <div
-              className={`${
+            <div className={`${
                 !animation ? "enter" : "leave"
-              } flex flex-col space-y-3 overflow-hidden`}
-            >
+              } flex flex-col space-y-3`}>
               {img2 && (
                 <SuspenseImage
                   loading="lazy"
@@ -146,18 +135,11 @@ export default function Template({
                   src={`${img2}`}
                 />
               )}
-              <p
-                style={{ whiteSpace: "pre-wrap" }}
-                className={`${!animation ? "enter" : "leave"} overflow-hidden`}
-              >
-                {detail2}
-              </p>
+              <p style={{ whiteSpace: "pre-wrap" }}>{detail2}</p>
             </div>
-            <div
-              className={`${
+            <div className={`${
                 !animation ? "enter" : "leave"
-              } flex flex-col space-y-3 overflow-hidden`}
-            >
+              } flex flex-col space-y-3`}>
               {img3 && (
                 <SuspenseImage
                   loading="lazy"
@@ -166,18 +148,11 @@ export default function Template({
                   src={`${img3}`}
                 />
               )}
-              <p
-                style={{ whiteSpace: "pre-wrap" }}
-                className={`${!animation ? "enter" : "leave"} overflow-hidden`}
-              >
-                {detail3}
-              </p>
+              <p style={{ whiteSpace: "pre-wrap" }}>{detail3}</p>
             </div>
-            <div
-              className={`${
+            <div className={`${
                 !animation ? "enter" : "leave"
-              } flex flex-col space-y-3 overflow-hidden`}
-            >
+              } flex flex-col space-y-3`}>
               <p className=" text-gray-300 ">{skills?.map((e) => e + ", ")}</p>
             </div>
           </div>

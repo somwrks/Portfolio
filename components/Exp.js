@@ -7,16 +7,16 @@ export default function Exp({setShow,change,title,detail1,index,icon,skills}) {
     <div
     className={`flex flex-col md:flex-row z-0  ${
       !change ? "enter" : "leave"
-    }  space-y-5 md:space-x-5 items-start md:items-center md:justify-between`}
+    }    md:space-x-5  items-start md:items-center  w-full h-full md:justify-between`}
   >
-    <div className="flex md:w-3/5  flex-col ">
+    <div className="flex md:w-3/5 h-full flex-col ">
     
                   <Image loading="lazy"    onError={(err) => console.error('Error loading image:', err)}
-  src={`${icon}`} className=" " width={400} height={400} />
+  src={`${icon}`} className=" " width={300} height={300} />
    
    
     </div>
-    <div className="flex flex-col w-full md:w-4/5 justify-between text-white  space-y-4">
+    <div className="flex flex-col gap-y-4 w-full md:w-4/5  text-white   ">
       <div>
         <h1 className=" text-[6vw] md:text-[1.5vw]">
           {title}
