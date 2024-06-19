@@ -59,7 +59,7 @@ export default function About({ toggleAudio, isPlaying,setEmailSent,emailSent}) 
             </h2>
           </div>
           <div className="flex flex-col ">
-            <Link href={"https://youtu.be/Z1NimVSJ8XI?si=Upwvi9LE3hS6heiU"}>
+           
               <SuspenseImage
                 loading="lazy"
                 src={
@@ -68,7 +68,7 @@ export default function About({ toggleAudio, isPlaying,setEmailSent,emailSent}) 
                 width={500}
                 height={500}
               />
-            </Link>
+        
           </div>
         </div>
         <div className="flex flex-wrap md:flex-nowrap flex-row  gap-y-4 md:gap-x-4 items-center w-full md:w-7/12 justify-between">
@@ -84,18 +84,14 @@ export default function About({ toggleAudio, isPlaying,setEmailSent,emailSent}) 
             </h2>
           </div>
           <div className="flex flex-col">
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href={"https://youtu.be/4Tm6Z1y3h94?si=yNaGK79xcMes3bRX"}
-            >
+           
               <SuspenseImage
                 loading="lazy"
                 src={"https://i.ibb.co/jD2gYsX/IMG20240514131416.jpg"}
                 width={500}
                 height={500}
               />
-            </Link>
+     
           </div>
         </div>
         <div className="flex flex-wrap md:flex-nowrap flex-row  gap-y-4 md:gap-x-4 items-center w-full md:w-7/12 justify-between">
@@ -111,18 +107,13 @@ export default function About({ toggleAudio, isPlaying,setEmailSent,emailSent}) 
             </h2>
           </div>
           <div className="flex flex-col ">
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href={"https://www.youtube.com/watch?v=GL-uWmw4YMA"}
-            >
+        
               <SuspenseImage
                 loading="lazy"
                 src={"https://i.ibb.co/BsmzD3v/image.png"}
                 width={500}
                 height={500}
               />
-            </Link>
           </div>
         </div>
         <div className="flex flex-wrap md:flex-nowrap flex-row  gap-y-4 md:gap-x-4 items-center w-full md:w-7/12 justify-between">
@@ -138,18 +129,14 @@ export default function About({ toggleAudio, isPlaying,setEmailSent,emailSent}) 
             </h2>
           </div>
           <div className="flex flex-col ">
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href={"https://www.youtube.com/watch?v=EiKK04Ht8QI"}
-            >
+  
               <SuspenseImage
                 loading="lazy"
                 src={"https://i.ibb.co/yY54XW9/IMG20240514131416.jpg"}
                 width={500}
                 height={500}
               />
-            </Link>
+         
           </div>
         </div>
         <div className="flex flex-wrap md:flex-nowrap flex-row  gap-y-4 md:gap-x-4 items-center w-full md:w-7/12 justify-between">
@@ -166,18 +153,13 @@ export default function About({ toggleAudio, isPlaying,setEmailSent,emailSent}) 
             </h2>
           </div>
           <div className="flex flex-col ">
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href={"https://www.youtube.com/watch?v=pQgxiQAMTTo"}
-            >
+       
               <SuspenseImage
                 loading="lazy"
                 src={"https://i.ibb.co/x8BVhQb/image.png"}
                 width={500}
                 height={500}
               />
-            </Link>
           </div>
         </div>
         <div className="flex flex-wrap md:flex-nowrap flex-row  gap-y-4 md:gap-x-4 items-center w-full md:w-7/12 justify-between">
@@ -195,18 +177,13 @@ export default function About({ toggleAudio, isPlaying,setEmailSent,emailSent}) 
             </h2>
           </div>
           <div className="flex flex-col ">
-            <Link
-              target="_blank"
-              rel="noopener noreferrer"
-              href={"https://www.youtube.com/watch?v=J-5x1yL9hSc"}
-            >
+           
               <SuspenseImage
                 loading="lazy"
                 src={"https://i.ibb.co/NV3zs2M/image.png"}
                 width={500}
                 height={500}
               />
-            </Link>
           </div>
         </div>
       </div>
