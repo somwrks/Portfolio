@@ -16,13 +16,7 @@ export default function App({ Component, pageProps }) {
   const audioRef = useRef(null);
   useEffect(() => {
     if (typeof window !== "undefined") {
-      if (!yes) {
-        document.body.style.background = "black";
-      } else {
-        document.body.style.background = "transparent";
-        document.body.style.backgroundImage =
-          "linear-gradient(45deg, #2355d5, #000000)";
-      }
+     
       // Initialize the audio 7 and store it in the ref
       audioRef.current = new Audio("/music.mp3");
       audioRef.current.volume = 0.1;
@@ -52,13 +46,10 @@ export default function App({ Component, pageProps }) {
 
   const toggleAudio = () => {
     if (audioRef.current) {
-      const circle = document.querySelector(".circle");
       if (isPlaying) {
         audioRef.current.pause();
-        // Add the 'no-animation' class to stop the animation
       } else {
         audioRef.current.play();
-        // Remove the 'no-animation' class to start the animation
       }
       setIsPlaying(!isPlaying);
     }
@@ -125,23 +116,15 @@ export default function App({ Component, pageProps }) {
         />
       )}
 
-      {!yes ? (
-        <div className="flex-col flex w-full overflow-hidden justify-center  items-center min-h-screen  ">
-          <div className="flex flex-col h-[100px] rounded-full  circle w-[100px] absolute"></div>
-          <div className="flex flex-col backdrop-blur-xl h-[100px] rounded-full  justify-center items-center w-[100px] absolute ">
-            <Image
-              loading="lazy"
-              onError={(err) => console.error("Error loading image:", err)}
-              src={"/play.svg"}
-              width={200}
-              onClick={start}
-              height={200}
-            />
-          </div>
-        </div>
-      ) : (
+      {!yes ?  (
+        <div className="flex  flex-col fade select-none  overflow-hidden w-full min-h-screen bg justify-center items-center fixed z-50">
+          
+        <h1 className="text-3xl text-white h-8 text-center absolute  w-full animate-l-r "   onClick={start}> <span className="">Begin</span></h1>
+    </div>
+      ) :
         <Component {...pageProps} emailSent={emailSent} setEmailSent={setEmailSent} toggleAudio={toggleAudio} isPlaying={isPlaying} />
-      )}
+      }
+      
       </ClerkProvider>
       <SpeedInsights />
     </>

@@ -1,44 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'flowbite';
+@import "flowbite";
 
 * {
-  transition: 0.3s all;
   overflow-x: hidden;
-  font-family:serif;
+  font-family: serif;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0;
 }
 @media (max-width: 767px) {
   body {
-    cursor:auto;
+    cursor: auto;
   }
 }
 body {
   cursor: none;
-  overflow-x: hidden
+  overflow-x: hidden;
+background-color: black;
 }
-.bg{
-  background-size: 200% 200%;
-  background-image: linear-gradient(49deg, rgb(0, 0, 0) 0%, rgb(2, 15, 82) 100%);
-  animation: gradient 7s ease infinite;
-}
-
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 
 .effect {
   transition: 0.3s ease-in-out;
@@ -49,28 +30,29 @@ body {
 .circle {
   background-image: url("../public/me.webp");
   background-size: cover;
-  background-blend-mode: darken;
   transition: all 0.5s;
   background-repeat: no-repeat;
 }
-.circle:hover{
+.circle:hover {
   scale: 1.03;
 }
 @keyframes fadeInOut {
-  0%, 100% {
+  0%,
+  100% {
     background-image: url("../public/me.webp"); /* Start and end with the original image */
   }
   50% {
     background-image: url("../public/me2.webp"); /* Change to another image halfway through */
   }
 }
-.circleanimation{
-  animation: rotateAnimation 15s linear infinite forwards,fadeInOut 20s linear infinite; 
+.circleanimation {
+  animation: rotateAnimation 15s linear infinite forwards,
+    fadeInOut 20s linear infinite;
   animation-fill-mode: forwards;
-  animation-play-state:running;
+  animation-play-state: running;
 }
-.circleanimation.pause{
-  animation-play-state:paused;
+.circleanimation.pause {
+  animation-play-state: paused;
 }
 
 @keyframes rotateAnimation {
@@ -81,72 +63,22 @@ body {
     transform: rotate(360deg);
   }
 }
-.circle:hover{
+.circle:hover {
   transform: scale(1.03);
 }
 
-.circle:active{
+.circle:active {
   transform: scale(1);
 }
-.circleoutline{
+.circleoutline {
   overflow: none;
-  transition: all 0.5s ease; 
-  animation: rotate 10s linear infinite,fade 1s ease-in-out;
-
+  transition: all 0.5s ease;
+  animation: rotate 10s linear infinite, fade 1s ease-in-out;
 }
-.circle:hover + .circleoutline{
+.circle:hover + .circleoutline {
   animation: rotate 12s linear infinite;
 }
-.circle-word {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transform-origin: top left;
-}
 
-/* Rotate each word individually */
-.circle-word:nth-child(1) {
-  transform: rotate(0deg) translate(-50%, -50%);
-}
-.circle-word:nth-child(2) {
-  transform: rotate(30deg) translate(-50%, -50%);
-}
-.circle-word:nth-child(3) {
-  transform: rotate(60deg) translate(-50%, -50%);
-}
-.circle-word:nth-child(4) {
-  transform: rotate(90deg) translate(-50%, -50%);
-}
-.circle-word:nth-child(5) {
-  transform: rotate(120deg) translate(-50%, -50%);
-}
-.circle-word:nth-child(6) {
-  transform: rotate(150deg) translate(-50%, -50%);
-}
-.circle-word:nth-child(7) {
-  transform: rotate(180deg) translate(-50%, -50%);
-}
-.circle-word:nth-child(8) {
-  transform: rotate(210deg) translate(-50%, -50%);
-}
-.circle-word:nth-child(9) {
-  transform: rotate(240deg) translate(-50%, -50%);
-}
-.circle-word:nth-child(10) {
-  transform: rotate(270deg) translate(-50%, -50%);
-}
-.circle-word:nth-child(11) {
-  transform: rotate(300deg) translate(-50%, -50%);
-}
-.circle-word:nth-child(12) {
-  transform: rotate(330deg) translate(-50%, -50%);
-}
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -156,96 +88,102 @@ body {
   }
 }
 
-.enter:nth-child(1){
-  animation: enter 1s ease-in-out ;
+.enter:nth-child(1) {
+  animation: enter 1s ease-in-out;
   animation-delay: -2s;
 }
-.enter:nth-child(2){
-  animation: enter 1.5s ease-in-out ;
-  animation-delay: -2s;
-  /* animation-delay: 0.6s; */
-}
-.enter:nth-child(3){
-  animation: enter 2s ease-in-out ;
+.enter:nth-child(2) {
+  animation: enter 1.5s ease-in-out;
   animation-delay: -2s;
   /* animation-delay: 0.6s; */
 }
-.enter:nth-child(4){
-  animation: enter 2.5s ease-in-out ;
+.enter:nth-child(3) {
+  animation: enter 2s ease-in-out;
+  animation-delay: -2s;
+  /* animation-delay: 0.6s; */
+}
+.enter:nth-child(4) {
+  animation: enter 2.5s ease-in-out;
   animation-delay: -2s;
   /* animation-delay: 0.6s; */
 }
 @keyframes enter {
-  0%{
+  0% {
     transform: translateY(500px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
-    
   }
 }
-.leave:nth-child(4){
-  animation: leave 1s ease-in-out ;
+.leave:nth-child(4) {
+  animation: leave 1s ease-in-out;
 }
-.leave:nth-child(3){
-  animation: leave 1.5s ease-in-out ;
+.leave:nth-child(3) {
+  animation: leave 1.5s ease-in-out;
 }
-.leave:nth-child(2){
-  animation: leave 2s ease-in-out ;
+.leave:nth-child(2) {
+  animation: leave 2s ease-in-out;
 }
-.leave:nth-child(1){
-  animation: leave 2.5s ease-in-out ;
+.leave:nth-child(1) {
+  animation: leave 2.5s ease-in-out;
 }
 @keyframes leave {
-  0%{
+  0% {
     transform: translateY(0px);
   }
-  100%{
+  100% {
     transform: translateY(-1000px);
-    
   }
 }
-a:hover{
+a:hover {
   cursor: none;
 }
-.fade{
+.fade {
   animation: fade 0.6s ease-in-out;
 }
-
-.pop{
+.fade-none {
+  animation: fade-none 0.6s ease-in-out;
+}
+@keyframes fade-none {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.pop {
   animation: fade 1s ease-in-out, pop 0.3s ease-in-out;
 }
-.up{
+.up {
   animation: up 0.3s ease-in-out;
 }
 @keyframes up {
-  0%{
+  0% {
     transform: translateY(50px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
 
 @keyframes pop {
-  0%{
+  0% {
     transform: scale(0);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
 
 @keyframes fade {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-
-
 
 .story-container {
   width: 100vw;
@@ -268,20 +206,20 @@ a:hover{
   margin: 50px 0;
 }
 
-.fadein{
+.fadein {
   animation: fade 1s ease-in-out;
 }
-.fadeout{
+.fadeout {
   animation: fadeout 1s ease-in-out;
 }
 @keyframes fadeout {
-  0%{
+  0% {
     opacity: 100%;
   }
-  50%{
+  50% {
     opacity: 0%;
   }
-  100%{
+  100% {
     opacity: 100%;
   }
 }
@@ -304,20 +242,31 @@ a:hover{
   display: none;
 }
 
-.animatearrow{
+.animatearrow {
   opacity: 0;
-  animation: animatearrow 5s ease-in-out forwards ;
+  animation: animatearrow 5s ease-in-out forwards;
   animation-delay: 1s;
-transform: translateY(20px);
+  transform: translateY(20px);
 }
 
 @keyframes animatearrow {
-  0%{
+  0% {
     opacity: 1;
-    }
-    100%{
-      transform: translateY(500px);
-      
-      opacity: 0;
+  }
+  100% {
+    transform: translateY(500px);
+
+    opacity: 0;
+  }
+}
+.animate-l-r {
+  animation: fade 4s ease-in-out forwards , animate-l-r 9s ease-in-out forwards ;
+}
+@keyframes animate-l-r {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
   }
 }

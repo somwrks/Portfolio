@@ -65,7 +65,7 @@ export default function Home({
 
     const scrollStep = () => {
       const container = document.querySelector(".story-container");
-      const scrollingText = container.querySelector(".scrolling-text-content");
+      const scrollingText = container?.querySelector(".scrolling-text-content");
 
       if (scrollingText) {
         const currentTransform = transformAmountRef.current;
@@ -131,12 +131,12 @@ export default function Home({
         <meta property="og:image" content="me.webp" />
         <link rel="icon" href="som.webp" />
       </Head>
-      {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />}
+      {/* {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />} */}
 
       <div
         className={`flex  ${
-          change ? " opacity-0 " : " opacity-100 "
-        } select-none transition-all flex-col overflow-none md:items-center  justify-center cursor-none  w-full min-h-screen`}
+          change ? " opacity-100" : " opacity-100 " 
+        } fade select-none   flex-col overflow-none md:items-center  justify-center cursor-none  w-full min-h-screen`}
       >
         <Buttons setEmailSent={setEmailSent} emailSent={emailSent} />
 
