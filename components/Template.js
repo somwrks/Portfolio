@@ -67,7 +67,7 @@ export default function Template({
         )}
         <div className="flex flex-col w-full md:w-[60%] mx-auto p-4 space-y-14">
           <div
-            className={`flex items-center enter flex-row sticky top-0 space-x-3`}
+            className={`flex items-center  flex-row sticky top-0 space-x-3`}
             style={{ zIndex: 10 }}
           >
             <div>

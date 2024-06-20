@@ -4,7 +4,7 @@ import React from "react";
 export default function Exp({ setShow, title, detail1, index, icon, skills }) {
   return (
     <div
-      className={`flex flex-col md:flex-row z-0 enter  md:space-x-5  items-start md:items-center  w-full h-full md:justify-between`}
+      className={`flex flex-col md:flex-row z-0   md:space-x-5  items-start md:items-center  w-full h-full md:justify-between`}
     >
       <div className="flex md:w-3/5 h-full flex-col ">
         <Image
