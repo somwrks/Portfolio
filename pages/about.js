@@ -41,7 +41,7 @@ export default function About({ toggleAudio, isPlaying,setEmailSent,emailSent}) 
           "In addition to my technical skills, I am an avid learner, always seeking new knowledge and challenges. When I'm not coding, you can find me immersed in books about media theories, journaling, or just meditating in a soccer field (lol)"
         }
       />
-      <div className="flex select-none flex-col my-6 justify-center md:px-0 px-4 w-full md:items-center  gap-y-8 ">
+      <div className="flex fade select-none flex-col my-6 justify-center md:px-0 px-4 w-full md:items-center  gap-y-8 ">
         <div className="flex flex-wrap md:flex-nowrap flex-row  gap-y-4 md:gap-x-4 items-center w-full md:w-7/12 justify-between">
           <div className="flex flex-col w-full space-y-2">
             <h1 className="text-[4vw] md:text-[1.5vw] text-gray-200">

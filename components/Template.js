@@ -25,24 +25,10 @@ export default function Template({
   setEmailSent,
   emailSent
 }) {
-  const [change, setChange] = useState(true);
-  const [animation, setAnimation] = useState(true);
+  
 
-  useEffect(() => {
-    setTimeout(() => {
-      setChange(false);
-      setAnimation(false);
-    }, 3000);
+  
 
-    const handleBeforeUnload = (event) => {
-      setAnimation(true);
-    };
-
-    window.addEventListener("beforeunload", handleBeforeUnload);
-    return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, []);
 
   const [fullback, setFullback] = useState(false);
 
@@ -60,10 +46,9 @@ export default function Template({
           content="Som Srivastava, Som Developer, Srivastava Developer, Aishwarya Developer, Srivastava Aishwarya, Aishwarya Srivastava, Arizona State University, ASU, Go Devils, Devils, Sun Devils, Lucknow, India, Indian, Uttar Pradesh, Mesa, Phoenix, Metro Phoenix,  About, High School Graduate, Software Developer, Entrepreneur, Tech Enthusiast, Creative Thinker, Mental Health Advocate, Innovation, Self-Development, Passion, Curiosity"
         />
       </Head>
-      {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />}
       <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
       <div
-        className={`flex ${change ? "opacity-0" : "opacity-100"} transition-all flex-col select-none justify-start items-center z-0 w-full h-full`}
+        className={`flex  transition-all flex-col select-none justify-start items-center z-0 w-full h-full`}
       >
         <Buttons setEmailSent={setEmailSent} emailSent={emailSent} />
         {!isNaN(image) && (
@@ -82,9 +67,7 @@ export default function Template({
         )}
         <div className="flex flex-col w-full md:w-[60%] mx-auto p-4 space-y-14">
           <div
-            className={`flex items-center ${
-              !animation ? "enter" : "leave"
-            } flex-row sticky top-0 space-x-3`}
+            className={`flex items-center enter flex-row sticky top-0 space-x-3`}
             style={{ zIndex: 10 }}
           >
             <div>
@@ -111,9 +94,7 @@ export default function Template({
             </div>
           </div>
           <div className="text-gray-300 space-y-3 overflow-hidden text-[4vw] md:text-[1.3vw]">
-            <div className={`${
-                !animation ? "enter" : "leave"
-              } flex flex-col space-y-3`}>
+            <div className={`enter flex flex-col space-y-3`}>
               {img1 && (
                 <SuspenseImage
                   loading="lazy"
@@ -124,9 +105,7 @@ export default function Template({
               )}
               <p style={{ whiteSpace: "pre-wrap" }}>{detail1}</p>
             </div>
-            <div className={`${
-                !animation ? "enter" : "leave"
-              } flex flex-col space-y-3`}>
+            <div className={`enter flex flex-col space-y-3`}>
               {img2 && (
                 <SuspenseImage
                   loading="lazy"
@@ -137,9 +116,7 @@ export default function Template({
               )}
               <p style={{ whiteSpace: "pre-wrap" }}>{detail2}</p>
             </div>
-            <div className={`${
-                !animation ? "enter" : "leave"
-              } flex flex-col space-y-3`}>
+            <div className={`enter flex flex-col space-y-3`}>
               {img3 && (
                 <SuspenseImage
                   loading="lazy"
@@ -150,9 +127,7 @@ export default function Template({
               )}
               <p style={{ whiteSpace: "pre-wrap" }}>{detail3}</p>
             </div>
-            <div className={`${
-                !animation ? "enter" : "leave"
-              } flex flex-col space-y-3`}>
+            <div className={`enter flex flex-col space-y-3`}>
               <p className=" text-gray-300 ">{skills?.map((e) => e + ", ")}</p>
             </div>
           </div>

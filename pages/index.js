@@ -134,9 +134,7 @@ export default function Home({
       {/* {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />} */}
 
       <div
-        className={`flex  ${
-          change ? " opacity-100" : " opacity-100 " 
-        } fade select-none   flex-col overflow-none md:items-center  justify-center cursor-none  w-full min-h-screen`}
+        className={`flex   fade select-none   flex-col overflow-none md:items-center  justify-center cursor-none  w-full min-h-screen`}
       >
         <Buttons setEmailSent={setEmailSent} emailSent={emailSent} />
 

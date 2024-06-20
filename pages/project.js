@@ -57,15 +57,11 @@ export default function project({ toggleAudio, isPlaying ,setEmailSent,emailSent
       </Head>
       {show === null ? (
         <>
-          {change && (
-            <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />
-          )}
+         
           <Buttons setEmailSent={setEmailSent} emailSent={emailSent}/>
 
           <div
-            className={`flex ${
-              change ? "opacity-0" : "opacity-100"
-            }  transition-all flex-col justify-center items-center  w-full min-h-screen  `}
+            className={`flex fade transition-all flex-col justify-center items-center  w-full min-h-screen  `}
           >
             <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
             <div className="flex flex-col flex-grow h-full md:w-[60%] mx-auto p-4  space-y-12  ">
@@ -145,7 +141,7 @@ export default function project({ toggleAudio, isPlaying ,setEmailSent,emailSent
                         index={index}
                         icon={item.icon}
                         setShow={setShow}
-                        change={change}
+                        
                       />
                 )
               ) : filteredData != 0 ? (
@@ -159,7 +155,7 @@ export default function project({ toggleAudio, isPlaying ,setEmailSent,emailSent
                         index={index}
                         icon={item.icon}
                         setShow={setShow}
-                        change={change}
+                        
                       />
                 )
               ) : (

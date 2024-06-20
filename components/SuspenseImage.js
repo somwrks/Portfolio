@@ -16,7 +16,7 @@ const SuspenseImage = (props) => {
   }
 
   return (
-    <Suspense fallback={<Skeleton width={props.width} height={props.height} />}>
+    <Suspense fallback={<Skeleton baseColor='white' width={props.width} height={props.height} />}>
       <LazyImage {...props} onError={() => setHasError(true)} />
     </Suspense>
   );

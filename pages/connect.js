@@ -8,12 +8,7 @@ import ContactForm from "@/components/ContactForm";
 import Buttons from "@/components/Buttons";
 
 export default function Connect({ toggleAudio, isPlaying, setEmailSent,emailSent }) {
-  const [change, setChange] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setChange(false);
-    }, 3000);
-  }, []);
+
 
   return (
     <>
@@ -31,13 +26,10 @@ export default function Connect({ toggleAudio, isPlaying, setEmailSent,emailSent
         <meta property="og:image" content="me2.webp" />
         <link rel="icon" href="som.webp" />
       </Head>
-      {change && <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />}
      
 
       <div
-        className={`flex ${
-          change ? "opacity-0" : "opacity-100"
-        } transition-all flex-col justify-center items-center w-full `}
+        className={`flex fade transition-all flex-col justify-center items-center w-full `}
       >
         <Buttons setEmailSent={setEmailSent} emailSent={emailSent} />
         <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />

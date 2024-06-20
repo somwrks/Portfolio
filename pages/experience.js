@@ -9,7 +9,6 @@ import Sorting from "@/components/Sorting";
 import Player from "@/components/Player";
 
 export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSent }) {
-  const [change, setChange] = useState(true);
   const [show, setShow] = useState(null);
   const [search, setSearch] = useState("All");
   const options = [
@@ -25,11 +24,7 @@ export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSe
     "Video Editing",
     "Community Service",
   ];
-  useEffect(() => {
-    setTimeout(() => {
-      setChange(false);
-    }, 3000);
-  }, []);
+ 
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -58,14 +53,10 @@ export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSe
       </Head>
       {show === null ? (
         <>
-          {change && (
-            <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />
-          )}
+       
           <Buttons setEmailSent={setEmailSent} emailSent={emailSent}/>
           <div
-            className={`flex ${
-              change ? "opacity-0" : "opacity-100"
-            } transition-all flex-col justify-center items-center w-full min-h-screen`}
+            className={`flex fade transition-all flex-col justify-center items-center w-full min-h-screen`}
           >
             <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
 
@@ -77,7 +68,6 @@ export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSe
                   index={0}
                   icon={data[0].icon}
                   setShow={setShow}
-                  change={change}
                 />
               ) : (
                 <div className="flex flex-col w-full  text-white text-2xl text-center mt-5">
@@ -101,7 +91,6 @@ export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSe
                         index={index}
                         icon={item.icon}
                         setShow={setShow}
-                        change={change}
                       />
                     )
                 )
@@ -117,7 +106,7 @@ export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSe
                         index={index}
                         icon={item.icon}
                         setShow={setShow}
-                        change={change}
+                        
                       />
                     )
                 )
@@ -131,7 +120,7 @@ export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSe
         </>
       ) : (
         <>
-          {change && <Loading />}
+          
           {/* Displaying detailed experience */}
           <Template
             isPlaying={isPlaying}
