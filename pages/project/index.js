@@ -5,13 +5,12 @@ import Template from "@/components/Template";
 import Head from "next/head";
 import React, { useState } from "react";
 import { useEffect } from "react";
-import data from "../public/project.json";
+import data from "@/public/project.json";
 import Buttons from "@/components/Buttons";
 import Sorting from "@/components/Sorting";
 
 export default function project({ toggleAudio, isPlaying ,setEmailSent,emailSent}) {
   const [change, setChange] = useState(true);
-  const [show, setShow] = useState(null);
   useEffect(() => {
     setTimeout(() => {
       setChange(false);
@@ -30,9 +29,6 @@ export default function project({ toggleAudio, isPlaying ,setEmailSent,emailSent
     "Video Editing",
     "Community Service",
   ];
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [show]);
   const filteredData = data.filter((item) => item.category.includes(search));
 
   return (
@@ -55,8 +51,7 @@ export default function project({ toggleAudio, isPlaying ,setEmailSent,emailSent
         <meta property="og:image" content="me.webp" />
         <meta property="og:url" content="https://somwrks/projects" />
       </Head>
-      {show === null ? (
-        <>
+     
          
           <Buttons setEmailSent={setEmailSent} emailSent={emailSent}/>
 
@@ -138,9 +133,9 @@ export default function project({ toggleAudio, isPlaying ,setEmailSent,emailSent
                         key={index}
                         title={item.title}
                         detail1={item.detail1}
+                        skills={item.skills}
                         index={index}
                         icon={item.icon}
-                        setShow={setShow}
                         
                       />
                 )
@@ -149,12 +144,12 @@ export default function project({ toggleAudio, isPlaying ,setEmailSent,emailSent
                   (item, index) =>
                     item.category.includes(search) &&
                       <Exp
+                        skills={item.skills}
                         key={index}
                         title={item.title}
                         detail1={item.detail1}
                         index={index}
                         icon={item.icon}
-                        setShow={setShow}
                         
                       />
                 )
@@ -165,31 +160,7 @@ export default function project({ toggleAudio, isPlaying ,setEmailSent,emailSent
               )}
             </div>
           </div>
+    
         </>
-      ) : (
-        <>
-          {change && (
-            <Loading toggleAudio={toggleAudio} isPlaying={isPlaying} />
-          )}
-          <Template
-            img1={data[show].img1 ? data[show].img1 : ""}
-            img2={data[show].img2 ? data[show].img2 : ""}
-            img3={data[show].img3 ? data[show].img3 : ""}
-            toggleAudio={toggleAudio}
-            title={data[show].title}
-            image={show}
-            isPlaying={isPlaying}
-            link={data[show].link}
-            icon={data[show].icon}
-            setShow={setShow}
-            detail1={data[show].detail1}
-            detail2={data[show].detail2}
-            detail3={data[show].detail3}
-            skills={data[show].skills}
-            category={data[show].category}
-          />
-        </>
-      )}
-    </>
   );
 }

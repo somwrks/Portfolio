@@ -4,14 +4,15 @@
     "link": "https://github.com/somwrks/RL-Maze",
     "detail1": "This project is a Reinforcement Learning (RL) simulation project built with a combination of Next.js, Flask, Tailwind CSS, and OpenCV. The purpose is to provide an educational platform for machine learning enthusiasts, allowing them to learn about RL by building their own mazes and training AI agents to solve them.",
     "detail2": "Educational reinforcement learning simulation that allows users to experiment with building mazes and training agents to navigate them. Users can define the maze layout, set reward and penalty points, and observe how the agent learns to find the optimal path to the goal. The simulation visualizes the agent's progress and provides insights into the reinforcement learning process. The project leverages NextJS for the frontend, Flask for the backend, TailwindCSS for styling, and OpenCV for image processing. Users can build their own mazes, set parameters for their agent, and watch it learn and solve the maze. The simulation visualizes the agent's progress and provides insights into the reinforcement learning process.",
-    "detail3":"Users can build their own mazes and train reinforcement learning agents to solve them. Users can define the maze's layout, set up reward and penalty points, and observe the agent's learning process as it navigates the maze. The project uses NextJS for the frontend, Flask for the backend, and OpenCV for visual processing. This combination creates an interactive and informative experience for users interested in reinforcement learning concepts. The project is under development and welcomes contributions.", "icon": "https://i.ibb.co/J3JDtBq/image.png",
-   "icon": "https://i.ibb.co/NWNLjt1/Screenshot-2024-06-17-225617.png", "img1": "https://i.ibb.co/NWNLjt1/Screenshot-2024-06-17-225617.png",
+    "detail3": "Users can build their own mazes and train reinforcement learning agents to solve them. Users can define the maze's layout, set up reward and penalty points, and observe the agent's learning process as it navigates the maze. The project uses NextJS for the frontend, Flask for the backend, and OpenCV for visual processing. This combination creates an interactive and informative experience for users interested in reinforcement learning concepts. The project is under development and welcomes contributions.",
+    "icon": "https://i.ibb.co/NWNLjt1/Screenshot-2024-06-17-225617.png",
+    "img1": "https://i.ibb.co/NWNLjt1/Screenshot-2024-06-17-225617.png",
     "img2": "https://i.ibb.co/6ZBNdm6/Screenshot-2024-06-17-225657.png",
     "img3": "https://i.ibb.co/y6x5cj3/Screenshot-2024-06-17-225828.png",
     "skills": ["NextJS", "Flask", "TailwindCSS", "OpenCV", "Clerk API"],
     "category": ["Website Development", "Artificial Intelligence"]
   },
-   {
+  {
     "title": "OneAI",
     "link": "https://github.com/somwrks/OneAI",
     "detail1": "This project is a desktop application built using NextronJS and TailwindCSS, allowing users to generate professional README files for their projects with the help of various AI models such as OpenAI, Llama, Gemini, Claude, Perplexity, and more.\nUsers can select their preferred AI model, provide their API keys, specify the project directory, and choose from a range of README templates.\nThe AI will then generate a comprehensive README file based on the user's selections.\nUsers can conveniently save the generated README file to their computer.",
@@ -21,7 +22,16 @@
     "img1": "https://i.ibb.co/mym98j9/image.png",
     "img2": "https://i.ibb.co/XVXqnqX/Untitled-design.png",
     "img3": "https://i.ibb.co/T4hGpBR/image.png",
-    "skills": ["NextronJS", "ElectronJS", "TailwindCSS", "Openai API", "Perplexity API", "Gemini API", "Claude API", "Clerk API"],
+    "skills": [
+      "NextronJS",
+      "ElectronJS",
+      "TailwindCSS",
+      "Openai API",
+      "Perplexity API",
+      "Gemini API",
+      "Claude API",
+      "Clerk API"
+    ],
     "category": ["Software Development", "Artificial Intelligence"]
   },
   {
@@ -34,7 +44,14 @@
     "img1": "https://i.ibb.co/zrH8dgV/image.png",
     "img2": "https://i.ibb.co/3SrqMSv/image.png",
     "img3": "",
-    "skills": ["NextJS", "TailwindCSS", "Supabase", "OpenCV", "Flask", "Python"],
+    "skills": [
+      "NextJS",
+      "TailwindCSS",
+      "Supabase",
+      "OpenCV",
+      "Flask",
+      "Python"
+    ],
     "category": ["Website Development", "Artificial Intelligence"]
   },
   {
@@ -112,7 +129,15 @@
     "icon": "https://i.ibb.co/SQcbYRR/image.png",
     "img2": "https://i.ibb.co/SQcbYRR/image.png",
     "img3": "",
-    "skills": ["React", "TailwindCSS", "NodeJS", "ExpressJS", "MongoDB", "Redux", "Rest API"],
+    "skills": [
+      "React",
+      "TailwindCSS",
+      "NodeJS",
+      "ExpressJS",
+      "MongoDB",
+      "Redux",
+      "Rest API"
+    ],
     "category": ["Website Development", "Website Design"]
   },
   {

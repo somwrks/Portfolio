@@ -11,17 +11,13 @@ export default function Template({
   img1,
   img2,
   img3,
-  toggleAudio,
   image,
   title,
   detail1,
   detail2,
   detail3,
   link,
-  setShow,
-  isPlaying,
   skills,
-  category,
   setEmailSent,
   emailSent
 }) {
@@ -30,7 +26,6 @@ export default function Template({
   
 
 
-  const [fullback, setFullback] = useState(false);
 
   return (
     <>
@@ -46,25 +41,11 @@ export default function Template({
           content="Som Srivastava, Som Developer, Srivastava Developer, Aishwarya Developer, Srivastava Aishwarya, Aishwarya Srivastava, Arizona State University, ASU, Go Devils, Devils, Sun Devils, Lucknow, India, Indian, Uttar Pradesh, Mesa, Phoenix, Metro Phoenix,  About, High School Graduate, Software Developer, Entrepreneur, Tech Enthusiast, Creative Thinker, Mental Health Advocate, Innovation, Self-Development, Passion, Curiosity"
         />
       </Head>
-      <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
       <div
-        className={`flex  transition-all flex-col select-none justify-start items-center z-0 w-full h-full`}
+        className={`flex fade transition-all flex-col select-none justify-start items-center mt-5 z-0 w-full h-full`}
       >
         <Buttons setEmailSent={setEmailSent} emailSent={emailSent} />
-        {!isNaN(image) && (
-          <div className="absolute top-0 md:top-10 left-0 md:left-10 m-4">
-            <SuspenseImage
-              src={`/${fullback ? "fullback" : "back"}.svg`}
-              alt="Go Back"
-              className={"transition-all fade"}
-              onMouseEnter={() => setFullback(true)}
-              onMouseLeave={() => setFullback(false)}
-              width={50}
-              height={50}
-              onClick={() => setShow(null)}
-            />
-          </div>
-        )}
+        
         <div className="flex flex-col w-full md:w-[60%] mx-auto p-4 space-y-14">
           <div
             className={`flex items-center  flex-row sticky top-0 space-x-3`}

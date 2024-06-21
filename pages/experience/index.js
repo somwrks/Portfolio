@@ -3,7 +3,7 @@ import Loading from "@/components/Loading";
 import Template from "@/components/Template";
 import Head from "next/head";
 import React, { useState, useEffect } from "react";
-import data from "../public/data.json";
+import data from "@/public/data.json";
 import Buttons from "@/components/Buttons";
 import Sorting from "@/components/Sorting";
 import Player from "@/components/Player";
@@ -51,8 +51,6 @@ export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSe
         <meta property="og:url" content="https://somwrks.com/experience" />
         <meta property="og:image" content="me2.webp" />
       </Head>
-      {show === null ? (
-        <>
        
           <Buttons setEmailSent={setEmailSent} emailSent={emailSent}/>
           <div
@@ -89,6 +87,8 @@ export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSe
                         title={item.title}
                         detail1={item.detail1}
                         index={index}
+                        name={item.name}
+
                         icon={item.icon}
                         setShow={setShow}
                       />
@@ -103,6 +103,7 @@ export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSe
                         key={index}
                         title={item.title}
                         detail1={item.detail1}
+                        name={item.name}
                         index={index}
                         icon={item.icon}
                         setShow={setShow}
@@ -117,30 +118,7 @@ export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSe
               )}
             </div>
           </div>
-        </>
-      ) : (
-        <>
-          
-          {/* Displaying detailed experience */}
-          <Template
-            isPlaying={isPlaying}
-            img1={data[show].img1 || ""}
-            icon={data[show].icon || ""}
-            img2={data[show].img2 || ""}
-            img3={data[show].img3 || ""}
-            toggleAudio={toggleAudio}
-            title={data[show].title}
-            image={show}
-            link={data[show].link}
-            setShow={setShow}
-            detail1={data[show].detail1}
-            detail2={data[show].detail2}
-            detail3={data[show].detail3}
-            skills={data[show].skills}
-            category={data[show].category}
-          />
-        </>
-      )}
+      
     </>
   );
 }
