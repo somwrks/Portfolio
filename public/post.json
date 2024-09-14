@@ -1,4 +1,21 @@
 [
+     {
+    "date": "13 September, 2024",
+    "images": ["https://i.ibb.co/Jy7zrMw/image.png"],
+    "title": "Just got done with my new project, check it out!",
+    "description": "This project is a Kivy-based mobile app that uses a pre-trained Faster R-CNN model for car detection and estimates carbon emissions based on the detected vehicles. It leverages OpenCV for image processing and provides live updates of the detected cars and their corresponding estimated carbon footprint.",
+    "buttons": [
+         { "text": "Visit Project", "link": "https://github.com/somwrks/Carbon-Emission-Detector" }
+    ]
+  },
+    {
+    "date": "11 August, 2024",
+    "images": ["https://i.ibb.co/wB1HVVm/Whats-App-Image-2024-09-13-at-23-53-19-a41d3978.jpg", "https://i.ibb.co/KjTwtds/EF84-F633-C608-436-E-9597-15348-EC58-E74.png"],
+    "title": "Moved to DA USA!!",
+    "description": "FINALLY",
+    "buttons": [
+    ]
+  },
     {
     "date": "5 June, 2024",
     "images": ["https://i.ibb.co/QvKSZ5k/IMG20240605135513.jpg"],
