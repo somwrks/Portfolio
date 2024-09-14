@@ -1,5 +1,18 @@
 [
   {
+    "title": "Carbon Emission Detector",
+    "link": "https://github.com/somwrks/Carbon-Emission-Detector",
+    "detail1": "Real-time car detection and classification using YOLOv5 and ResNet50. Fine-tuned YOLOv5 with Stanford Cars dataset for 92% mAP.",
+    "detail2": "Integrated car make/model classification with an 87% accuracy rate and vehicle size estimation based on bounding box dimensions.",
+    "detail3": "Estimates CO2 emissions using a comprehensive dataset, providing users with real-time feedback and environmental metrics.",
+    "icon": "https://i.ibb.co/Jy7zrMw/image.png",
+    "img1": "https://i.ibb.co/Jy7zrMw/image.png",
+    "img2": "",
+    "img3": "",
+    "skills": ["YOLOv5", "ResNet50", "Kivy", "TensorFlow", "Real-time Processing", "Computer Vision", "CO2 Emissions Estimation"],
+    "category": ["Software development", "Artificial Intelligence"]
+},
+  {
     "title": "RL-Maze",
     "link": "https://github.com/somwrks/RL-Maze",
     "detail1": "This project is a Reinforcement Learning (RL) simulation project built with a combination of Next.js, Flask, Tailwind CSS, and OpenCV. The purpose is to provide an educational platform for machine learning enthusiasts, allowing them to learn about RL by building their own mazes and training AI agents to solve them.",
