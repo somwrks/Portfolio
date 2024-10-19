@@ -32,13 +32,15 @@ export default function Exp({  title, detail1, icon, skills,name }) {
           </p>
         </div>
         <div>
+            <Link
+            href={`/${name ? "experience" : "project"}/${slug}`}
+            >
           <button
             className="w-full py-[2vw]  md:py-[0.5vw] backdrop-blur-3xl font-bold  rounded-xl text-white border-2 border-gray-200"
           >
-            <Link
-            href={`/${name ? "experience" : "project"}/${slug}`}
-            >Explore</Link>
+            Explore
           </button>
+            </Link>
         </div>
       </div>
     </div>

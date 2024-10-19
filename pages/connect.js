@@ -32,13 +32,12 @@ export default function Connect({ toggleAudio, isPlaying, setEmailSent,emailSent
         className={`flex fade transition-all flex-col justify-center items-center w-full `}
       >
         <Buttons setEmailSent={setEmailSent} emailSent={emailSent} />
-        <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
         <div className="flex flex-col w-full  md:w-[60%] md:mx-auto p-4 space-y-4 backdrop-blur-md">
           <div className="flex items-center flex-row ">
             <h1 className="text-[9vw] md:text-[4vw] text-gray-200">Connect</h1>
           </div>
           <div>
-            <h1 className="text-white text-[3vw] md:text-[1vw] ">
+            <h1 className="text-white text-[3vw] md:text-[2vw] ">
              somwrks.queries@gmail.com
             </h1>
           </div>
