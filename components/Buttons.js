@@ -92,8 +92,6 @@ export default function Buttons({ emailSent, setEmailSent }) {
           <div className="flex flex-col p-2 w-full " ref={iframeRef}>
             {iframeVisible ? (
               <>
-                 {/* <SignedIn> */}
-                 {/* <div className="flex flex-col h-full w-full"> */}
 
                   <iframe
                     src={process.env.NEXT_PUBLIC_RESUME_LINK}
@@ -110,26 +108,6 @@ export default function Buttons({ emailSent, setEmailSent }) {
                   >
                     Download Resume
                   </a>
-                 {/* </div> */}
-                 {/* </SignedIn> */}
-                 {/* <SignedOut> */}
-                   {/* <div
-                     className={`flex flex-col text-white md:w-1/2 w-full h-[800px] items-center  bg-gray-900 bg-opacity-80 backdrop-blur-md fixed z-50`}
-                   >
-                     <div className="p-3 border text-md rounded-2xl">
-                       <SignInButton>
-                         <button>Sign in to access</button>
-                       </SignInButton>
-                     </div>
-                   </div>
-                   <img
-                     src="/resume.jpg"
-                     width="100%"
-                     height="100%"
-                     className="h-[800px] -z-1 flex items-center justify-center"
-                     allow="autoplay"
-                   ></img> */}
-                 {/* </SignedOut> */}
               </>
             ) : (
               <div className="flex justify-center items-center h-full">
@@ -156,25 +134,6 @@ export default function Buttons({ emailSent, setEmailSent }) {
                   >
                     Download Freelance
                   </Link>
-                 {/* </SignedIn> */}
-                 {/* <SignedOut>
-                   <div
-                     className={`flex flex-col text-white md:w-1/2 w-full h-[800px] items-center  bg-gray-900 bg-opacity-80 backdrop-blur-md fixed z-50`}
-                   >
-                     <div className="p-3 border text-md rounded-2xl">
-                       <SignInButton>
-                         <button>Sign in to access</button>
-                       </SignInButton>
-                     </div>
-                   </div>
-                   <img
-                     src="/resume.jpg"
-                     width="100%"
-                     height="100%"
-                     className="h-[800px] -z-1 flex items-center justify-center"
-                     allow="autoplay"
-                   ></img>
-                 </SignedOut> */}
               </>
             ) : (
               <div className="flex justify-center items-center h-full">
@@ -186,19 +145,50 @@ export default function Buttons({ emailSent, setEmailSent }) {
       </div>
     </div>
   ) : (
-    <div className="flex flex-col fade md:-right-10 -right-11 gap-y-16 h-full z-40 top-1/3 fixed">
+    <>
+    <div className="flex w-full items-center justify-center flex-row fade md:-top-12 backdrop-blur-xl rounded-xl p-2 -top-11 gap-4 md:gap-12  z-40  fixed">
       <button
         onClick={() => setShow("freelance")}
-        className="px-4 bg-black rounded-sm fade -rotate-90 mt-12 text-white border-b-0 border text-xl z-40"
+        className="px-4  rounded-sm fade mt-12 md:mt-12 text-white  text-xl z-40"
       >
         Freelance
       </button>
       <button
         onClick={() => setShow("resume")}
-        className="px-4 bg-white rounded-sm fade -rotate-90 mt-12 text-black border-b-0 border text-xl z-40"
+        className="px-4 bg-white rounded-sm fade mt-12 md:mt-12 text-black  text-xl z-40"
       >
         Resume
       </button>
+    <Link href={"https://www.linkedin.com/in/somwrks"} target="noref">
+    
+      <button
+        // onClick={() => setShow("freelance")}
+        className="px-4  rounded-sm fade mt-12 md:mt-12 text-white  text-xl z-40"
+      >
+        Instagram
+      </button>
+      </Link>
+    
+    <Link href={"https://www.linkedin.com/in/somwrks"} target="noref">
+
+      <button
+        // onClick={() => setShow("freelance")}
+        className="px-4 bg-white  rounded-sm fade mt-12 text-black border-t-0 border text-xl z-40"
+      >
+        Github
+      </button>
+      </Link>
+      <Link href={"https://www.linkedin.com/in/somwrks"} target="noref">
+
+      <button
+        // onClick={() => setShow("resume")}
+        className="px-4 text-white rounded-sm fade mt-12   text-xl z-40"
+      >
+        LinkedIn
+      </button>
+    </Link>
     </div>
+    </>
+
   );
 }

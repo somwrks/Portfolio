@@ -54,7 +54,7 @@ export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSe
        
           <Buttons setEmailSent={setEmailSent} emailSent={emailSent}/>
           <div
-            className={`flex fade transition-all flex-col justify-center items-center w-full min-h-screen`}
+            className={`flex fade mt-12 transition-all flex-col justify-center items-center w-full min-h-screen`}
           >
             <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
 

@@ -42,7 +42,7 @@ export default function Template({
         />
       </Head>
       <div
-        className={`flex fade transition-all flex-col select-none justify-start items-center mt-5 z-0 w-full h-full`}
+        className={`flex fade  transition-all flex-col select-none justify-start items-center mt-12 z-0 w-full h-full`}
       >
         <Buttons setEmailSent={setEmailSent} emailSent={emailSent} />
         

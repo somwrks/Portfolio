@@ -56,7 +56,7 @@ export default function project({ toggleAudio, isPlaying ,setEmailSent,emailSent
           <Buttons setEmailSent={setEmailSent} emailSent={emailSent}/>
 
           <div
-            className={`flex fade transition-all flex-col justify-center items-center  w-full min-h-screen  `}
+            className={`flex fade mt-12 transition-all flex-col justify-center items-center  w-full min-h-screen  `}
           >
             <Player toggleAudio={toggleAudio} isPlaying={isPlaying} />
             <div className="flex flex-col flex-grow h-full md:w-[60%] mx-auto p-4  space-y-12  ">

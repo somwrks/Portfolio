@@ -152,7 +152,7 @@ export default function About({
           <Link href="https://open.spotify.com/playlist/0eaDLKciMUm1u9pZGSnF1Q?si=78aa332ad4194a99">
             <Image
               className="hover:scale-110 z-0 scale-105 overflow-hidden"
-              src={"/FU2.jpg"}
+              src={"/fu2.jpg"}
               width={410}
               height={500}
             />
