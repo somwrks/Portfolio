@@ -1,5 +1,18 @@
 [
   {
+    "title": "Self-Drive Car Simulation & RL-Maze",
+    "link": "https://github.com/somwrks/Self-Driving-Car-Simulation",
+    "detail1": "Built AI navigation system using Q-learning and neural networks with TensorFlow, Next.js, and Flask",
+    "detail2": "Achieved 95% collision avoidance and 20% error reduction in maze and self-driving simulations",
+    "detail3": "Implemented real-time visualizations and sensor fusion of 100 parallel AI agents",
+    "icon": "https://i.ibb.co/jLxbSZm/image.png",
+    "img1": "https://i.ibb.co/jLxbSZm/image.png",
+    "img2": "",
+    "img3": "",
+    "skills": ["Q-learning", "Neural Networks", "TensorFlow", "Next.js", "Flask", "Reinforcement Learning"],
+    "category": ["Website Development", "Reinforcement Learning", "Neural Networks"]
+},
+  {
     "title": "Carbon Emission Detector",
     "link": "https://github.com/somwrks/Carbon-Emission-Detector",
     "detail1": "Real-time car detection and classification using YOLOv5 and ResNet50. Fine-tuned YOLOv5 with Stanford Cars dataset for 92% mAP.",

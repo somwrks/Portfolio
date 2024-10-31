@@ -1,31 +1,53 @@
 [
-     {
+  {
+    "date": "30 October, 2024",
+    "images": [
+      "https://i.ibb.co/PNKzqLn/Whats-App-Image-2024-10-30-at-23-02-54-9a22cdd3.jpg"
+    ],
+    "title": "yo check this out ",
+    "description": "Built AI navigation system using **Q-learning** and **neural networks** with **TensorFlow**, **Next.js**, and **Flask**, achieving **95%** collision avoidance and **20%** error reduction in maze and self-driving simulations, with real-time visualizations and sensor fusion of **100** parallel AI agents.",
+    "buttons": [
+      {
+        "text": "Visit Project",
+        "link": "https://github.com/somwrks/Self-Driving-Car-Simulation"
+      }
+    ]
+  },
+  {
     "date": "13 September, 2024",
     "images": ["https://i.ibb.co/Jy7zrMw/image.png"],
     "title": "Just got done with my new project, check it out!",
     "description": "This project is a Kivy-based mobile app that uses a pre-trained Faster R-CNN model for car detection and estimates carbon emissions based on the detected vehicles. It leverages OpenCV for image processing and provides live updates of the detected cars and their corresponding estimated carbon footprint.",
     "buttons": [
-         { "text": "Visit Project", "link": "https://github.com/somwrks/Carbon-Emission-Detector" }
+      {
+        "text": "Visit Project",
+        "link": "https://github.com/somwrks/Carbon-Emission-Detector"
+      }
     ]
   },
-    {
+  {
     "date": "11 August, 2024",
-    "images": ["https://i.ibb.co/wB1HVVm/Whats-App-Image-2024-09-13-at-23-53-19-a41d3978.jpg", "https://i.ibb.co/KjTwtds/EF84-F633-C608-436-E-9597-15348-EC58-E74.png"],
+    "images": [
+      "https://i.ibb.co/wB1HVVm/Whats-App-Image-2024-09-13-at-23-53-19-a41d3978.jpg",
+      "https://i.ibb.co/KjTwtds/EF84-F633-C608-436-E-9597-15348-EC58-E74.png"
+    ],
     "title": "Moved to DA USA!!",
     "description": "FINALLY",
-    "buttons": [
-    ]
+    "buttons": []
   },
-    {
+  {
     "date": "5 June, 2024",
     "images": ["https://i.ibb.co/QvKSZ5k/IMG20240605135513.jpg"],
     "title": "Andrew's Courses",
     "description": "Past week i've been revising andrew's courses and honestly it's THE best for anyone getting into AI",
     "buttons": [
-      { "text": "Visit Course", "link": "https://www.coursera.org/specializations/deep-learning" }
+      {
+        "text": "Visit Course",
+        "link": "https://www.coursera.org/specializations/deep-learning"
+      }
     ]
   },
-    {
+  {
     "date": "3 June, 2024",
     "images": ["https://i.ibb.co/jLSkYZ1/IMG20240603170010.jpg"],
     "title": "Reinforcement Learning Project",
@@ -56,25 +78,34 @@
     "title": "starting my website blogs",
     "description": "I may post sometimes about my work or fun related stuff on this website...\nAlso finished the office for 3rd time!",
     "buttons": [
-      { "text": "The Office", "link": "https://en.wikipedia.org/wiki/The_Office_(American_TV_series)" }
+      {
+        "text": "The Office",
+        "link": "https://en.wikipedia.org/wiki/The_Office_(American_TV_series)"
+      }
     ]
   },
-      {
+  {
     "date": "18 November, 2023",
     "images": ["https://i.ibb.co/WB2n0ds/image.png"],
     "title": "Featured startup in School Magazine (LOL)",
     "description": "Glad to be featured in school's year magazine for our work",
     "buttons": [
-      { "text": "View Post", "link": "https://www.facebook.com/photo/?fbid=376400898075425&set=a.189456243436559" }
+      {
+        "text": "View Post",
+        "link": "https://www.facebook.com/photo/?fbid=376400898075425&set=a.189456243436559"
+      }
     ]
   },
-      {
+  {
     "date": "14 November, 2023",
     "images": ["https://i.ibb.co/TPqm42k/image.png"],
     "title": "Featured Entrepreneur",
     "description": "Talked about my progress",
     "buttons": [
-      { "text": "Visit", "link": "https://thefuturemogulmagazine.webflow.io/issues" }
+      {
+        "text": "Visit",
+        "link": "https://thefuturemogulmagazine.webflow.io/issues"
+      }
     ]
   }
 ]
