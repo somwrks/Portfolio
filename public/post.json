@@ -9,7 +9,7 @@
     "buttons": [
       {
         "text": "Visit Project",
-        "link": "https://github.com/somwrks/Self-Driving-Car-Simulation"
+        "link": "https://www.github.com/ashworks1706/Self-Driving-Car-Simulation"
       }
     ]
   },
@@ -21,7 +21,7 @@
     "buttons": [
       {
         "text": "Visit Project",
-        "link": "https://github.com/somwrks/Carbon-Emission-Detector"
+        "link": "https://www.github.com/ashworks1706/Carbon-Emission-Detector"
       }
     ]
   },
@@ -53,7 +53,7 @@
     "title": "Reinforcement Learning Project",
     "description": "Working on a collaborative project to demonstrate educational stats for ML nerds",
     "buttons": [
-      { "text": "Visit Project", "link": "https://github.com/somwrks/RL-Maze" }
+      { "text": "Visit Project", "link": "https://www.github.com/ashworks1706/RL-Maze" }
     ]
   },
   {
@@ -69,7 +69,7 @@
     "title": "My First Software Development Project | Desktop",
     "description": "Building a readme generator app that scans through your repository or project locally to develop a nice readme. I wanna keep refining this project and bring more updates to this, because i have better ideas in mind that could optimize this very well by using different algorithms.",
     "buttons": [
-      { "text": "Visit Project", "link": "https://github.com/somwrks/OneAI" }
+      { "text": "Visit Project", "link": "https://www.github.com/ashworks1706/OneAI" }
     ]
   },
   {

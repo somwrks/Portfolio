@@ -1,7 +1,7 @@
 [
   {
     "title": "Self-Drive Car Simulation & RL-Maze",
-    "link": "https://github.com/somwrks/Self-Driving-Car-Simulation",
+    "link": "https://www.github.com/ashworks1706/Self-Driving-Car-Simulation",
     "detail1": "Built AI navigation system using Q-learning and neural networks with TensorFlow, Next.js, and Flask",
     "detail2": "Achieved 95% collision avoidance and 20% error reduction in maze and self-driving simulations",
     "detail3": "Implemented real-time visualizations and sensor fusion of 100 parallel AI agents",
@@ -14,7 +14,7 @@
 },
   {
     "title": "Carbon Emission Detector",
-    "link": "https://github.com/somwrks/Carbon-Emission-Detector",
+    "link": "https://www.github.com/ashworks1706/Carbon-Emission-Detector",
     "detail1": "Real-time car detection and classification using YOLOv5 and ResNet50. Fine-tuned YOLOv5 with Stanford Cars dataset for 92% mAP.",
     "detail2": "Integrated car make/model classification with an 87% accuracy rate and vehicle size estimation based on bounding box dimensions.",
     "detail3": "Estimates CO2 emissions using a comprehensive dataset, providing users with real-time feedback and environmental metrics.",
@@ -27,7 +27,7 @@
 },
   {
     "title": "RL-Maze",
-    "link": "https://github.com/somwrks/RL-Maze",
+    "link": "https://www.github.com/ashworks1706/RL-Maze",
     "detail1": "This project is a Reinforcement Learning (RL) simulation project built with a combination of Next.js, Flask, Tailwind CSS, and OpenCV. The purpose is to provide an educational platform for machine learning enthusiasts, allowing them to learn about RL by building their own mazes and training AI agents to solve them.",
     "detail2": "Educational reinforcement learning simulation that allows users to experiment with building mazes and training agents to navigate them. Users can define the maze layout, set reward and penalty points, and observe how the agent learns to find the optimal path to the goal. The simulation visualizes the agent's progress and provides insights into the reinforcement learning process. The project leverages NextJS for the frontend, Flask for the backend, TailwindCSS for styling, and OpenCV for image processing. Users can build their own mazes, set parameters for their agent, and watch it learn and solve the maze. The simulation visualizes the agent's progress and provides insights into the reinforcement learning process.",
     "detail3": "Users can build their own mazes and train reinforcement learning agents to solve them. Users can define the maze's layout, set up reward and penalty points, and observe the agent's learning process as it navigates the maze. The project uses NextJS for the frontend, Flask for the backend, and OpenCV for visual processing. This combination creates an interactive and informative experience for users interested in reinforcement learning concepts. The project is under development and welcomes contributions.",
@@ -40,7 +40,7 @@
   },
   {
     "title": "OneAI",
-    "link": "https://github.com/somwrks/OneAI",
+    "link": "https://www.github.com/ashworks1706/OneAI",
     "detail1": "This project is a desktop application built using NextronJS and TailwindCSS, allowing users to generate professional README files for their projects with the help of various AI models such as OpenAI, Llama, Gemini, Claude, Perplexity, and more.\nUsers can select their preferred AI model, provide their API keys, specify the project directory, and choose from a range of README templates.\nThe AI will then generate a comprehensive README file based on the user's selections.\nUsers can conveniently save the generated README file to their computer.",
     "detail2": "Ensure all dependencies are installed.\nYou can install all dependencies by running `npm install` in the project's root directory.\nBuild the application by running `npm run build` in the project's root directory.\nLaunch the application by running `npm run start` in the project's root directory.\nYou will be greeted with the OneAI application.\n\n1. Provide your API keys for various AI models like OpenAI, Llama, Gemini, Claude, Perplexity.\n2. Select the desired template for your README file.\n3. Provide the directory to your project.\n\nOneAI will generate the README file based on your selections and save it to your computer.\nYou can edit and customize the generated README file as needed.",
     "detail3": "The key components of the code include:\n\nUI: The application's user interface is built using NextronJS, which leverages the power of Next.js for building web applications and integrates it with ElectronJS to create a native desktop application.\nThe UI is styled using TailwindCSS for a modern and customizable look.\n\nAI Model Integration: The project seamlessly integrates with various leading AI models:\n\nOpenAI API: Users can leverage OpenAI's powerful models like GPT-3 and GPT-4 for advanced text generation and understanding.\nGemini API: Access to Google's Gemini family of models, offering state-of-the-art performance for a range of tasks.\nClaude API: Utilize Anthropic's Claude, known for its safety and reliability in text generation and interaction.\nLlama API: Integrate with Meta's Llama models for large language model capabilities.\nPerplexity API: Connect to Perplexity AI, a powerful search engine and language model for information retrieval.\n\nAPI Key Management: Users can securely input their API keys for each model, allowing them to access and utilize the AI models within the application.\n\nProject Directory Integration: The application enables users to provide the directory path to their projects, facilitating the automatic generation of READMEs based on the project's content and structure.\n\nReadme Template Selection: Users can choose from a collection of pre-defined README templates, ensuring their README files adhere to best practices and conventions.\n\nReadme Generation: The application leverages the selected AI model to automatically generate a high-quality README file based on the user's project directory and chosen template.\n\nReadme File Saving: Users can conveniently save the generated README file to their computer for easy access and sharing.",
@@ -62,7 +62,7 @@
   },
   {
     "title": "AR-Quiz",
-    "link": "https://github.com/somwrks/AR-Quiz",
+    "link": "https://www.github.com/ashworks1706/AR-Quiz",
     "detail1": "This project is a test-taking website with facial recognition to detect cheating behaviors.\nUsers will be required to keep looking into the camera during the test, and if they look away or exhibit cheating behaviors, the test will be terminated.\nThe project uses Next.js for the frontend, Flask for the backend, OpenCV/Mediapipe for facial recognition, and Supabase/Prisma for the database.",
     "detail2": "The tech stack is robust and modern, incorporating Next.js and Tailwind CSS for a responsive frontend, React Webcam for camera functionality, and Flask for the backend API.\nFacial recognition is achieved using OpenCV and Mediapipe, which process images from the user's webcam to detect face and eye movements.\nThe database setup includes Supabase, a scalable PostgreSQL database, with Prisma providing an ORM layer to interact with the database.\nThe backend processes and analyzes the captured images to determine if the user is looking away, which is a potential indicator of cheating.",
     "detail3": "Getting started with the project involves cloning the repository, setting up the backend and frontend environments, and configuring necessary environment variables.\nThe project structure is well-organized, with separate directories for backend code, frontend code, database scripts, and documentation.\nDevelopers can contribute to the project by following the provided guidelines and submitting pull requests.\nThe facial recognition logic in the backend captures images periodically during the test, processes them to detect face and eye positions, and determines if the user is cheating based on predefined thresholds.\nIf cheating is detected, the test session is interrupted, and appropriate actions are taken.",
@@ -82,7 +82,7 @@
   },
   {
     "title": "Sentimental Analysis",
-    "link": "https://github.com/somwrks/Sentimental-Analysis",
+    "link": "https://www.github.com/ashworks1706/Sentimental-Analysis",
     "detail1": "Next.js application that performs sentiment analysis on text data using a TensorFlow.js model.\nThe application is built with TypeScript and utilizes the TensorFlow.js library for training and evaluating the machine learning model.",
     "detail2": "This project is focused on building a sentiment analysis tool using TensorFlow.js, which can classify text into positive, neutral, or negative sentiments.\nThe process begins with tokenizing and vectorizing the text input, converting each word into its ASCII character codes.\nThis transformation standardizes the text data, ensuring consistency by padding or truncating sequences to a fixed length, known as `sequenceLength`.\nThe tokenized text is then prepared for model training by creating uniform-length sequences, making the data suitable for input into the neural network.",
     "detail3": "The project trains a neural network model using TensorFlow.js.\nThe model architecture includes dense layers and dropout layers, designed to handle the tokenized text input and predict sentiment accurately.\nThe training process involves compiling the model with a binary cross-entropy loss function and the Adam optimizer, followed by fitting the model on the preprocessed data.\nAfter training, the `sentimentAnalysisFunction` leverages the trained model to predict the sentiment of new text inputs.\nBy reshaping and padding the input text to match the model’s expected input shape, the function provides a sentiment score, which is interpreted based on predefined thresholds to classify the text as positive, neutral, or negative.",
@@ -95,7 +95,7 @@
   },
   {
     "title": "EduMon | Hackathon Project",
-    "link": "https://github.com/somwrks/EduMon",
+    "link": "https://www.github.com/ashworks1706/EduMon",
     "detail1": "EduMon is a web platform designed to revolutionize the educational experience.\nIt starts with a strong authentication system to ensure a secure environment.\nUsers can select their school and access a wide range of educational resources, including clubs, events, webinars, and competitions.\nIt also offers AI-powered tools for scheduling and to-do lists to help students manage their time effectively.",
     "detail2": "EduMon was built through a collaborative effort, leveraging the latest technology.\nWe combined web development expertise with AI APIs to create the platform's functionality.\nUser-friendly design and robust security measures were integral components of the development process.",
     "detail3": "",
@@ -108,7 +108,7 @@
   },
   {
     "title": "SafeSentry | Hackathon Project",
-    "link": "https://github.com/somwrks/SafeSentry",
+    "link": "https://www.github.com/ashworks1706/SafeSentry",
     "detail1": "SafeSentry is a mobile app that has a wide variety of personal security and safety features that allow high school students to take their own initiative and action towards preventing a possible gun violence threat.",
     "detail2": "SafeSentry features a log-in/authentication system, where a student can use their student ID # or any applicable information (school email, etc.) to register with our app.\nAfter being registered and added to their own school ecosystem, the student has the ability to file evidence-based incident reports in the event of suspicious activity or if they get any information about crimes that take place or will take place.\nFiling reports can often be painstaking and slow, but our app allows a student to securely file one that can make the difference towards the prevention of a school shooting.",
     "detail3": "SafeSentry also has an interactive map feature that shows locations of incident reports, safety exits, safety shelters, etc.\nHaving knowledge of these locations can be lifesaving in the event of an actual shooter being on campus.\nIf an actual threat is on campus, and a student is trying to remain concealed or in hiding, they can quickly use our Emergency Aid feature and with a click of a button, alert local authorities.\nLocal Authorities and School Administrators can also use the timeline location feature to track students in times of emergency through their accounts.\nOverall, SafeSentry has been equipped with innovative never-before-seen features that can help reduce the casualties in the event of a school shooting or prevent one entirely.",
@@ -121,7 +121,7 @@
   },
   {
     "title": "BlindChat",
-    "link": "https://github.com/somwrks/BlindChat/",
+    "link": "https://www.github.com/ashworks1706/BlindChat/",
     "detail1": "BlindChat is an anonymous chatting app that has the functionality of real-time database update with messages and Google Authentication.",
     "detail2": "",
     "detail3": "Made using Reactjs, Tailwind, and Firebase.",
@@ -134,7 +134,7 @@
   },
   {
     "title": "SomFlix",
-    "link": "https://github.com/somwrks/SomFlix/",
+    "link": "https://www.github.com/ashworks1706/SomFlix/",
     "detail1": "Netflix Cloned functional and responsive website that fetches real-time updated movies, has payment and login authentication.",
     "detail2": "Frontend - NextJS and Tailwind\nBackend - NextJS\nDatabase - Firebase\nLibraries - Material Icons, React Icons, and Rest API",
     "detail3": "",
@@ -147,7 +147,7 @@
   },
   {
     "title": "Books of Gold",
-    "link": "https://github.com/somwrks/Books-of-Gold",
+    "link": "https://www.github.com/ashworks1706/Books-of-Gold",
     "detail1": "Full Stack E-Commerce website with payment and login authorization.\nIt has both Admin and Client Side Dashboard along with One-time-password and 2FA Authentication System, making it a potential for large-scale websites.",
     "detail2": "Frontend - ReactJS, and Tailwind\nBackend - NodeJs, ExpressJs\nDatabase - MongoDB Cloud\nFrontend Libraries - Flowbite, Redux, npm overlay navbar, and Sass\nBackend Libraries - REST API",
     "detail3": "",
@@ -168,7 +168,7 @@
   },
   {
     "title": "Book Recommendor",
-    "link": "https://github.com/somwrks/Book-Recommendor/",
+    "link": "https://www.github.com/ashworks1706/Book-Recommendor/",
     "detail1": "Website which uses OpenAI API to generate best possible recommendations of books according to user's interests.",
     "detail2": "I used Nextjs as the main JavaScript framework, Tailwind CSS for CSS, and OpenAI API for generating recommendations.",
     "detail3": "",

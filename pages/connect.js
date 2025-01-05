@@ -22,7 +22,7 @@ export default function Connect({ toggleAudio, isPlaying, setEmailSent,emailSent
           name="keywords"
           content="Som Srivastava, Connect, Collaboration, Partnerships, Software Developer, Entrepreneur, Social Media, LinkedIn, Instagram, Twitter, GitHub, Contact"
         />
-        <meta property="og:url" content="https://somwrks.com/connect" />
+        <meta property="og:url" content="https://ashworks.dev/connect" />
         <meta property="og:image" content="me2.webp" />
         <link rel="icon" href="som.webp" />
       </Head>
@@ -38,7 +38,7 @@ export default function Connect({ toggleAudio, isPlaying, setEmailSent,emailSent
           </div>
           <div>
             <h1 className="text-white text-[3vw] md:text-[2vw] ">
-             somwrks.queries@gmail.com
+             ashworks1706@gmail.com
             </h1>
           </div>
           <ContactForm />
@@ -46,12 +46,12 @@ export default function Connect({ toggleAudio, isPlaying, setEmailSent,emailSent
             <Box
               imageUrl="/linkedin.webp"
               icon="linkedinicon"
-              overlayText="https://linkedin.com/in/somwrks"
+              overlayText="https://linkedin.com/in/ashworks"
             />
             <Box
               imageUrl="/instagram.webp"
               icon="instagramicon"
-              overlayText="https://instagram.com/somwrks"
+              overlayText="https://instagram.com/ashworks.dev"
             />
             <Box
               imageUrl="/twitter.webp"
@@ -61,7 +61,7 @@ export default function Connect({ toggleAudio, isPlaying, setEmailSent,emailSent
             <Box
               imageUrl="/github.webp"
               icon="githubicon"
-              overlayText="https://github.com/somwrks"
+              overlayText="https://www.github.com/ashworks1706"
             />
           </div> */}
         </div>

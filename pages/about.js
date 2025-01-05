@@ -23,7 +23,7 @@ export default function About({
           content="Discover the multifaceted world of Som Srivastava, a passionate individual exploring the realms of technology, creativity, and social impact. Dive into his unique blend of entrepreneurial spirit, software development expertise, and a curiosity that transcends boundaries"
         />
         <meta property="og:title" content="Som Srivastava | About Me" />
-        <meta property="og:url" content="https://somwrks.com/about" />
+        <meta property="og:url" content="https://ashworks.dev/about" />
         <meta property="og:image" content="me2.webp" />
 
         <meta

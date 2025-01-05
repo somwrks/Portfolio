@@ -159,7 +159,7 @@ export default function Buttons({ emailSent, setEmailSent }) {
       >
         Resume
       </button>
-    <Link href={"https://www.instagram.com/somwrks"} target="noref">
+    <Link href={"https://www.instagram.com/ashworks.dev"} target="noref">
     
       <button
         // onClick={() => setShow("freelance")}
@@ -169,7 +169,7 @@ export default function Buttons({ emailSent, setEmailSent }) {
       </button>
       </Link>
     
-    <Link href={"https://www.github.com/somwrks"} target="noref">
+    <Link href={"https://www.github.com/ashworks1706"} target="noref">
 
       <button
         // onClick={() => setShow("freelance")}

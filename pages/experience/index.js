@@ -48,7 +48,7 @@ export default function experience({ toggleAudio, isPlaying,setEmailSent,emailSe
           property="og:description"
           content="Explore the diverse experiences and projects that have shaped Som Srivastava's journey as a software developer and entrepreneur. Discover his expertise across various technologies, programming languages, and tools, showcasing his versatility and passion for innovation."
         />
-        <meta property="og:url" content="https://somwrks.com/experience" />
+        <meta property="og:url" content="https://ashworks.dev/experience" />
         <meta property="og:image" content="me2.webp" />
       </Head>
        
