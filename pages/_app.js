@@ -118,8 +118,8 @@ export default function App({ Component, pageProps }) {
 
       {!yes ?  (
         <div className="flex  flex-col fade select-none  overflow-hidden w-full min-h-screen bg justify-center items-center fixed z-50">
-          
-        <h1 className="text-3xl text-white h-8 text-center absolute  w-full animate-l-r "   onClick={start}> <span className="">Begin</span></h1>
+        <h1 className="text-4xl text-white h-12 text-center absolute  w-full animate-l-r">Revamp in Progress</h1>
+        {/* <h1 className="text-3xl text-white h-8 text-center absolute  w-full animate-l-r "   onClick={start}> <span className="">Begin</span></h1> */}
     </div>
       ) :
         <Component  {...pageProps} emailSent={emailSent} setEmailSent={setEmailSent} toggleAudio={toggleAudio} isPlaying={isPlaying} />
