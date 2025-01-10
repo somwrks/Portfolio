@@ -1,0 +1,729 @@
+{
+  "sections": {
+    "education": [
+      {
+        "degree": "B.S in Technological Entrepreneurship Management",
+        "details": "B.S in Technological Entrepreneurship Management, Arizona State University2024 \u0000 2028"
+      },
+      {
+        "degree": "Calculus",
+        "details": "Calculus, Principles of Programming, Introduction to Software Engineering, 3.87 GPA, Dean's List"
+      }
+    ],
+    "experience": [
+      {
+        "title": "Co-",
+        "details": []
+      },
+      {
+        "title": "F",
+        "details": []
+      },
+      {
+        "title": "o",
+        "details": []
+      },
+      {
+        "title": "u",
+        "details": []
+      },
+      {
+        "title": "n",
+        "details": []
+      },
+      {
+        "title": "d",
+        "details": []
+      },
+      {
+        "title": "e",
+        "details": []
+      },
+      {
+        "title": "r, PearPrepJul 2023 \u0000 Jan 2024",
+        "details": []
+      },
+      {
+        "title": "F",
+        "details": []
+      },
+      {
+        "title": "o",
+        "details": []
+      },
+      {
+        "title": "u",
+        "details": []
+      },
+      {
+        "title": "n",
+        "details": []
+      },
+      {
+        "title": "d",
+        "details": []
+      },
+      {
+        "title": "e",
+        "details": []
+      },
+      {
+        "title": "r, OwnBoonMay 2023 \u0000 Dec 2023",
+        "details": []
+      }
+    ],
+    "projects": [
+      {
+        "name": "",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "S",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "p",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "a",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "r",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "k",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "y",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "A",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "I",
+        "technologies": [
+          "AI\u0000Powered"
+        ],
+        "details": []
+      },
+      {
+        "name": "A",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "g",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "n",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "t",
+        "technologies": [
+          "Vertex AI",
+          " Discord API",
+          " Selenium",
+          " Docker",
+          " Qdrant",
+          " Google Cloud & Huggingface"
+        ],
+        "details": [
+          "Finetuned Multi-Modal Gemini improving 60% in reasoning tool use cases, RAG & Reinforcement learning",
+          "architecture performing 40% faster Qdrant hybrid vector MIPS & RAPTOR search, built 5\u0000 webhooks for 90%",
+          "accuracy in refined information retrieval, real-time analytical dashboards, ASU funded project in discord servers",
+          "Self-Drive Car Simulation & RL\u0000"
+        ]
+      },
+      {
+        "name": "M",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "a",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "z",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          "Website"
+        ],
+        "details": []
+      },
+      {
+        "name": "D",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "v",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "l",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "o",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "p",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "m",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "n",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "t",
+        "technologies": [
+          "Reinforcement Learning & Neural Networks"
+        ],
+        "details": [
+          "Built AI navigation system, using Q-learning and refined neural networks with TensorFlow, Next.js, and Flask,",
+          "achieving 95% collision avoidance and 20% error reduction in maze and self-driving simulations, with real-time",
+          "visualizations and sensor fusion of 90\u0000 parallel AI agents.",
+          "Carbon Emission"
+        ]
+      },
+      {
+        "name": "D",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "t",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "c",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "t",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "o",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "r",
+        "technologies": [
+          "Computer"
+        ],
+        "details": []
+      },
+      {
+        "name": "V",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "i",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "s",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "i",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "o",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "n",
+        "technologies": [
+          "OpenCV",
+          " PyTorch",
+          " Pandas",
+          " Flask",
+          " Kivy",
+          " Huggingface"
+        ],
+        "details": [
+          "Fine-tuned YOLOv5 with Stanford Cars dataset for real-time detection, achieving 92% mAP with a Kivy app for",
+          "live car detection and carbon footprint prediction reaching 87% accuracy.",
+          "Fashion Images"
+        ]
+      },
+      {
+        "name": "G",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "n",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "r",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "a",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "t",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "o",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "r",
+        "technologies": [
+          "Generative Adversarial"
+        ],
+        "details": []
+      },
+      {
+        "name": "N",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "t",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "w",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "o",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "r",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "k",
+        "technologies": [
+          "MNIST",
+          " Tensorflow",
+          " Pandas",
+          " Huggingface"
+        ],
+        "details": [
+          "Implemented GAN using TensorFlow, trained on the Fashion MNIST dataset to generate high-quality fashion",
+          "images with 94% accuracy with LeakyReLU activation, dropout layers, and adaptive learning rates."
+        ]
+      },
+      {
+        "name": "S",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "a",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "f",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "S",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "n",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "t",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "r",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "y",
+        "technologies": [
+          "App"
+        ],
+        "details": []
+      },
+      {
+        "name": "D",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "v",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "l",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "o",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "p",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "m",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "n",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "t",
+        "technologies": [
+          "React Native",
+          " Firebase",
+          " Firestore",
+          " GeoSpatial Index",
+          " Clerk"
+        ],
+        "details": [
+          "Built a React Native app with Expo to send instant proximity-based alerts using firebase's real-time database",
+          "and geospatial indexing during 24hr hackathon and won first place among 300\u0000 International Participants."
+        ]
+      }
+    ],
+    "skills": [
+      "Python",
+      "Java",
+      "C#",
+      "C\u0000\u0000",
+      "JavaScript",
+      "TypeScript",
+      "SQL",
+      "React",
+      "React Native",
+      "Electron.js",
+      "Next.js",
+      "Node.js",
+      "Tailwind CSS",
+      "TensorFlow",
+      "Scikit-learn",
+      "Flask",
+      "Django",
+      "VSCode",
+      "AWS",
+      "Google Cloud",
+      "Git",
+      "Gitlab",
+      "Kubernetes",
+      "CI/CD Pipeline",
+      "Linux",
+      "Figma",
+      "MongoDB",
+      "Firebase",
+      "PostgreSQL",
+      "Supabase",
+      "Notion",
+      "MLOps",
+      "DevOps",
+      "Vercel",
+      "Clerk",
+      "Vertex AI",
+      "Open Source"
+    ],
+    "achievements": [
+      {
+        "title": "1st Place",
+        "details": "1st Place, International Codeday '24 Hackathon           - 1st Place, International TechXcelerate '23 Hackathon"
+      },
+      {
+        "title": "2nd Place",
+        "details": "2nd Place, National Razzmatazz '22                               - 2nd Place, International Happy Hacks 1 '23 Hackathon"
+      },
+      {
+        "title": "Featured Entrepreneur in Future Mogul Magazine and Startup in City Montessori School Magazine",
+        "details": "Featured Entrepreneur in Future Mogul Magazine and Startup in City Montessori School Magazine"
+      }
+    ]
+  },
+  "nextFetch": "2025-01-10T07:34:00.079Z"
+}

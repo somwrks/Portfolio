@@ -9,13 +9,207 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #00180C;
     --foreground: #ededed;
   }
 }
 
 body {
+  scrollbar-width: 0;
+  overflow-y:hidden;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* styles/animations.css */
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.95);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+.slide-out {
+  animation: slideOut 0.4s ease-out forwards;
+}
+
+.zoom-out {
+  animation: zoomOut 0.4s ease-out forwards;
+}
+
+.zoom-in {
+  animation: zoomIn 0.4s ease-out forwards;
+}
+
+.backdrop-animate {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-33.33%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+}
+ 
+/* Add a mask to fade edges */
+.overflow-hidden {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.slider {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.slide-track {
+  display: flex;
+  gap: 1rem;
+  width: calc(288px * 69); /* Adjust based on slide width and number of slides */
+  animation: scroll 300s linear infinite;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 288px; /* w-72 equivalent */
+  background: rgba(26, 26, 26, 0.63);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.slide-image {
+  width: 100%;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.slide-content {
+  margin-top: 0.75rem;
+  padding: 0 1rem;
+}
+
+.slide-title {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.slide-description,
+.slide-commits {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-288px * 69)); /* Adjust based on number of unique slides */
+  }
+}
+
+/* Add smooth edges */
+.slider::before,
+.slider::after {
+  content: "";
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+
+.slider::before {
+  left: 0;
+  background: linear-gradient(to right, var(--background) 0%, transparent 100%);
+}
+
+.slider::after {
+  right: 0;
+  background: linear-gradient(to left, var(--background) 0%, transparent 100%);
 }

@@ -1,101 +1,127 @@
-import Image from "next/image";
+"use client";
+import React, { useState, useEffect } from "react";
+import NavbarComponent from "../components/Utils/NavbarComponent";
+import Footer from "../components/Utils/Footer";
+import Popup from "../components/Utils/Popup";
+import LandingPage from "../components/Utils/LandingPage";
+import { Image } from "@nextui-org/react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [selectedSection, setSelectedSection] = useState<string | null>(null);
+  const [zoom, setZoom] = useState<boolean | null>(false);
+  const [isClosing, setIsClosing] = useState(false);
+  const router = useRouter();
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+  const handleClose = () => {
+    setIsClosing(true);
+    setZoom(false);
+    setTimeout(() => {
+      setSelectedSection(null);
+      setIsClosing(false);
+    }, 400);
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        handleClose();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
+  return (
+    <>
+      <div className="flex flex-row w-full justify-between flex-grow  min-h-screen">
+        <div
+          className={`flex justify-between  min-h-screen items-center py-24  flex-col w-1/2  h-full  transition-all duration-400 ease-out ${
+            zoom ? "zoom-out blur-sm" : "zoom-in"
+          }`}
+        >
+          <div>
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/asu.svg"
+              width={150}
+              className=" brightness-75 cursor-pointer hover:brightness-100"
+              height={150}
+              alt="Arizona State University Logo"
+              onClick={() => {
+                router.push("https://www.asu.edu/");
+              }}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+          <div>
+            <Image
+              src="/cms.jpg"
+              width={150}
+              className=" brightness-75 cursor-pointer hover:brightness-100"
+              height={150}
+              alt="City Montessori School Logo"
+              onClick={() => {
+                router.push("https://www.cmseducation.org");
+              }}
+            />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
+          className={`flex flex-col  w-full md:w-1/2  relative transition-all duration-400 ease-out ${
+            zoom ? "zoom-out" : "zoom-in"
+          }`}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <NavbarComponent zoom={zoom} setZoom={setZoom} />
+          <LandingPage />
+          <Footer setSelectedSection={setSelectedSection} setZoom={setZoom} />
+        </div>
+        <div
+          className={`flex justify-between  min-h-screen items-center py-24  flex-col w-1/2  h-full  transition-all duration-400 ease-out ${
+            zoom ? "zoom-out blur-sm" : "zoom-in"
+          }`}
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <div>
+            <Image
+              src="/asu.svg"
+              width={150}
+              className=" brightness-75 cursor-pointer hover:brightness-100"
+              height={150}
+              alt="Arizona State University Logo"
+              onClick={() => {
+                router.push("https://www.asu.edu/");
+              }}
+            />
+          </div>
+          <div>
+            <Image
+              src="/cms.jpg"
+              width={150}
+              className=" brightness-75 cursor-pointer hover:brightness-100"
+              height={150}
+              alt="City Montessori School Logo"
+              onClick={() => {
+                router.push("https://www.cmseducation.org");
+              }}
+            />
+          </div>
+        </div>
+      </div>
+
+      {selectedSection && (
+        <div
+          className="fixed backdrop-blur-sm justify-center w-full items-center flex inset-0 z-10 backdrop-animate"
+          onClick={handleClose}
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <Popup
+            section={selectedSection}
+            isClosing={isClosing}
+            onClose={handleClose}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </div>
+      )}
+    </>
   );
 }
