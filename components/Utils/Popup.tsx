@@ -158,6 +158,8 @@ export default function Popup({
                 ? "Embedded"
                 : topic === "cli-application"
                 ? "CLI"
+                : topic === "research-paper"
+                ? "Research"
                 : topic}
             </div>
           ))}
