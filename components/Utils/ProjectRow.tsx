@@ -27,7 +27,7 @@ export default function ProjectRow({ projects }: ProjectRowProps) {
         {duplicatedProjects.map((project, index) => (
           <div
             key={index}
-            className="flex-none hover:bg-[#1e1e1ea1] ease-in-out cursor-pointer w-72 bg-[rgba(26,26,26,0.63)] h-auto rounded-xl p-4"
+            className="flex-none hover:bg-[#1e1e1ea1] ease-in-out cursor-pointer w-72 bg-[rgba(26,26,26,0.63)] h-auto rounded-xl "
             onClick={() => handleClick(project.logoUrl)}
           >
             <Image

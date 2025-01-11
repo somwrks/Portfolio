@@ -12,74 +12,30 @@
     ],
     "experience": [
       {
-        "title": "Co-",
-        "details": []
-      },
-      {
-        "title": "F",
-        "details": []
-      },
-      {
-        "title": "o",
-        "details": []
-      },
-      {
-        "title": "u",
-        "details": []
-      },
-      {
-        "title": "n",
-        "details": []
-      },
-      {
-        "title": "d",
-        "details": []
-      },
-      {
-        "title": "e",
-        "details": []
-      },
-      {
-        "title": "r, PearPrepJul 2023 \u0000 Jan 2024",
-        "details": []
-      },
-      {
-        "title": "F",
-        "details": []
-      },
-      {
-        "title": "o",
-        "details": []
-      },
-      {
-        "title": "u",
-        "details": []
-      },
-      {
-        "title": "n",
-        "details": []
-      },
-      {
-        "title": "d",
-        "details": []
-      },
-      {
-        "title": "e",
-        "details": []
-      },
-      {
-        "title": "r, OwnBoonMay 2023 \u0000 Dec 2023",
-        "details": []
+        "title": "Co-Founder, PearPrepJul 2023 \u0000 Jan 2024",
+        "details": [
+          "Developed an educational web app leveraging GPT\u00004 API for query-response personalization, enhancing",
+          "context understanding through fine-tuned prompts.",
+          "Integrated Firebase for JWT-based authentication and real-time NoSQL database, with Stripe's webhook",
+          "system for secure payment transactions, ensuring 99.9% uptime.",
+          "Full Stack Developer & Hackathon Coordinator, Hack UnitedJul 2023 \u0000 Jan 2024",
+          "Built a Next.js app with server-side rendering and MongoDB real-time syncing, using JWT authentication and",
+          "TailwindCSS's JIT compiler, reducing page load times by 40%.",
+          "Orchestrated \"United Hacks\" event, managing systems that handled over 300 registrations on judging panel.",
+          "Founder, OwnBoonMay 2023 \u0000 Dec 2023",
+          "Managed daily operations including business meetings and technical project designs, overseeing development",
+          "of a Next.js productivity SaaS with Sanity CMS and OpenAI's GPT\u00004 integration.",
+          "Orchestrated API integrations \u0000Clerk, Stripe, Sendbird) in a microservices architecture, managing a global",
+          "development team, increasing operational efficiency by 50%.",
+          "Full Stack Developer & Board Member, Computer Science Youth of AmericaAug 2023 \u0000 Oct 2023",
+          "Developed a scalable platform for connecting computer science students nationwide, built with Next.js, and",
+          "PostgreSQL, enabling secure user authentication via OAuth 2.0.",
+          "Integrated Stripe's Connect API for secure marketplace payments, enabling 100+ trusted fund distribution",
+          "between parties."
+        ]
       }
     ],
     "projects": [
-      {
-        "name": "",
-        "technologies": [
-          ""
-        ],
-        "details": []
-      },
       {
         "name": "S",
         "technologies": [
@@ -132,7 +88,63 @@
       {
         "name": "I",
         "technologies": [
-          "AI\u0000Powered"
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "",
+        "technologies": [
+          "AI\u0000"
+        ],
+        "details": []
+      },
+      {
+        "name": "P",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "o",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "w",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "r",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "d",
+        "technologies": [
+          ""
         ],
         "details": []
       },
@@ -167,12 +179,19 @@
       {
         "name": "t",
         "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "",
+        "technologies": [
           "Vertex AI",
-          " Discord API",
-          " Selenium",
-          " Docker",
-          " Qdrant",
-          " Google Cloud & Huggingface"
+          "Discord API",
+          "Selenium",
+          "Docker",
+          "Qdrant",
+          "Google Cloud & Huggingface"
         ],
         "details": [
           "Finetuned Multi-Modal Gemini improving 60% in reasoning tool use cases, RAG & Reinforcement learning",
@@ -205,7 +224,63 @@
       {
         "name": "e",
         "technologies": [
-          "Website"
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "W",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "b",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "s",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "i",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "t",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
         ],
         "details": []
       },
@@ -282,14 +357,118 @@
       {
         "name": "t",
         "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "",
+        "technologies": [
           "Reinforcement Learning & Neural Networks"
         ],
         "details": [
           "Built AI navigation system, using Q-learning and refined neural networks with TensorFlow, Next.js, and Flask,",
           "achieving 95% collision avoidance and 20% error reduction in maze and self-driving simulations, with real-time",
-          "visualizations and sensor fusion of 90\u0000 parallel AI agents.",
-          "Carbon Emission"
+          "visualizations and sensor fusion of 90\u0000 parallel AI agents."
         ]
+      },
+      {
+        "name": "C",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "a",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "r",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "b",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "o",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "n",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "E",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "m",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "i",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "s",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "s",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "i",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "o",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "n",
+        "technologies": [
+          ""
+        ],
+        "details": []
       },
       {
         "name": "D",
@@ -343,7 +522,70 @@
       {
         "name": "r",
         "technologies": [
-          "Computer"
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "C",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "o",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "m",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "p",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "u",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "t",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "r",
+        "technologies": [
+          ""
         ],
         "details": []
       },
@@ -385,18 +627,115 @@
       {
         "name": "n",
         "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "",
+        "technologies": [
           "OpenCV",
-          " PyTorch",
-          " Pandas",
-          " Flask",
-          " Kivy",
-          " Huggingface"
+          "PyTorch",
+          "Pandas",
+          "Flask",
+          "Kivy",
+          "Huggingface"
         ],
         "details": [
           "Fine-tuned YOLOv5 with Stanford Cars dataset for real-time detection, achieving 92% mAP with a Kivy app for",
-          "live car detection and carbon footprint prediction reaching 87% accuracy.",
-          "Fashion Images"
+          "live car detection and carbon footprint prediction reaching 87% accuracy."
         ]
+      },
+      {
+        "name": "F",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "a",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "s",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "h",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "i",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "o",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "n",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "I",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "m",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "a",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "g",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "s",
+        "technologies": [
+          ""
+        ],
+        "details": []
       },
       {
         "name": "G",
@@ -457,7 +796,161 @@
       {
         "name": "r",
         "technologies": [
-          "Generative Adversarial"
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "G",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "n",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "r",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "a",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "t",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "i",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "v",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "A",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "d",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "v",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "e",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "r",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "s",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "a",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "r",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "i",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "a",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "l",
+        "technologies": [
+          ""
         ],
         "details": []
       },
@@ -506,10 +999,17 @@
       {
         "name": "k",
         "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "",
+        "technologies": [
           "MNIST",
-          " Tensorflow",
-          " Pandas",
-          " Huggingface"
+          "Tensorflow",
+          "Pandas",
+          "Huggingface"
         ],
         "details": [
           "Implemented GAN using TensorFlow, trained on the Fashion MNIST dataset to generate high-quality fashion",
@@ -582,7 +1082,35 @@
       {
         "name": "y",
         "technologies": [
-          "App"
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "A",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "p",
+        "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "p",
+        "technologies": [
+          ""
         ],
         "details": []
       },
@@ -659,11 +1187,18 @@
       {
         "name": "t",
         "technologies": [
+          ""
+        ],
+        "details": []
+      },
+      {
+        "name": "",
+        "technologies": [
           "React Native",
-          " Firebase",
-          " Firestore",
-          " GeoSpatial Index",
-          " Clerk"
+          "Firebase",
+          "Firestore",
+          "GeoSpatial Index",
+          "Clerk"
         ],
         "details": [
           "Built a React Native app with Expo to send instant proximity-based alerts using firebase's real-time database",
@@ -725,5 +1260,5 @@
       }
     ]
   },
-  "nextFetch": "2025-01-10T07:34:00.079Z"
+  "nextFetch": "2025-01-11T07:53:16.686Z"
 }

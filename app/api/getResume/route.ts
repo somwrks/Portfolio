@@ -66,13 +66,15 @@ async function fetchAndProcessResume() {
     achievements: [] as unknown[]
   };
 
-  const sectionRegex = {
-    education: /EDUCATION([\s\S]*?)(?=EXPERIENCE|$)/i,
-    experience: /EXPERIENCE([\s\S]*?)(?=PROJECTS|$)/i,
-    projects: /PROJECTS([\s\S]*?)(?=SKILLS|$)/i,
-    skills: /SKILLS([\s\S]*?)(?=ACHIEVEMENTS|$)/i,
-    achievements: /ACHIEVEMENTS([\s\S]*?)(?=$)/i
-  };
+ // Improved regex patterns
+const sectionRegex = {
+  education: /EDUCATION([\s\S]*?)(?=EXPERIENCE|$)/i,
+  experience: /EXPERIENCE([\s\S]*?)(?=PROJECTS|$)/i,
+  projects: /PROJECTS([\s\S]*?)(?=SKILLS|$)/i,
+  skills: /SKILLS([\s\S]*?)(?=ACHIEVEMENTS|$)/i,
+  achievements: /ACHIEVEMENTS([\s\S]*?)(?=$)/i
+};
+
 
   const eduMatch = text.match(sectionRegex.education);
   if (eduMatch) {
@@ -85,29 +87,48 @@ async function fetchAndProcessResume() {
 
   const expMatch = text.match(sectionRegex.experience);
   if (expMatch) {
-    const expText = expMatch[1];
-    const experiences = expText.split(/(?=\w+,\s*\w+\s*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s*\d{4})/g);
+    const expText = expMatch[1].trim();
+    const experiences = expText.split(/(?=[\w\s]+\s*[|]\s*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s*\d{4})/g);
     
-    sections.experience = experiences.map(exp => {
-      const lines = exp.trim().split('\n');
-      return {
-        title: lines[0],
-        details: lines.slice(1).filter(l => l.trim().startsWith('•')).map(l => l.trim())
-      };
-    });
+    sections.experience = experiences
+      .filter(exp => exp.trim())
+      .map(exp => {
+        const lines = exp.trim().split('\n');
+        const titleLine = lines[0].trim();
+        const [title, date] = titleLine.split('|').map(s => s.trim());
+        
+        return {
+          title,
+          date,
+          details: lines
+            .slice(1)
+            .filter(l => l.trim())
+            .map(l => l.trim().replace(/^[•\-]\s*/, ''))
+        };
+      });
   }
 
   const projMatch = text.match(sectionRegex.projects);
   if (projMatch) {
-    const projects = projMatch[1].split(/(?=\w+\s*\|)/g);
-    sections.projects = projects.map(proj => {
-      const lines = proj.trim().split('\n');
-      return {
-        name: lines[0].split('|')[0].trim(),
-        technologies: lines[0].split('|').slice(1).join('|').trim().split(','),
-        details: lines.slice(1).filter(l => l.trim())
-      };
-    });
+    const projText = projMatch[1].trim();
+    const projects = projText.split(/(?=[\w\s]+\s*[|])/g);
+    
+    sections.projects = projects
+      .filter(proj => proj.trim())
+      .map(proj => {
+        const lines = proj.trim().split('\n');
+        const [name, ...techParts] = lines[0].split('|');
+        const technologies = techParts.join('|').split(',').map(t => t.trim());
+        
+        return {
+          name: name.trim(),
+          technologies,
+          details: lines
+            .slice(1)
+            .filter(l => l.trim())
+            .map(l => l.trim().replace(/^[•\-]\s*/, ''))
+        };
+      });
   }
 
   const skillsMatch = text.match(sectionRegex.skills);

@@ -129,6 +129,17 @@ body {
     transparent
   );
 }
+.overflow-hidden-custom {
+  overflow-y: scroll;
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.overflow-hidden-custom::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;  /* Safari and Chrome */
+}
 
 .slider {
   width: 100%;
@@ -213,3 +224,4 @@ body {
   right: 0;
   background: linear-gradient(to left, var(--background) 0%, transparent 100%);
 }
+

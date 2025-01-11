@@ -33,6 +33,10 @@ export function Providers({ children }: { children: React.ReactNode }) {
       setProjectsData(projects);
       setStoriesData(stories);
       setIsLoading(false);
+      console.log("Resume data extracted : ", resume)
+      console.log("Projects data extracted : ", projects)
+      console.log("Stories data extracted : ", stories)
+      
     } catch (error) {
       setError(error instanceof Error ? error.message : 'An error occurred');
       setIsLoading(false);

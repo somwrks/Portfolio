@@ -24,7 +24,7 @@ export default function Footer({ setSelectedSection,setZoom }: FooterProps) {
         </Button>
         <Button 
           className="bg-[#0E0E0E] text-white rounded-full px-4 md:px-12 py-2"
-          onPress={() => {setSelectedSection('experience');
+          onPress={() => {setSelectedSection('experiences');
             setZoom(true);
           }}
         >

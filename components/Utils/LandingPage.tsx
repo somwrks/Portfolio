@@ -5,9 +5,7 @@ import SkillRow from './SkillRow';
 import ProjectRow from './ProjectRow';
 
 export default function LandingPage() {
-    const { resumeData, projectsData, storiesData, isLoading } = useData();
-    console.log(resumeData)
-    console.log(projectsData)
+    const { resumeData, projectsData } = useData();
 
 
     // Split skills into 4 groups
@@ -19,7 +17,7 @@ export default function LandingPage() {
     );
 
     return (
-        <div className="flex flex-col gap-y-32  w-full overflow-hidden">
+        <div className="flex flex-col gap-y-32  w-full ">
             <div className="w-full">
             <ProjectRow 
                 projects={projectsData.projects}

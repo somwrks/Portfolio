@@ -1,4 +1,3 @@
-// tailwind.config.js
 import type { Config } from "tailwindcss";
 import { nextui } from "@nextui-org/react";
 
@@ -12,7 +11,8 @@ export default {
   theme: {
     extend: {
       animation: {
-        'scroll': 'scroll 300s linear infinite',
+        'scroll': 'scroll forwards 300s linear infinite',
+        'slow-mo': 'scroll forwards 600s linear infinite',
       },
       keyframes: {
         scroll: {
@@ -22,6 +22,5 @@ export default {
       },
     },
   },
-  darkMode: "class",
   plugins: [nextui()],
 } satisfies Config;

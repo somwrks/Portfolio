@@ -1,7 +1,7 @@
 // components/AvatarPopup.tsx
 "use client";
 import React, { useState, useRef } from "react";
-import { Button, Image, Link } from "@nextui-org/react";
+import {  Image, Link } from "@nextui-org/react";
 
 interface AvatarPopupProps {
   isClosing: boolean;
@@ -78,7 +78,9 @@ export default function AvatarPopup({ isClosing, onClose }: AvatarPopupProps) {
           passionate people!
         </p>
         <div className="flex gap-4 mt-4">
-          <Link href="https://www.instagram.com/ashworks.dev/">
+          <Link target="_blank"
+  rel="noopener noreferrer"
+ href="https://www.instagram.com/ashworks.dev/">
           <svg
             width="40"
             height="40"
@@ -96,7 +98,9 @@ export default function AvatarPopup({ isClosing, onClose }: AvatarPopupProps) {
             />
           </svg>
 </Link>
-<Link href="https://x.com/ashworks1706">
+<Link target="_blank"
+  rel="noopener noreferrer"
+ href="https://x.com/ashworks1706">
           <svg
             width="40"
             height="40"
@@ -110,7 +114,9 @@ export default function AvatarPopup({ isClosing, onClose }: AvatarPopupProps) {
             />
           </svg>
           </Link>
-<Link href="https://www.linkedin.com/in/ashworks/">
+<Link target="_blank"
+  rel="noopener noreferrer"
+ href="https://www.linkedin.com/in/ashworks/">
           <svg
             width="42"
             height="40"
@@ -125,7 +131,9 @@ export default function AvatarPopup({ isClosing, onClose }: AvatarPopupProps) {
           </svg>
           </Link>
 
-<Link href="https://discord.gg/PRs84AnxtT">
+<Link target="_blank"
+  rel="noopener noreferrer"
+ href="https://discord.gg/PRs84AnxtT">
           <svg
             width="40"
             height="46"
@@ -139,7 +147,9 @@ export default function AvatarPopup({ isClosing, onClose }: AvatarPopupProps) {
             />
           </svg>
           </Link>
-<Link href="mailto:ashworks1706@gmail.com">
+<Link target="_blank"
+  rel="noopener noreferrer"
+ href="mailto:ashworks1706@gmail.com">
           <svg
             width="40"
             className="mt-1"

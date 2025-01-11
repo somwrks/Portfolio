@@ -19,6 +19,7 @@ async function fetchFromGitHub(username: string) {
     let commitCount = 0;
     let latestCommitDate: string | null = null;
     const logoUrl = `https://opengraph.githubassets.com/1/${username}/${repo.name}`;
+    let topics: string[] = [];
     
     try {
       const readmeResponse = await octokit.rest.repos.getReadme({
@@ -45,6 +46,13 @@ async function fetchFromGitHub(username: string) {
           commitCount = parseInt(totalCommitsMatch[1], 10);
         }
       }
+
+      // Fetch topics for the repository
+      const topicsResponse = await octokit.rest.repos.getAllTopics({
+        owner: username,
+        repo: repo.name,
+      });
+      topics = topicsResponse.data.names;
     } catch (error) {
       console.log(`Failed to fetch data for ${repo.name}: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
@@ -55,7 +63,8 @@ async function fetchFromGitHub(username: string) {
       readme: readme,
       logoUrl: logoUrl,
       commitCount: commitCount,
-      latestCommitDate: latestCommitDate
+      latestCommitDate: latestCommitDate,
+      topics: topics
     };
   }));
 
@@ -69,6 +78,7 @@ async function fetchFromGitHub(username: string) {
 
   return projects;
 }
+
 
 async function saveToFile(data: any) {
   const filePath = path.join(ROOT_DIRECTORY, FILE_NAME);

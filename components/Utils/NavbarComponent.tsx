@@ -7,6 +7,7 @@ import {
   Avatar,
 } from "@nextui-org/react";
 import AvatarPopup from './AvatarPopup';
+import ResumePopup from './ResumePopup';
 
 interface NavbarProps {
   setZoom: (zoom: boolean) => void;
@@ -16,6 +17,7 @@ interface NavbarProps {
 export default function NavbarComponent({ setZoom,zoom }: NavbarProps) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
+  const [isResumePopup, setIsResumePopup] = useState(false)
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -33,6 +35,7 @@ export default function NavbarComponent({ setZoom,zoom }: NavbarProps) {
     setIsClosing(true);
     setZoom(false)
     setTimeout(() => {
+      setIsResumePopup(false)
       setIsPopupOpen(false);
       setIsClosing(false);
     }, 300);
@@ -48,7 +51,7 @@ export default function NavbarComponent({ setZoom,zoom }: NavbarProps) {
           className="bg-[#0E0E0E] rounded-full"
         >
           <div className="w-full flex flex-row justify-between items-center py-4 px-6">
-            <h1 className="text-xl font-semibold text-white">Resume</h1>
+            <h1 onClick={()=>{setIsResumePopup(true);setZoom(true)}} className="text-xl cursor-pointer hover:text-gray-200 font-semibold text-white">Resume</h1>
             <NavbarContent as="div" className="items-center" justify="end"> 
               <Avatar
                 isBordered
@@ -71,6 +74,17 @@ export default function NavbarComponent({ setZoom,zoom }: NavbarProps) {
           onClick={handleClose}
         >
           <AvatarPopup 
+            isClosing={isClosing}
+            onClose={handleClose}
+          />
+        </div>
+      )}
+      {isResumePopup && (
+        <div 
+          className="fixed backdrop-blur-sm justify-center w-full items-center flex inset-0 z-10 backdrop-animate"
+          onClick={handleClose}
+        >
+          <ResumePopup
             isClosing={isClosing}
             onClose={handleClose}
           />
